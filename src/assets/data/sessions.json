@@ -1,0 +1,418 @@
+[
+    {
+        "id": "201",
+        "title": "Strong and Kind",
+        "description": "Reflection on how one can build resilience while navigating the pressures of demands of a dynamic workplace and the pivotal role of mindfulness, kindness and compassion.",
+        "track": "Leadership",
+        "link": "",
+        "format": "Keynote",
+        "date": "May 23rd, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            119
+        ]
+    },
+    {
+        "id": "202",
+        "title": "How women lead and succeed",
+        "description": "I’ve been interacting with successful, very successful women and I have always been curious about what the secret rituals and healthy practices are that make up their lives? How is that they are more successful than many other women on the planet? \n\nAnd what I found out was that it’s about knowing the right techniques and rituals to get to the next level. It's more to do with the habits you are willing to give up and create more space for habits that will multiply our progress speed.\n\nIn this 30 minute talk, I share with you the # 1 ritual of success practiced by the business moguls and super successful leaders. It will help you up-level your results and accelerate your speed of growth.",
+        "track": "Leadership",
+        "link": "",
+        "format": "Talk",
+        "date": "May 23rd, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            120
+        ]
+    },
+    {
+        "id": "203",
+        "title": "Ice Breaker",
+        "description": "",
+        "track": "Leadership",
+        "link": "",
+        "format": "Ice Breaker",
+        "date": "May 23rd, 2020",
+        "timeDuration": "15",
+        "speakers": [
+            107,
+            103
+        ]
+    },
+    {
+        "id": "204",
+        "title": "Owning Your Narrative",
+        "description": "How about a new narrative for the new normal? Or the new (ab)normal? Whatever that is, but why need a narrative? Well, whether or not you own your narrative, there is one that already exists! Whether you are an employee, a freelancer, an intrapreneur, an entrepreneur or a business owner how you choose to sail through the new normal has everything to do with the narrative you choose to create, amplify and manage.",
+        "track": "Leadership",
+        "link": "",
+        "format": "Talk",
+        "date": "May 23rd, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            121
+        ]
+    },
+    {
+        "id": "205",
+        "title": "Why Communities Matter?",
+        "description": "",
+        "link": "",
+        "track": "Leadership",
+        "format": "Panel Discussion",
+        "date": "May 23rd, 2020",
+        "timeDuration": "45",
+        "speakers": [
+            106,
+            122,
+            104,
+            114,
+            117
+        ]
+    },
+    {
+        "id": "206",
+        "title": "Q & A",
+        "description": "",
+        "track": "Leadership",
+        "link": "",
+        "format": "AMA & Closing",
+        "date": "May 23rd, 2020",
+        "timeDuration": "30",
+        "speakers": []
+    },
+    {
+        "id": "207",
+        "title": "Data Pipelines using Airflow on Kubernetes",
+        "description": "Airflow is an opensource platform to create, schedule and monitor workflows. In this talk we will explore \n- What is airflow?   \n- How to create data pipelines? \n- How to exploit kubernetes to achieve performance\n- Pros and cons of the approach",
+        "track": "Tech - ML & Cloud",
+        "link": "",
+        "format": "Tech Talk",
+        "date": "May 24th, 2020",
+        "timeDuration": "20",
+        "speakers": [
+            123
+        ]
+    },
+    {
+        "id": "208",
+        "title": "Building a Fault Tolerant Architecture",
+        "description": "",
+        "track": "Tech - ML & Cloud",
+        "format": "Tech Talk",
+        "link": "",
+        "date": "May 24th, 2020",
+        "timeDuration": "20",
+        "speakers": [
+            116
+        ]
+    },
+    {
+        "id": "209",
+        "title": "Designing Conversations using Dialogflow",
+        "description": "",
+        "track": "Tech - ML & Cloud",
+        "link": "",
+        "format": "Tech Talk",
+        "date": "May 24th, 2020",
+        "timeDuration": "20",
+        "speakers": [
+            124
+        ]
+    },
+    {
+        "id": "210",
+        "title": "Ice Breaker",
+        "description": "There are a lot of inspiring women in technology around the us. A small walk through the stories of some inspiring women.",
+        "track": "Tech - ML & Cloud",
+        "format": "Ice Breaker",
+        "link": "",
+        "date": "May 24th, 2020",
+        "timeDuration": "15",
+        "speakers": [
+            101,
+            109
+        ]
+    },
+    {
+        "id": "211",
+        "title": "Hands-on workshop in Introduction to Neural Networks",
+        "description": "",
+        "track": "Tech - ML & Cloud",
+        "format": "Workshop",
+        "link": "",
+        "date": "May 24th, 2020",
+        "timeDuration": "45",
+        "speakers": [
+            125,
+            126
+        ]
+    },
+    {
+        "id": "212",
+        "title": "Fireside Chat",
+        "description": "Fireside Chat",
+        "track": "Tech - ML & Cloud",
+        "format": "Fireside chat",
+        "link": "",
+        "date": "May 24th, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            128,
+            127
+        ]
+    },
+    {
+        "id": "213",
+        "title": "Virtual Machines in GCP",
+        "description": "",
+        "track": "Tech - ML & Cloud",
+        "format": "Lightning Talk",
+        "link": "",
+        "date": "May 24th, 2020",
+        "timeDuration": "10",
+        "speakers": [
+            129
+        ]
+    },
+    {
+        "id": "231",
+        "title": "ML Explainability + Trust",
+        "description": "",
+        "link": "",
+        "track": "Tech - ML & Cloud",
+        "format": "Lightning Talk",
+        "date": "May 24th, 2020",
+        "timeDuration": "15",
+        "speakers": [
+            112
+        ]
+    },
+    {
+        "id": "214",
+        "title": "Q & A",
+        "description": "",
+        "track": "Tech - ML & Cloud",
+        "link": "",
+        "format": "AMA & Closing",
+        "date": "May 24th, 2020",
+        "timeDuration": "30",
+        "speakers": []
+    },
+    {
+        "id": "215",
+        "title": "Visual Engineering",
+        "description": "This talk would cover some aspects of how visuals speak to humans and why we must engineer them.",
+        "link": "",
+        "track": "Design & Entrepreneurship",
+        "format": "Design Talk",
+        "date": "May 30th, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            130
+        ]
+    },
+    {
+        "id": "216",
+        "title": "Fail, Gains and Stepping Stones",
+        "description": "A reflective talk on some of the fails, learnings and moments in my career which shaped what I do now, with a peak into some design led projects. A real look into how plans can fall apart, but there will be people, communities and insights that help your journey.",
+        "track": "Design & Entrepreneurship",
+        "link": "",
+        "format": "Design Talk",
+        "date": "May 30th, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            131
+        ]
+    },
+    {
+        "id": "217",
+        "title": "Ice Breaker",
+        "description": "",
+        "track": "Design & Entrepreneurship",
+        "format": "Ice Breaker",
+        "date": "May 30th, 2020",
+        "link": "",
+        "timeDuration": "15",
+        "speakers": [
+            113,
+            132
+        ]
+    },
+    {
+        "id": "218",
+        "title": "An Entrepreneur’s Journey",
+        "description": "",
+        "link": "",
+        "track": "Design & Entrepreneurship",
+        "format": "Talk",
+        "date": "May 30th, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            133
+        ]
+    },
+    {
+        "id": "230",
+        "title": "How to Get Startup Ideas",
+        "description": "",
+        "track": "Design & Entrepreneurship",
+        "link": "",
+        "format": "Lightning Talk",
+        "date": "May 30th, 2020",
+        "timeDuration": "15",
+        "speakers": [
+            134
+        ]
+    },
+    {
+        "id": "219",
+        "title": "A Wonky Journey",
+        "description": "It's never a straight path to success. Or the commonly accepted definition of \"success\". In the journey of an entrepreneur, things always happen at the worst possible time. What makes it worth it is how you treat the situation. This talk takes you back 7 years and encompassess all the life lessons that Swaathi learnt on her journey. Buckle up!",
+        "track": "Design & Entrepreneurship",
+        "link": "",
+        "format": "Lightning Talk",
+        "date": "May 30th, 2020",
+        "timeDuration": "15",
+        "speakers": [
+            135
+        ]
+    },
+    {
+        "id": "220",
+        "title": "Role of Design in Startups",
+        "description": "",
+        "track": "Design & Entrepreneurship",
+        "format": "Lightning Talk",
+        "date": "May 30th, 2020",
+        "link": "",
+        "timeDuration": "15",
+        "speakers": [
+            136
+        ]
+    },
+    {
+        "id": "221",
+        "title": "Q & A",
+        "description": "",
+        "track": "Design & Entrepreneurship",
+        "format": "AMA & Closing",
+        "link": "",
+        "date": "May 30th, 2020",
+        "timeDuration": "30",
+        "speakers": []
+    },
+    {
+        "id": "222",
+        "title": "What’s new in Android R",
+        "description": "Learn about new features in Android R and how they will impact your app. Also learn about Best Practices for new API’s.",
+        "link": "",
+        "track": "Tech - Android & Web",
+        "format": "Tech Talk",
+        "date": "May 31st, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            137
+        ]
+    },
+    {
+        "id": "223",
+        "title": "Widgets that stretch and fold: Responsive Design in Flutter",
+        "description": "When we are building Flutter apps for Android & iOS and now even Web, we have to make sure we move away from the practise of using hardcoded widths and heights. It’s important to develop and know about flexible widgets that can stretch all the way and fold in minimal spaces, because when we are developing in Flutter, we are developing for more than 4 varied platforms.The talk is targeted to developers (and maybe even designer turned developers) who know how to work around Flutter widgets, but are struggling to get out of their forced habit of creating strictly sized widgets and want to build apps that are responsive and still beautiful in various other platforms. ",
+        "track": "Tech - Android & Web",
+        "format": "Tech Talk",
+        "date": "May 31st, 2020",
+        "link": "",
+        "timeDuration": "30",
+        "speakers": [
+            138
+        ]
+    },
+    {
+        "id": "224",
+        "title": "Ice Breaker",
+        "description": "",
+        "track": "Tech - Android & Web",
+        "link": "",
+        "format": "Ice Breaker",
+        "date": "May 31st, 2020",
+        "timeDuration": "15",
+        "speakers": [
+            110,
+            139
+        ]
+    },
+    {
+        "id": "225",
+        "title": "Framework-agnostic web components, with Angular",
+        "description": "Living in the times when technology and frameworks change quite fast, we really need to think through what we are building, why we are building it, and how we are building it. And now that we have done this amount of thinking, we want to be smart, right? Same effort, multiple times? Definitely not! I will be talking about Building reusable web components using Angular elements, and building and publishing the package to be able to use it in applications built using any framework.",
+        "link": "",
+        "track": "Tech - Android & Web",
+        "format": "Tech Talk",
+        "date": "May 31st, 2020",
+        "timeDuration": "30",
+        "speakers": [
+            102
+        ]
+    },
+    {
+        "id": "226",
+        "title": "What it takes to become a modern web developer in 2020",
+        "description": "",
+        "track": "Tech - Android & Web",
+        "format": "Lightning Talk",
+        "link": "",
+        "date": "May 31st, 2020",
+        "timeDuration": "15",
+        "speakers": [
+            118
+        ]
+    },
+    {
+        "id": "227",
+        "title": "Angular Components: Google Map",
+        "description": "",
+        "track": "Tech - Android & Web",
+        "format": "Lightning Talk",
+        "link": "",
+        "date": "May 31st, 2020",
+        "timeDuration": "15",
+        "speakers": [
+            115
+        ]
+    },
+    {
+        "id": "228",
+        "title": "Micro-interactions: Enhancing UX",
+        "description": "",
+        "track": "Tech - Android & Web",
+        "format": "Lightning Talk",
+        "date": "May 31st, 2020",
+        "timeDuration": "15",
+        "link": "",
+        "speakers": [
+            140
+        ]
+    },
+    {
+        "id": "232",
+        "title": "#IWDIndia2020 Story",
+        "description": "",
+        "track": "Tech - Android & Web",
+        "format": "Lightning Talk",
+        "link": "",
+        "date": "May 31st, 2020",
+        "timeDuration": "15",
+        "speakers": [112]
+    },
+    {
+        "id": "229",
+        "title": "Q & A",
+        "description": "",
+        "track": "Tech - Android & Web",
+        "format": "AMA & Closing",
+        "link": "",
+        "date": "May 31st, 2020",
+        "timeDuration": "30",
+        "speakers": []
+    }
+]
