@@ -67,7 +67,7 @@
                     </p>
                     <v-data-table
                       :mobile-breakpoint="0"
-                      style="border:0px solid #e0e0e0;border-radius:5px;background:white;"
+                      style="border:0px solid #e0e0e0;border-radius:5px;"
                       :headers="headers"
                       :items="day1Data"
                       disable-pagination
