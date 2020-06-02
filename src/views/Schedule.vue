@@ -23,7 +23,14 @@
             </template>
 
             <template v-slot:extension>
-              <v-tabs v-model="model" :mobile-breakpoint="0" :grow="getMobileTab()" :centered="getMobileTab()" color="indigo" slider-color="indigo">
+              <v-tabs
+                v-model="model"
+                :mobile-breakpoint="0"
+                :grow="getMobileTab()"
+                :centered="getMobileTab()"
+                color="indigo"
+                slider-color="indigo"
+              >
                 <v-tab href="#day1">
                   Day 1
                 </v-tab>
@@ -58,6 +65,38 @@
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
+                    <v-data-table
+                      :mobile-breakpoint="0"
+                      style="border:0px solid #e0e0e0;border-radius:5px;background:white;"
+                      :headers="headers"
+                      :items="day1Data"
+                      class="elevation-0 ma-0 pa-0"
+                    >
+                      <template v-slot:item.name="{ item }">
+                        <v-list-item>
+                          <v-list-item-avatar>
+                            <v-img
+                              :src="
+                                item.image.length > 0
+                                  ? item.image
+                                  : getImgUrl(item.image, 'profile.jpg')
+                              "
+                            ></v-img>
+                          </v-list-item-avatar>
+
+                          <v-list-item-content>
+                            <v-list-item-title
+                              class="google-font"
+                              v-html="item.speaker"
+                            ></v-list-item-title>
+                            <v-list-item-subtitle
+                              class="google-font"
+                              v-html="item.des"
+                            ></v-list-item-subtitle>
+                          </v-list-item-content>
+                        </v-list-item>
+                      </template>
+                    </v-data-table>
                   </v-col>
                 </v-row>
               </v-container>
@@ -119,14 +158,46 @@ export default {
   name: "",
   data: () => ({
     model: "day1",
+    headers: [
+      {
+        text: "Time",
+        align: "start",
+        value: "time",
+        width: "25%",
+      },
+      { text: "Speaker", value: "name" },
+      { text: "Description", value: "description" },
+    ],
+    day1Data: [
+      {
+        time: "2:00 - 3:00",
+        speaker: "Vrijraj",
+        des:"GDE for Web",
+        image: "",
+        description: "This is Description",
+      },
+      {
+        time: "2:00 - 3:00",
+        speaker: "Vrijraj",
+        image: "",
+        des:"GDE for Web",
+        description: "This is Description",
+      },
+      {
+        time: "2:00 - 3:00",
+        speaker: "Vrijraj",
+        des:"GDE for Web",
+        image: "",
+        description: "This is Description",
+      },
+    ],
   }),
-  mounted(){
+  mounted() {},
+  methods: {
+    getMobileTab() {
+      if (window.innerWidth < 500) return true;
+      else return false;
+    },
   },
-  methods:{
-    getMobileTab(){
-        if(window.innerWidth<500) return true
-        else return false
-    }
-  }
 };
 </script>
