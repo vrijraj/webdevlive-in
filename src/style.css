@@ -1,0 +1,13 @@
+@font-face {
+    font-family: google-sans;
+    src: url(assets/fonts/google-font.woff2);
+}
+.google-font{
+    font-family: google-sans
+};
+html{
+    overflow-x: hidden;
+}
+body{
+    font-family: google-sans
+}
