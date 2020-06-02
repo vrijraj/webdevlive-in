@@ -58,47 +58,28 @@
               <v-container>
                 <v-row>
                   <v-col>
-                    <h1 class="google-font">Performance & Developer Tools</h1>
+                    <h3 class="google-font">Performance & Developer Tools</h3>
                     <p class="google-font">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Nostrum officiis impedit laborum tempore aliquam libero
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
-                    <v-data-table
-                      :mobile-breakpoint="0"
-                      style="border:0px solid #e0e0e0;border-radius:5px;"
-                      :headers="headers"
-                      :items="day1Data"
-                      disable-pagination
-                      hide-default-header
-                      class="elevation-0 ma-0 pa-0"
-                    >
-                      <template v-slot:item.name="{ item }">
-                        <v-list-item>
-                          <v-list-item-avatar>
-                            <v-img
-                              :src="
-                                item.image.length > 0
-                                  ? item.image
-                                  : getImgUrl(item.image, 'profile.jpg')
-                              "
-                            ></v-img>
-                          </v-list-item-avatar>
-
-                          <v-list-item-content>
-                            <v-list-item-title
-                              class="google-font"
-                              v-html="item.speaker"
-                            ></v-list-item-title>
-                            <v-list-item-subtitle
-                              class="google-font"
-                              v-html="item.des"
-                            ></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </template>
-                    </v-data-table>
+                    <v-container fluid>
+                        <v-row justify="center" align="center" v-for="(item, index) in day1Data" :key="index" style="border-bottom:1px solid #e0e0e0" class="pa-0 my-0">
+                            <v-col md="2" cols="3" class="text-right my-0 py-0">
+                                <p style="font-size:150%" class="mb-0 google-font">{{item.startTime}}</p>
+                                <p style="font-size:80%" class="ma-0 google-font">{{item.endTime}}</p>
+                                <p class="mt-1 google-font" style="font-size:70%"><b style="color:grey">GMT (+05:30)</b></p>
+                            </v-col>
+                            <v-col class="schedule-details my-0" cols="9" md="10" style="border-left:1px solid #e0e0e0">
+                                <ScheduleDialog :data="item"/>
+                                <!-- <p style="font-size:130%" class="mb-0 google-font">{{item.title}}</p>
+                                <p style="font-size:100%" class="mb-0 google-font">{{item.description}}</p>
+                                <v-chip label small>{{item.speaker}}</v-chip> -->
+                            </v-col>
+                        </v-row>
+                    </v-container>
                   </v-col>
                 </v-row>
               </v-container>
@@ -156,40 +137,40 @@
 </template>
 
 <script>
+import ScheduleDialog from '../components/Schedule/ScheduleDialog'
 export default {
   name: "",
+  components:{
+    ScheduleDialog
+  },
   data: () => ({
     model: "day1",
-    headers: [
-      {
-        text: "Time",
-        align: "start",
-        value: "time",
-        width: "25%",
-      },
-      { text: "Speaker", value: "name" },
-      { text: "Description", value: "description" },
-    ],
     day1Data: [
       {
-        time: "2:00 - 3:00",
+        startTime: "2:00",
+        endTime:"3:00",
         speaker: "Vrijraj",
         des:"GDE for Web",
         image: "",
+        title:"This is Title",
         description: "This is Description",
       },
       {
-        time: "2:00 - 3:00",
+        startTime: "2:00",
+        endTime:"3:00",
         speaker: "Vrijraj",
         image: "",
+        title:"This is Title",
         des:"GDE for Web",
         description: "This is Description",
       },
       {
-        time: "2:00 - 3:00",
+        startTime: "2:00",
+        endTime:"3:00",
         speaker: "Vrijraj",
         des:"GDE for Web",
         image: "",
+        title:"This is Title",
         description: "This is Description",
       },
     ],
@@ -203,3 +184,9 @@ export default {
   },
 };
 </script>
+
+<style>
+    .schedule-details:hover{
+        background: #FAFAFA;
+    }
+</style>

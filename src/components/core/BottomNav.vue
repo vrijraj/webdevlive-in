@@ -7,6 +7,7 @@
     :background-color="this.$vuetify.theme.dark?'#212121':'white'"
     :color="this.$vuetify.theme.dark?'white':'indigo'"
     class="hidden-md-and-up"
+    style="overflow-x: hidden;"
   > 
     <v-btn
         v-for="(link, i) in links.filter(res=>res.meta.showBottomNav)" :key="i"
