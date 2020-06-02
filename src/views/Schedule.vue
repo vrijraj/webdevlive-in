@@ -70,6 +70,8 @@
                       style="border:0px solid #e0e0e0;border-radius:5px;background:white;"
                       :headers="headers"
                       :items="day1Data"
+                      disable-pagination
+                      hide-default-header
                       class="elevation-0 ma-0 pa-0"
                     >
                       <template v-slot:item.name="{ item }">
