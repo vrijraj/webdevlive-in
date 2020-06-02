@@ -5,7 +5,7 @@
                 <v-img :src="require('@/assets/img/home.png')"></v-img>
             </v-col>
             <v-col cols="12" md="7" lg="7">
-                <h1 class="google-font mt-5 indigo--text">Web.dev Live India</h1>
+                <h1 class="google-font mt-5">Web.dev Live India</h1>
                 <p class="google-font" style="font-size:150%">Bringing web developers together, from home</p>
                 <p class="google-font">These are unprecedented times, with people worldwide looking to stay connected and informed. The Web plays a special role here, and we're proud to see how the community has stepped up.</p>
                 <p class="google-font">
