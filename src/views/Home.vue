@@ -12,7 +12,7 @@
 
 <script>
 // @ is an alias to /src
-import ComingSoon from '../components/home/CommingSoon'
+import ComingSoon from '@/components/home/ComingSoon'
 export default {
   name: 'Home',
   components: {

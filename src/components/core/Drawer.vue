@@ -2,9 +2,11 @@
   <v-navigation-drawer v-model="drawer" app width="300px" temporary>
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title class="google-font py-1" style="font-size:130%">{{
+        <v-list-item-title class="google-font py-1" style="font-size:130%">
+          {{
           mainData.EventName || ""
-        }}</v-list-item-title>
+          }}
+        </v-list-item-title>
       </v-list-item-content>
     </v-list-item>
 
@@ -37,8 +39,7 @@
             href="https://github.com/gdg-x/aura/"
             target="_blank"
             style="text-decoration:none"
-            >Aura</a
-          >
+          >Aura</a>
         </p>
       </div>
     </template>
@@ -46,11 +47,11 @@
 </template>
 
 <script>
-import mainData from '../../assets/data/main.json'
+import mainData from "@/assets/data/about.json";
 import { mapGetters, mapMutations } from "vuex";
 export default {
   data: () => ({
-    mainData:mainData
+    mainData: mainData
   }),
   computed: {
     ...mapGetters(["links"]),
@@ -60,8 +61,8 @@ export default {
       },
       set(val) {
         this.setDrawer(val);
-      },
-    },
+      }
+    }
   },
   methods: {
     ...mapMutations(["setDrawer"]),
@@ -75,7 +76,7 @@ export default {
       if (item.to || !item.href) return;
       this.$vuetify.goTo(item.href);
       this.setDrawer(false);
-    },
-  },
+    }
+  }
 };
 </script>

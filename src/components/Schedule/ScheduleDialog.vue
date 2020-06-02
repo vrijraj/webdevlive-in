@@ -1,12 +1,8 @@
 <template>
   <v-dialog v-model="dialog" width="700">
-      <!-- :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'" -->
+    <!-- :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'" -->
     <template v-slot:activator="{ on }">
-      <div
-        v-on="on"
-        style="cursor: pointer;"
-        class="py-3 ma-1 fill-height"
-      >
+      <div v-on="on" style="cursor: pointer;" class="py-3 ma-1 fill-height">
         <p style="font-size:130%" class="mb-0 google-font">{{data.title}}</p>
         <p style="font-size:100%" class="mb-0 google-font">{{data.description}}</p>
         <v-chip class="mt-2" label small>{{data.speaker}}</v-chip>
@@ -14,47 +10,24 @@
     </template>
 
     <v-card :class="theme.isDark ? 'grey darken-3' : 'white'">
-      <!-- <v-card-title class="px-5 google-font" primary-title>
-        {{ data.name }} Details
-      </v-card-title> -->
-
       <v-card-text class="pa-5">
         <v-container>
           <v-row>
             <v-col md="4" cols="12" class="text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit blanditiis quos ex autem culpa? Reiciendis a adipisci nulla ducimus cumque quaerat accusamus. Numquam accusantium voluptate deleniti eaque velit tenetur nam!</p>
-              <!-- <v-avatar size="100">
-                <img
-                  :src="getImgUrl(data.image, 'profile.jpg')"
-                  :lazy-src="getImgUrl(data.image, 'profile.jpg')"
-                  alt=""
-                />
-              </v-avatar>
-              <p class="google-font mt-3 mb-0" style="font-size:140%"><b>{{ data.name }}</b></p>
-              <p class="google-font mt-1" style="font-size:100%">{{ data.company }}</p>
-              <socialMediaDetails class="pl-0 ml-0" :data="data.socialLinks" /> -->
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit blanditiis quos ex autem culpa? Reiciendis a adipisci nulla ducimus cumque quaerat accusamus. Numquam accusantium voluptate deleniti eaque velit tenetur nam!</p>
             </v-col>
             <v-col md="8" cols="12">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit blanditiis quos ex autem culpa? Reiciendis a adipisci nulla ducimus cumque quaerat accusamus. Numquam accusantium voluptate deleniti eaque velit tenetur nam!</p>
-              <!-- <p class="google-font mb-0" style="font-size:110%">{{ data.designation }}</p>
-              <p class="google-font" style="font-size:110%">{{ data.address.country }}, {{ data.address.city }}</p>
-              <p class="google-font" style="font-size:110%">{{ data.bio }}</p> -->
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit blanditiis quos ex autem culpa? Reiciendis a adipisci nulla ducimus cumque quaerat accusamus. Numquam accusantium voluptate deleniti eaque velit tenetur nam!</p>
             </v-col>
           </v-row>
         </v-container>
-
-        <!-- <v-btn class="primary mt-3" small depressed @click="goToTeam(data.id)"
-          >See More Info</v-btn
-        > -->
       </v-card-text>
 
       <v-divider></v-divider>
 
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="dialog = false">
-          Close
-        </v-btn>
+        <v-btn color="primary" text @click="dialog = false">Close</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -62,27 +35,26 @@
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
   inject: ["theme"],
   props: ["data"],
   data() {
     return {
-      dialog: false,
+      dialog: false
     };
   },
   mounted() {},
   methods: {
     goToTeam(id) {
       this.$router.push("/team/" + id);
-    },
+    }
   },
   filters: {
     summery: (val, num) => {
       if (val.length > num) return val.substring(0, num) + "..";
       else return val;
-    },
-  },
+    }
+  }
 };
 </script>
 

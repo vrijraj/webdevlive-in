@@ -26,9 +26,9 @@ export default new Vuex.Store({
       //   },
       // },
       {
-        text: "Team",
-        to: "/team",
-        icon: "mdi-account-settings",
+        text: "schedule",
+        to: "/schedule",
+        icon: 'mdi-format-float-left',
         meta: {
           showToolbar: true,
           showBottomNav: true,
@@ -37,7 +37,16 @@ export default new Vuex.Store({
       {
         text: "Speakers",
         to: "/speakers",
-        icon: "mdi-assistant",
+        icon: 'mdi-account-switch',
+        meta: {
+          showToolbar: true,
+          showBottomNav: true,
+        },
+      },
+      {
+        text: "Team",
+        to: "/team",
+        icon: "mdi-account-multiple",
         meta: {
           showToolbar: true,
           showBottomNav: true,
@@ -46,25 +55,16 @@ export default new Vuex.Store({
       // {
       //   text: "About",
       //   to: "/about",
-      //   icon: "mdi-comment-alert",
+      //   icon: "mdi-information-outline",
       //   meta: {
       //     showToolbar: true,
       //     showBottomNav: true,
       //   },
       // },
-      {
-        text: "schedule",
-        to: "/schedule",
-        icon: "mdi-contacts",
-        meta: {
-          showToolbar: true,
-          showBottomNav: true,
-        },
-      },
       // {
       //   text: "Partners",
       //   to: "/partners",
-      //   icon: "mdi-currency-usd",
+      //   icon: "mdi-account-settings",
       //   meta: {
       //     showToolbar: false,
       //     showBottomNav: false,
@@ -73,7 +73,7 @@ export default new Vuex.Store({
       // {
       //   text: "Blogs",
       //   to: "/blogs",
-      //   icon: "mdi-blogger",
+      //   icon: "mdi-receipt",
       //   meta: {
       //     showToolbar: true,
       //     showBottomNav: false,

@@ -8,45 +8,41 @@
         :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'"
       >
         <v-avatar size="100">
-          <img
-            :src="getImgUrl(data.image, 'profile.jpg')"
-            :lazy-src="getImgUrl(data.image, 'profile.jpg')"
-            alt=""
-          />
+          <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
         </v-avatar>
-        <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">
-          {{ data.name | summery(20) }}
-        </p>
-        <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">
-          {{ data.designation | summery(20) }}
-        </p>
-        <socialMediaDetails :data="data.socialLinks" />
+        <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{ data.name }}</p>
+        <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{ data.company.name }}</p>
+        <socialMediaDetails :data="data.social" />
       </div>
     </template>
 
     <v-card :class="theme.isDark ? 'grey darken-3' : 'white'">
       <!-- <v-card-title class="px-5 google-font" primary-title>
         {{ data.name }} Details
-      </v-card-title> -->
+      </v-card-title>-->
 
       <v-card-text class="pa-5">
         <v-container>
           <v-row>
             <v-col md="4" cols="12" class="text-center">
               <v-avatar size="100">
-                <img
-                  :src="getImgUrl(data.image, 'profile.jpg')"
-                  :lazy-src="getImgUrl(data.image, 'profile.jpg')"
-                  alt=""
-                />
+                <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
               </v-avatar>
-              <p class="google-font mt-3 mb-0" style="font-size:140%"><b>{{ data.name }}</b></p>
-              <p class="google-font mt-1" style="font-size:100%">{{ data.company }}</p>
-              <socialMediaDetails class="pl-0 ml-0" :data="data.socialLinks" />
+              <p class="google-font mt-3 mb-0" style="font-size:140%">
+                <b>{{ data.name }}</b>
+              </p>
+              <p class="google-font mt-1" style="font-size:100%">
+                {{ data.company.designation }}
+                <span v-if="data.company.name">,&nbsp;</span>
+                {{ data.company.name }}
+              </p>
+              <socialMediaDetails class="pl-0 ml-0" :data="data.social" />
             </v-col>
             <v-col md="8" cols="12">
-              <p class="google-font mb-0" style="font-size:110%">{{ data.designation }}</p>
-              <p class="google-font" style="font-size:110%">{{ data.address.country }}, {{ data.address.city }}</p>
+              <p
+                class="google-font"
+                style="font-size:110%;word-break:normal;font-weight:bold"
+              >{{data.community.designation}}, {{data.community.name}}</p>
               <p class="google-font" style="font-size:110%">{{ data.bio }}</p>
             </v-col>
           </v-row>
@@ -54,16 +50,14 @@
 
         <!-- <v-btn class="primary mt-3" small depressed @click="goToTeam(data.id)"
           >See More Info</v-btn
-        > -->
+        >-->
       </v-card-text>
 
       <v-divider></v-divider>
 
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="dialog = false">
-          Close
-        </v-btn>
+        <v-btn color="primary" text @click="dialog = false">Close</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -73,27 +67,27 @@
 import socialMediaDetails from "@/components/common/SocialInfo";
 export default {
   components: {
-    socialMediaDetails,
+    socialMediaDetails
   },
   inject: ["theme"],
   props: ["data"],
   data() {
     return {
-      dialog: false,
+      dialog: false
     };
   },
   mounted() {},
   methods: {
     goToTeam(id) {
       this.$router.push("/team/" + id);
-    },
+    }
   },
   filters: {
-    summery: (val, num) => {
+    summary: (val, num) => {
       if (val.length > num) return val.substring(0, num) + "..";
       else return val;
-    },
-  },
+    }
+  }
 };
 </script>
 

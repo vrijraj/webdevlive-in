@@ -13,12 +13,12 @@ export default {
                 return splitArr[0].substring(0, 1).toUpperCase();
             }
         },
-        getImgUrl(pic, defaultimage="profile.jpg") {
+        getImgUrl(pic, defaultimage = "maleAvatar.jpg") {
             if (pic.length > 0) {
                 return pic;
             } else {
-                return require('@/assets/img/dontremove/'+defaultimage);
+                return require('@/assets/img/common/' + defaultimage);
             }
         },
     },
-  }
+}
