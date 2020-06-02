@@ -10,7 +10,7 @@
 
     <v-divider></v-divider>
 
-    <v-list dense shaped>
+    <v-list dense>
       <v-list-item
         v-for="(link, i) in links"
         :key="i"

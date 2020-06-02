@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <h1>Speakers Page</h1>
+          <h1 class="google-font">Team Page</h1>
         </v-col>
       </v-row>
     </v-container>
