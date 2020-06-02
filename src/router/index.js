@@ -24,6 +24,11 @@ Vue.use(VueRouter)
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/schedule',
+    name: 'Schedule',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Schedule.vue')
   }
 ]
 

@@ -52,15 +52,15 @@ export default new Vuex.Store({
       //     showBottomNav: true,
       //   },
       // },
-      // {
-      //   text: "Contact",
-      //   to: "/contact",
-      //   icon: "mdi-contacts",
-      //   meta: {
-      //     showToolbar: true,
-      //     showBottomNav: true,
-      //   },
-      // },
+      {
+        text: "schedule",
+        to: "/schedule",
+        icon: "mdi-contacts",
+        meta: {
+          showToolbar: true,
+          showBottomNav: true,
+        },
+      },
       // {
       //   text: "Partners",
       //   to: "/partners",
