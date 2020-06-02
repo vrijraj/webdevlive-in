@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app fixed clipped-left :class="this.$vuetify.theme.dark?'':'white'">
+    <v-app-bar app fixed clipped-left :class="this.$vuetify.theme.dark?'indigo':'white'">
         <v-app-bar-nav-icon @click="toggleDrawer" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
         <v-toolbar-title class="google-font px-0">  
             <router-link
@@ -58,7 +58,7 @@ import mainData from '../../assets/data/main.json'
             if (this.$vuetify.theme.dark) {
                 metaThemeColor.setAttribute("content", "#212121");
             } else {
-                metaThemeColor.setAttribute("content", "#0277bd");
+                metaThemeColor.setAttribute("content", "#3F51B5");
             }
         },
         shareMe(e){

@@ -32,7 +32,7 @@
       <v-card-text class="pa-5">
         <v-container>
           <v-row>
-            <v-col md="4" class="text-center">
+            <v-col md="4" cols="12" class="text-center">
               <v-avatar size="100">
                 <img
                   :src="getImgUrl(data.image, 'profile.jpg')"
@@ -44,7 +44,7 @@
               <p class="google-font mt-1" style="font-size:100%">{{ data.company }}</p>
               <socialMediaDetails class="pl-0 ml-0" :data="data.socialLinks" />
             </v-col>
-            <v-col md="8">
+            <v-col md="8" cols="12">
               <p class="google-font mb-0" style="font-size:110%">{{ data.designation }}</p>
               <p class="google-font" style="font-size:110%">{{ data.address.country }}, {{ data.address.city }}</p>
               <p class="google-font" style="font-size:110%">{{ data.bio }}</p>
