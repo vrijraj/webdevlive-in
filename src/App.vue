@@ -63,7 +63,12 @@ export default {
       window.location.reload();
     });
   },
-   methods:{
+  beforeCreate() {
+    localStorage.getItem("darkMode") == "true"
+      ? (this.$vuetify.theme.dark = true)
+      : (this.$vuetify.theme.dark = false);
+  },
+  methods:{
     showRefreshUI(e) {
       this.registration = e.detail;
       this.snackBtnText = 'Refresh';
