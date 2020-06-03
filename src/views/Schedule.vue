@@ -65,21 +65,7 @@
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
-                    <v-container fluid>
-                        <v-row justify="center" align="center" v-for="(item, index) in day1Data" :key="index" style="border-bottom:1px solid #e0e0e0" class="pa-0 my-0">
-                            <v-col md="2" cols="3" class="text-right my-0 py-0">
-                                <p style="font-size:150%" class="mb-0 google-font">{{item.startTime}}</p>
-                                <p style="font-size:80%" class="ma-0 google-font">{{item.endTime}}</p>
-                                <p class="mt-1 google-font" style="font-size:70%"><b style="color:grey">GMT (+05:30)</b></p>
-                            </v-col>
-                            <v-col class="schedule-details my-0" cols="9" md="10" style="border-left:1px solid #e0e0e0">
-                                <ScheduleDialog :data="item"/>
-                                <!-- <p style="font-size:130%" class="mb-0 google-font">{{item.title}}</p>
-                                <p style="font-size:100%" class="mb-0 google-font">{{item.description}}</p>
-                                <v-chip label small>{{item.speaker}}</v-chip> -->
-                            </v-col>
-                        </v-row>
-                    </v-container>
+                    <ScheduleDetails :data="ScheduleData[0]"/>
                   </v-col>
                 </v-row>
               </v-container>
@@ -88,13 +74,14 @@
               <v-container>
                 <v-row>
                   <v-col>
-                    <h1 class="google-font">Front-end & AMP</h1>
+                    <h3 class="google-font">Front-end & AMP</h3>
                     <p class="google-font">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Nostrum officiis impedit laborum tempore aliquam libero
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
+                    <ScheduleDetails :data="ScheduleData[1]"/>
                   </v-col>
                 </v-row>
               </v-container>
@@ -103,13 +90,14 @@
               <v-container>
                 <v-row>
                   <v-col>
-                    <h1 class="google-font">PWA & FUGU</h1>
+                    <h3 class="google-font">PWA & FUGU</h3>
                     <p class="google-font">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Nostrum officiis impedit laborum tempore aliquam libero
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
+                    <ScheduleDetails :data="ScheduleData[2]"/>
                   </v-col>
                 </v-row>
               </v-container>
@@ -118,13 +106,14 @@
               <v-container>
                 <v-row>
                   <v-col>
-                    <h1 class="google-font">Privacy & UX</h1>
+                    <h3 class="google-font">Privacy & UX</h3>
                     <p class="google-font">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Nostrum officiis impedit laborum tempore aliquam libero
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
+                    <ScheduleDetails :data="ScheduleData[3]"/>
                   </v-col>
                 </v-row>
               </v-container>
@@ -137,43 +126,16 @@
 </template>
 
 <script>
-import ScheduleDialog from '../components/Schedule/ScheduleDialog'
+import ScheduleDetails from '../components/Schedule/SchedueDetails'
+import ScheduleData from '../assets/data/schedule.json'
 export default {
   name: "",
   components:{
-    ScheduleDialog
+    ScheduleDetails,
   },
   data: () => ({
     model: "day1",
-    day1Data: [
-      {
-        startTime: "2:00",
-        endTime:"3:00",
-        speaker: "Vrijraj",
-        des:"GDE for Web",
-        image: "",
-        title:"This is Title",
-        description: "This is Description",
-      },
-      {
-        startTime: "2:00",
-        endTime:"3:00",
-        speaker: "Vrijraj",
-        image: "",
-        title:"This is Title",
-        des:"GDE for Web",
-        description: "This is Description",
-      },
-      {
-        startTime: "2:00",
-        endTime:"3:00",
-        speaker: "Vrijraj",
-        des:"GDE for Web",
-        image: "",
-        title:"This is Title",
-        description: "This is Description",
-      },
-    ],
+    ScheduleData:ScheduleData
   }),
   mounted() {},
   methods: {
