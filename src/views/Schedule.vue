@@ -133,7 +133,7 @@
 </template>
 
 <script>
-import ScheduleDetails from "../components/Schedule/SchedueDetails";
+import ScheduleDetails from "../components/Schedule/ScheduleDetails";
 import ScheduleData from "../assets/data/schedule.json";
 export default {
   name: "",
