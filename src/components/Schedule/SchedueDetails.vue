@@ -5,7 +5,7 @@
       align="center"
       v-for="(item, index) in data.schedule"
       :key="index"
-      style="border-bottom:1px solid #e0e0e0"
+      :class="$vuetify.theme.dark?'row-border-dark':'row-border-white'"
       class="pa-0 my-0"
     >
       <v-col md="2" cols="3" class="text-right my-0 py-0">
@@ -18,11 +18,12 @@
         </p>
       </v-col>
       <v-col
-        class="schedule-details my-0"
+        class="my-0"
+        :class="$vuetify.theme.dark?'schedule-details-dark col-border-dark':'schedule-details-white col-border-white'"
         cols="9"
         md="10"
-        style="border-left:1px solid #e0e0e0"
       >
+      <!-- style="border-left:1px solid #e0e0e0" -->
         <ScheduleDialog :data="getSessionData(item.session)" />
       </v-col>
     </v-row>
@@ -48,3 +49,25 @@ import SessionsData from '@/assets/data/sessions.json'
 
     }
 </script>
+
+<style scoped>
+    .schedule-details-white:hover{
+      background: #FAFAFA;
+    }
+    .schedule-details-dark:hover{
+      background: #433E47;
+      
+    }
+    .row-border-white{
+        border-bottom:1px solid #e0e0e0
+    }
+    .row-border-dark{
+        border-bottom:1px solid #292929
+    }
+    .col-border-white{
+        border-left:1px solid #e0e0e0
+    }
+    .col-border-dark{
+        border-left:1px solid #292929
+    }
+</style>

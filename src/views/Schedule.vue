@@ -3,11 +3,15 @@
     <v-container
       fluid
       class="pa-0 pt-0"
-      style="border-bottom: 1px solid #e0e0e0;"
+      :class="$vuetify.theme.dark ? 'row-border-dark' : 'row-border-white'"
     >
       <v-row justify="center" align="center" class="py-0 my-0">
         <v-col md="10" class="py-0 my-0">
-          <v-toolbar flat class="py-0 mt-0 my-0" tabs height="120%">
+          <v-toolbar flat 
+          class="py-0 mt-0 my-0" 
+          tabs 
+          height="120%" 
+          :class="$vuetify.theme.dark==true?'grey darken-4':'white'">
             <v-toolbar-title
               class="google-font my-5"
               style="font-weight: 350;color: #616161;font-size:200%"
@@ -54,7 +58,10 @@
       <v-row justify="center" align="center">
         <v-col md="10">
           <v-tabs-items v-model="model">
-            <v-tab-item value="day1">
+            <v-tab-item
+              value="day1"
+              :class="$vuetify.theme.dark ? 'black' : 'white'"
+            >
               <v-container>
                 <v-row>
                   <v-col>
@@ -65,12 +72,12 @@
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
-                    <ScheduleDetails :data="ScheduleData[0]"/>
+                    <ScheduleDetails :data="ScheduleData[0]" />
                   </v-col>
                 </v-row>
               </v-container>
             </v-tab-item>
-            <v-tab-item value="day2">
+            <v-tab-item value="day2" :class="$vuetify.theme.dark ? 'black' : 'white'">
               <v-container>
                 <v-row>
                   <v-col>
@@ -81,12 +88,12 @@
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
-                    <ScheduleDetails :data="ScheduleData[1]"/>
+                    <ScheduleDetails :data="ScheduleData[1]" />
                   </v-col>
                 </v-row>
               </v-container>
             </v-tab-item>
-            <v-tab-item value="day3">
+            <v-tab-item value="day3" :class="$vuetify.theme.dark ? 'black' : 'white'">
               <v-container>
                 <v-row>
                   <v-col>
@@ -97,12 +104,12 @@
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
-                    <ScheduleDetails :data="ScheduleData[2]"/>
+                    <ScheduleDetails :data="ScheduleData[2]" />
                   </v-col>
                 </v-row>
               </v-container>
             </v-tab-item>
-            <v-tab-item value="day4">
+            <v-tab-item value="day4" :class="$vuetify.theme.dark ? 'black' : 'white'">
               <v-container>
                 <v-row>
                   <v-col>
@@ -113,7 +120,7 @@
                       maxime ipsa ipsum molestiae dolor aut ipsam odio vitae,
                       accusamus saepe voluptate tempora architecto enim?
                     </p>
-                    <ScheduleDetails :data="ScheduleData[3]"/>
+                    <ScheduleDetails :data="ScheduleData[3]" />
                   </v-col>
                 </v-row>
               </v-container>
@@ -126,16 +133,16 @@
 </template>
 
 <script>
-import ScheduleDetails from '../components/Schedule/SchedueDetails'
-import ScheduleData from '../assets/data/schedule.json'
+import ScheduleDetails from "../components/Schedule/SchedueDetails";
+import ScheduleData from "../assets/data/schedule.json";
 export default {
   name: "",
-  components:{
+  components: {
     ScheduleDetails,
   },
   data: () => ({
     model: "day1",
-    ScheduleData:ScheduleData
+    ScheduleData: ScheduleData,
   }),
   mounted() {},
   methods: {
@@ -147,8 +154,15 @@ export default {
 };
 </script>
 
-<style>
-    .schedule-details:hover{
-        background: #FAFAFA;
-    }
+<style scoped>
+.row-border-white {
+  border-bottom: 1px solid #e0e0e0;
+}
+.row-border-dark {
+  border-bottom: 1px solid #292929;
+  background: #212121;
+}
+.bg-dark{
+  background-color: #757575;
+}
 </style>
