@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="hidden-x">
     <v-snackbar
         v-model="snackWithButtons"
         :timeout="timeout"
@@ -87,5 +87,8 @@ export default {
 <style scoped>
 .snack >>> .v-snack__content {
   padding-right: 16px;
+}
+.hidden-x{
+  overflow-x: hidden
 }
 </style>
