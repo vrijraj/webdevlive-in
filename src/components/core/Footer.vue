@@ -15,6 +15,7 @@
               top
               right
               fab
+               @click="toTop"
             >
               <v-icon>mdi-chevron-up</v-icon>
             </v-btn>
@@ -58,5 +59,10 @@ export default {
       },
     ],
   }),
+    methods: {
+    toTop() {
+      this.$vuetify.goTo(0);
+    }
+  }
 };
 </script>
