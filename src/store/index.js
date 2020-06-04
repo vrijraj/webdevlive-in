@@ -26,7 +26,7 @@ export default new Vuex.Store({
       //   },
       // },
       {
-        text: "schedule",
+        text: "Schedule",
         to: "/schedule",
         icon: 'mdi-format-float-left',
         meta: {
