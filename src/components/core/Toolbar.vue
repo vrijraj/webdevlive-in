@@ -1,6 +1,16 @@
 <template>
   <v-app-bar app fixed clipped-left :class="this.$vuetify.theme.dark?'':'white'">
     <v-app-bar-nav-icon @click="toggleDrawer" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
+    <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          :src="require('@/assets/img/webdevlogo.png')"
+          transition="scale-transition"
+          width="30"
+        />
+    </div>
     <v-toolbar-title class="google-font px-0">
       <router-link
         to="/"
