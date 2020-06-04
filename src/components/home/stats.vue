@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="mb-0 pb-0">
-    <v-layout wrap align-center justify-space-between row fill-height>
-      <v-flex xs12 sm5 md7 lg7 xl6 class="pt-5">
+    <v-row align="center" justify="center">
+      <v-col cols="12" md="7" sm="7" lg="7" xl="6" class="">
         <p class="google-font mb-1 stats-wrapper" style="font-weight: 350;color: indigo;font-size:200%">
           <b class="google-font">Everyone is welcome here</b>
         </p>
@@ -11,56 +11,47 @@
             Together let’s celebrate the super-women in our lives. Together let’s create a new narrative for our industry.
             <br />
           </span>
-          <br />
-          <span class="hidden-sm-and-down hidden-md-and-down">
-            Allies are people who work to support diverse groups in our community with which they may not necessarily identify as members.
-            <br />
-          </span>
-          <br />This event is put together by a group of amazing, passionate women who truly believe in nurturing communities.
-          <span
-            class="hidden-sm-and-down hidden-md-and-down"
-          >Our speakers are women who have been associated with communities within their organisations, cities, country and beyond.</span>
         </p>
-      </v-flex>
+      </v-col>
 
-      <v-flex xs12 sm5 md4 lg4 xl6 class="pt-5">
-        <v-layout row wrap class="px-5">
-          <v-flex xs6>
+      <v-col cols="12" md="5" sm="5" lg="5" xl="6" class="">
+        <v-row justify="center" align="center" class="px-5">
+          <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
                 <span style="color: indigo;">0</span>
               </b>
             </p>
             <p class="google-font">Registrations</p>
-          </v-flex>
+          </v-col>
 
-          <v-flex xs6>
+          <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
                 <span style="color: indigo;">0</span>
               </b>
             </p>
             <p class="google-font">Communities</p>
-          </v-flex>
-          <v-flex xs6>
+          </v-col>
+          <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
                 <span style="color: indigo;">0</span>
               </b>
             </p>
             <p class="google-font">Speakers</p>
-          </v-flex>
-          <v-flex xs6>
+          </v-col>
+          <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
                 <span style="color: indigo;">0</span>
               </b>
             </p>
             <p class="google-font">Sessions</p>
-          </v-flex>
-        </v-layout>
-      </v-flex>
-    </v-layout>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 

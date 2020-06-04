@@ -1,32 +1,32 @@
 <template>
   <v-content>
     <v-container>
-      <v-row>
-        <v-col>
+      <v-row justify="center" align="center">
+        <v-col md="11" cols="12">
           <ComingSoon />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container>
-      <v-row>
-        <v-col>
+    <v-container fluid class="grey lighten-4" style="" >
+      <v-row justify="center" align="center">
+        <v-col md="11" cols="12">
           <stats />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container>
-      <v-row>
-        <v-col>
+    <v-container class="">
+      <v-row justify="center" align="center">
+        <v-col md="11" cols="12">
           <eventContext />
         </v-col>
       </v-row>
     </v-container>
 
     <v-container>
-      <v-row>
-        <v-col>
+      <v-row justify="start" align="center">
+        <v-col md="11" cols="12">
           <CodeOfConductSection />
         </v-col>
       </v-row>

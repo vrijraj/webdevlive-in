@@ -1,28 +1,35 @@
 <template>
   <v-content>
+    <!-- :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" -->
+    <!-- :style="{'background-image':'url('+require('@/assets/img/common/live.png')+')'}" -->
+    <!--     :style="{'background-image':'url('+require('@/assets/img/common/live.png')+')'}" -->
     <v-container
       fluid
-      class="px-1"
-      :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
+      class="px-1 "
+      :class="this.$vuetify.theme.dark == true?'grey darken-4 elevation-1':'white'"
+  
     >
       <v-row justify="center" align="center">
-        <v-col md="10" lg="10" sm="11" cols="12">
-          <v-container>
-            <v-row class>
-              <v-col class="pb-5">
-                <h1 class="google-font mb-5">Our Speakers</h1>
-                <br />
-                <br />
+        <v-col md="10" lg="10" sm="11" cols="12" class="">
+          <v-container class="mt-3">
+            <v-row justify="start" align="center" class="">
+              <v-col md="12" class="pt-5 text-center" >
+                
+                <v-img :src="require('@/assets/img/webdevlogo.png')" style="margin-left:auto;margin-right:auto" width="5vh"></v-img>
+                <h1 class="google-font mb-0" style="font-size:180%">Check out our speaker lineup</h1>
+                <p class="google-font" style="width:100%;margin-left:auto;margin-right:auto;font-size:110%">Whatever your challenge, see how these leaders on the front line of transformation, innovation, and exploration can help solve it with you. Get to know the inspiring minds right here.</p>
               </v-col>
             </v-row>
           </v-container>
+          <!-- <v-divider></v-divider> -->
         </v-col>
       </v-row>
     </v-container>
 
     <v-container fluid class="px-1">
       <v-row justify="center" align="center" class="px-0">
-        <v-col md="10" lg="10" sm="11" cols="12" class="card-top-margin">
+        <v-col md="10" lg="10" sm="11" cols="12">
+          
           <v-container>
             <v-row class>
               <v-col
@@ -72,8 +79,23 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+@media only screen and (min-width: 1268px) {
+  .desktop-bg{
+    background: url('../assets/img/common/live3.png');
+    background-position: right center;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    height: 40vh;
+  }
+}
 .card-top-margin {
   margin-top: -150px;
 }
+/* .bg-image{
+  background-position: top right;
+  background-size: 1000px;
+  height: 40vh;
+} */
+
 </style>
