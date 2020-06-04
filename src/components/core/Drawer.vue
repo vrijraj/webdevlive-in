@@ -31,7 +31,7 @@
         </v-list-item-content>
       </v-list-item>
     </v-list>
-    <template v-slot:append>
+    <!-- <template v-slot:append>
       <div class="pl-2">
         <p class="subtitle-2 google-font">
           Based on Project
@@ -42,7 +42,7 @@
           >Aura</a>
         </p>
       </div>
-    </template>
+    </template> -->
   </v-navigation-drawer>
 </template>
 
