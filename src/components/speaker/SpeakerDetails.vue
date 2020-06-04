@@ -40,6 +40,33 @@
             </v-col>
             <v-col md="8" cols="12">
               <p class="google-font" style="font-size:110%">{{ data.bio }}</p>
+              <p class="my-0 google-font mt-2" v-if="SessionsData.length>0" style="font-size:120%">
+                <b>Sessions:</b>
+              </p>
+
+              <v-col cols="12" md="8" v-for="(item, index) in SessionsData" :key="index">
+                <v-list two-line subheader class="pa-0 ma-0">
+                  <v-list-item class="pa-0">
+                    <v-list-item-content>
+                      <v-list-item-title
+                        class="google-font text-wrap"
+                        style="color:#424242;text-align:left;"
+                      >{{ item.title }}</v-list-item-title>
+                      <v-list-item-subtitle class="google-font">
+                        {{ item.track}}
+                        <br />
+                        <v-chip
+                          color="#00BFA5"
+                          label
+                          outlined
+                          class="mt-2 mb-0"
+                          x-small
+                        >{{item.format}}</v-chip>
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+              </v-col>
             </v-col>
           </v-row>
         </v-container>
@@ -56,6 +83,7 @@
 </template>
 
 <script>
+import SessionDetails from "@/assets/data/sessions.json";
 import socialMediaDetails from "@/components/common/SocialInfo";
 export default {
   components: {
@@ -65,10 +93,20 @@ export default {
   props: ["data"],
   data() {
     return {
-      dialog: false
+      dialog: false,
+      SessionDetails: SessionDetails,
+      SessionsData: []
     };
   },
-  mounted() {},
+  mounted() {
+    this.SessionDetails.map(res => {
+      res.speakers.map(d => {
+        if (d == this.data.id) {
+          this.SessionsData.push(res);
+        }
+      });
+    });
+  },
   filters: {
     summary: (val, num) => {
       if (val.length > num) return val.substring(0, num) + "..";
