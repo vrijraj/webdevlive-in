@@ -10,7 +10,7 @@
   <v-container>
       <v-row>
         <v-col>
-          <communityGuidelinesSection />
+          <CodeOfConductSection />
         </v-col>
       </v-row>
     </v-container>
@@ -24,8 +24,8 @@ export default {
   name: 'Home',
   components: {
     ComingSoon,
-    communityGuidelinesSection: () =>
-      import("@/components/communityGuidelines/guidelines")
+    CodeOfConductSection: () =>
+      import("@/components/codeOfConduct/guidelines")
   }
 }
 </script>
