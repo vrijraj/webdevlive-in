@@ -5,7 +5,7 @@
       fluid
       class="my-5"
     >
-      <v-row justify="center" align="start">
+      <v-row justify="center" align="start" class="mb-5 pb-5">
         <v-col md="2" lg="2" sm="11" cols="12">
           <v-container>
             <v-row class>
@@ -32,13 +32,13 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid class="">
+    <!-- <v-container fluid class="">
       <v-row align="center" justify="center">
         <v-col md="8" lg="7" xl="5" sm="11">
           <SocialShare/>
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
     <!-- <v-container fluid class="my-0 py-3 pb-0" >
       <v-row justify="center" align="center">
@@ -62,10 +62,10 @@
 
 <script>
 import data from "@/assets/data/faq.json";
-import SocialShare from "@/components/common/SocialShare"
+// import SocialShare from "@/components/common/SocialShare"
 export default {
   components:{
-    SocialShare
+    // SocialShare
   },
   data() {
     return {

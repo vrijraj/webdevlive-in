@@ -50,7 +50,7 @@ export default {
       },
       {
         name: "FAQ",
-        link: "/FAQ",
+        link: "/faq",
       },
       {
         name: "Google Developers",
