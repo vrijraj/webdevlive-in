@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-content class="">
     <v-container
       fluid
       class="px-1"
