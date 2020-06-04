@@ -89,7 +89,6 @@ export default {
   padding-right: 16px;
 }
 .hidden-x{
-  /* overflow-x: hidden; */
-  /* overflow-y:visible; */
+  /* overflow-x: hidden !important; */
 }
 </style>

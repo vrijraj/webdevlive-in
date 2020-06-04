@@ -6,7 +6,7 @@
     font-family: google-sans
 };
 html{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body{
     font-family: google-sans

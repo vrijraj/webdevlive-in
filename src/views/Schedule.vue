@@ -1,11 +1,11 @@
 <template>
-  <v-content>
+  <v-content class="ma-0">
     <v-container
       fluid
-      class="pa-0 pt-0"
+      class="pb-0"
       :class="$vuetify.theme.dark ? 'row-border-dark' : 'row-border-white'"
     >
-      <v-row justify="center" align="center" class="py-0 my-0">
+      <v-row justify="center" align="center">
         <v-col md="10" class="py-0 my-0">
           <v-toolbar flat 
           class="py-0 mt-0 my-0" 

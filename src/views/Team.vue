@@ -2,7 +2,6 @@
   <v-content class="">
     <v-container
       fluid
-      class="px-1"
       :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
     >
       <v-row justify="center" align="center">
@@ -20,7 +19,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="px-1">
+    <v-container fluid >
       <v-row justify="center" align="center" class="px-0">
         <v-col md="10" lg="10" sm="11" cols="12" class="card-top-margin">
           <v-container>

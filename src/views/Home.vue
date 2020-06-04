@@ -1,8 +1,8 @@
 <template>
-  <v-content>
-    <v-container>
+  <v-content class="ma-0">
+    <v-container fluid>
       <v-row justify="center" align="center">
-        <v-col md="11" cols="12">
+        <v-col md="10" sm="11" xl="10" cols="12">
           <ComingSoon />
         </v-col>
       </v-row>
@@ -16,7 +16,7 @@
       </v-row>
     </v-container>
 
-    <v-container class="">
+    <v-container fluid class="">
       <v-row justify="center" align="center">
         <v-col md="11" cols="12">
           <eventContext />
@@ -24,7 +24,7 @@
       </v-row>
     </v-container>
 
-    <v-container>
+    <v-container fluid>
       <v-row justify="start" align="center">
         <v-col md="11" cols="12">
           <CodeOfConductSection />
@@ -37,13 +37,16 @@
 <script>
 // @ is an alias to /src
 import ComingSoon from "@/components/home/ComingSoon";
+import stats from "@/components/home/stats"
+import eventContext from "@/components/home/eventContext"
+import CodeOfConductSection from "@/components/codeOfConduct/guidelines"
 export default {
   name: "Home",
   components: {
     ComingSoon,
-    stats: () => import("@/components/home/stats"),
-    eventContext: () => import("@/components/home/eventContext"),
-    CodeOfConductSection: () => import("@/components/codeOfConduct/guidelines")
+    stats,
+    eventContext,
+    CodeOfConductSection
   }
 };
 </script>
