@@ -55,7 +55,7 @@ export default new Vuex.Store({
       {
         text: "FAQ",
         to: "/faq",
-        icon: "mdi-note-text",
+        icon: "mdi-star",
         meta: {
           showToolbar: false,
           showBottomNav: false,

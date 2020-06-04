@@ -91,7 +91,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .darkModeCard {
   background-color: #292929;
   border: 1px solid #212121;

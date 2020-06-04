@@ -1,44 +1,6 @@
 <template>
   <v-content class="">
-    <!-- <v-container
-      fluid
-      :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
-    >
-      <v-row justify="center" align="start">
-        <v-col md="10" lg="10" sm="11" cols="12">
-          <v-container>
-            <v-row justify="start" align="start">
-              <v-col md="2" cols="12" class="pb-5 pt-5">
-                <br>
-                <v-img :src="require('@/assets/img/webdevlogo.png')" style="" width="5vh"></v-img>
-                <h1 class="google-font mb-5">Our Team</h1>
-                <br />
-                <br />
-              </v-col>
-              <v-col md="10" cols="12">
-                <v-container>
-            <v-row class>
-              <v-col
-                md="3"
-                lg="3"
-                xl="2"
-                sm="4"
-                cols="6"
-                class="px-1"
-                v-for="(item, index) in TeamData"
-                :key="index"
-              >
-                <TeamMember :data="item" />
-              </v-col>
-            </v-row>
-          </v-container>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-col>
-      </v-row>
-    </v-container> -->
-    
+
     <v-container
       fluid
       :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
@@ -48,7 +10,7 @@
           <v-container>
             <v-row class>
               <v-col class="pb-5">
-                <v-img :src="require('@/assets/img/webdevlogo.png')" style="" width="5vh"></v-img>
+                <!-- <v-img :src="require('@/assets/img/webdevlogo.png')" style="" width="5vh"></v-img> -->
                 <h1 class="google-font mb-5">Our Team</h1>
                 <br />
                 <br />

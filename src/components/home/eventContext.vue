@@ -82,7 +82,7 @@
       align="center"
       fill-height
       class="hidden-sm-and-up"
-      style="padding-top:5%;padding-bottom:5%;background:#fafafa"
+      style="padding-top:5%;padding-bottom:5%;"
     >
       <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="px-5">
         <span
