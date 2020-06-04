@@ -32,6 +32,13 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-container fluid class="">
+      <v-row align="center" justify="center">
+        <v-col md="8" lg="7" xl="5" sm="11">
+          <SocialShare/>
+        </v-col>
+      </v-row>
+    </v-container>
 
     <!-- <v-container fluid class="my-0 py-3 pb-0" >
       <v-row justify="center" align="center">
@@ -55,7 +62,11 @@
 
 <script>
 import data from "@/assets/data/faq.json";
+import SocialShare from "@/components/common/SocialShare"
 export default {
+  components:{
+    SocialShare
+  },
   data() {
     return {
       faqData: data

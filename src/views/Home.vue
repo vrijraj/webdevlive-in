@@ -39,6 +39,7 @@
         </v-col>
       </v-row>
     </v-container>
+    
   </v-content>
 </template>
 
