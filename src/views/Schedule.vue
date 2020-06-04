@@ -161,7 +161,7 @@ export default {
   color: white;
 }
 .grey-font{
-  color: #616161;
+  color: #616161 !important;
 }
 .row-border-white {
   border-bottom: 1px solid #e0e0e0;

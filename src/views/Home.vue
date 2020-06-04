@@ -8,9 +8,9 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="grey lighten-4" style="" >
+    <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
       <v-row justify="center" align="center">
-        <v-col md="11" cols="12">
+        <v-col md="10" sm="11" xl="10" cols="12">
           <stats />
         </v-col>
       </v-row>
@@ -18,15 +18,15 @@
 
     <v-container fluid class="">
       <v-row justify="center" align="center">
-        <v-col md="11" cols="12">
+        <v-col md="10" sm="11" xl="10" cols="12">
           <eventContext />
         </v-col>
       </v-row>
     </v-container>
 
     <v-container fluid>
-      <v-row justify="start" align="center">
-        <v-col md="11" cols="12">
+      <v-row justify="center" align="center">
+        <v-col md="10" sm="11" xl="10" cols="12">
           <CodeOfConductSection />
         </v-col>
       </v-row>
