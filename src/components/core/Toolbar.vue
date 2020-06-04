@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app fixed clipped-left :class="this.$vuetify.theme.dark?'':'white'">
+  <v-app-bar app fixed clipped-left hide-on-scroll :class="this.$vuetify.theme.dark?'':'white'">
     <v-app-bar-nav-icon @click="toggleDrawer" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
     <v-toolbar-title class="google-font px-0">
       <router-link

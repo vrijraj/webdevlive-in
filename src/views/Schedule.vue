@@ -14,7 +14,8 @@
           :class="$vuetify.theme.dark==true?'grey darken-4':'white'">
             <v-toolbar-title
               class="google-font my-5"
-              style="font-weight: 350;color: #616161;font-size:200%"
+              :style="this.$vuetify.theme.dark?'white-font':'grey-font'"
+              style="font-weight: 350;font-size:200%"
               >Schedules
             </v-toolbar-title>
             <template v-slot:extension>
@@ -155,6 +156,13 @@ export default {
 </script>
 
 <style scoped>
+
+.white-font{
+  color: white;
+}
+.grey-font{
+  color: #616161;
+}
 .row-border-white {
   border-bottom: 1px solid #e0e0e0;
 }

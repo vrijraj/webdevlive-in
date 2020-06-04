@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" width="700">
+  <v-dialog v-model="dialog" width="800" scrollable>
     <template v-slot:activator="{ on }">
       <div
         v-on="on"
@@ -55,7 +55,7 @@
 
       <v-divider></v-divider>
 
-      <v-card-actions>
+      <v-card-actions :class="this.$vuetify.theme.dark == true?'grey darken-3':'grey lighten-3'">
         <v-spacer></v-spacer>
         <v-btn color="primary" text @click="dialog = false">Close</v-btn>
       </v-card-actions>

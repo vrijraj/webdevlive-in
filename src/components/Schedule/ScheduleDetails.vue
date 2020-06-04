@@ -23,7 +23,6 @@
         cols="9"
         md="10"
       >
-      <!-- style="border-left:1px solid #e0e0e0" -->
         <ScheduleDialog :data="getSessionData(item.session)" />
       </v-col>
     </v-row>

@@ -9,6 +9,7 @@
           <v-container>
             <v-row class>
               <v-col class="pb-5">
+                <v-img :src="require('@/assets/img/webdevlogo.png')" style="" width="5vh"></v-img>
                 <h1 class="google-font mb-5">Our Team</h1>
                 <br />
                 <br />
@@ -19,7 +20,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid >
+    <v-container fluid class="mb-5 pb-5">
       <v-row justify="center" align="center" class="px-0">
         <v-col md="10" lg="10" sm="11" cols="12" class="card-top-margin">
           <v-container>
