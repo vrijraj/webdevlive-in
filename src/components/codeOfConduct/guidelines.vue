@@ -2,11 +2,11 @@
   <v-container>
     <v-row>
       <v-col>
-        <p class="google-font" style="font-size:180%;color:indigo">Code of Conduct</p>
+        <p class="google-font" style="font-size:180%;">Code of Conduct</p>
         <v-expansion-panels accordion>
           <v-expansion-panel v-for="(item,i) in data" :key="i">
             <v-expansion-panel-header class="google-font">{{item.name}}</v-expansion-panel-header>
-            <v-expansion-panel-content class="google-font grey lighten-4 py-3">{{item.des}}</v-expansion-panel-content>
+            <v-expansion-panel-content :class="$vuetify.theme.dark == true?'grey darken-3':'grey lighten-4'" class="google-font py-3">{{item.des}}</v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels><br>
         <p

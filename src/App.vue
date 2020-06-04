@@ -1,5 +1,5 @@
 <template>
-  <v-app class="hidden-x">
+  <v-app>
     <v-snackbar
         v-model="snackWithButtons"
         :timeout="timeout"
@@ -28,6 +28,7 @@
     <Drawer/>
     <BottomNav/>
     <MainView />
+    <AppFooter class="hidden-sm-and-down"/>
   </v-app>
 </template>
 
@@ -36,13 +37,15 @@ import Toolbar from './components/core/Toolbar'
 import Drawer from './components/core/Drawer'
 import BottomNav from './components/core/BottomNav'
 import MainView from './components/core/Views'
+import AppFooter from './components/core/Footer'
 export default {
   name: 'App',
   components: {
     Toolbar,
     Drawer,
     BottomNav,
-    MainView
+    MainView,
+    AppFooter
   },
 
   data: () => ({
@@ -87,9 +90,5 @@ export default {
 <style scoped>
 .snack >>> .v-snack__content {
   padding-right: 16px;
-}
-.hidden-x{
-  /* overflow-x: hidden; */
-  /* overflow-y:visible; */
 }
 </style>

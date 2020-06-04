@@ -2,13 +2,14 @@
   <v-container fluid class="mb-0 pb-0">
     <v-row align="center" justify="center">
       <v-col cols="12" md="7" sm="7" lg="7" xl="6" class="">
-        <p class="google-font mb-1 stats-wrapper" style="font-weight: 350;color: indigo;font-size:200%">
+        <p class="google-font mb-1" style="font-weight: 350;font-size:200%">
           <b class="google-font">Everyone is welcome here</b>
         </p>
         <p class="google-font mt-3" style="text-align:justify;">
-          Inviting women and allies from India and abroad who wish to celebrate and recognize the women who have influenced the tech industry and beyond.
+          In these unprecedented times, we’re seeing much of the web ecosystem focusing on fundamentals and innovating quickly to meet the ever-changing needs of users.
+          To help our community build powerful and useful sites, we want to invite you to web.dev LIVE, a four-day digital event to learn modern web techniques and to connect with other developers.
           <span class="hidden-sm-and-down hidden-md-and-down">
-            Together let’s celebrate the super-women in our lives. Together let’s create a new narrative for our industry.
+            To help our community build powerful and useful sites, we want to invite you to web.dev LIVE, a four-day digital event to learn modern web techniques and to connect with other developers.
             <br />
           </span>
         </p>
@@ -19,7 +20,7 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span style="color: indigo;">0</span>
+                <span style="">0</span>
               </b>
             </p>
             <p class="google-font">Registrations</p>
@@ -28,7 +29,7 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span style="color: indigo;">0</span>
+                <span style="">0</span>
               </b>
             </p>
             <p class="google-font">Communities</p>
@@ -36,7 +37,7 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span style="color: indigo;">0</span>
+                <span style="">0</span>
               </b>
             </p>
             <p class="google-font">Speakers</p>
@@ -44,7 +45,7 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span style="color: indigo;">0</span>
+                <span style="">0</span>
               </b>
             </p>
             <p class="google-font">Sessions</p>

@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" width="800">
+  <v-dialog v-model="dialog" width="800" scrollable>
     <!-- :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'" -->
     <template v-slot:activator="{ on }">
       <div v-on="on" style="cursor: pointer;" class="py-3 ma-1 fill-height">
@@ -8,28 +8,31 @@
         <!-- <v-chip class="mt-2 mr-2" label small>{{ data.track }}</v-chip> -->
         <v-chip class="mt-2 mr-2" label small>{{ data.format }}</v-chip>
         <span v-for="(itemp, indexp) in speakers" :key="indexp">
-          <v-chip class="mt-2 mr-2" outlined label small>{{
-            itemp.name
-          }}</v-chip>
+          <v-chip class="mt-2 mr-2" outlined label small>
+            <v-avatar left>
+              <v-icon small>mdi-account-circle-outline</v-icon>
+            </v-avatar>
+            {{itemp.name}}
+          </v-chip>
         </span>
       </div>
     </template>
 
-    <v-card :class="theme.isDark ? 'grey darken-3' : 'white'">
+    <v-card :class="theme.isDark ? 'grey darken-3' : 'white'" v-if="dialog" >
       <v-card-title
         class="google-font"
         style="background-position:right bottom;"
       >
         <p class="google-font mb-0" style="font-size:110%">{{ data.title }} Details</p>
         <v-spacer></v-spacer>
-        <v-tooltip bottom>
+        <!-- <v-tooltip bottom>
           <template v-slot:activator="{ on }">
             <v-btn icon v-on="on" @click="dialog = false">
               <v-icon>mdi-close</v-icon>
             </v-btn>
           </template>
           <span>Close</span>
-        </v-tooltip>
+        </v-tooltip> -->
         
       </v-card-title>
       <v-card-text class="px-5">
@@ -86,10 +89,10 @@
 
       <v-divider></v-divider>
 
-      <!-- <v-card-actions>
+      <v-card-actions :class="this.$vuetify.theme.dark == true?'grey darken-3':'grey lighten-3'">
         <v-spacer></v-spacer>
         <v-btn color="primary" text @click="dialog = false">Close</v-btn>
-      </v-card-actions> -->
+      </v-card-actions>
     </v-card>
   </v-dialog>
 </template>

@@ -1,33 +1,30 @@
-<template>
-  <v-content>
+<template >
+  <v-content class="ma-0">
     <!-- :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" -->
     <!-- :style="{'background-image':'url('+require('@/assets/img/common/live.png')+')'}" -->
     <!--     :style="{'background-image':'url('+require('@/assets/img/common/live.png')+')'}" -->
     <v-container
       fluid
-      class="px-1 "
-      :class="this.$vuetify.theme.dark == true?'grey darken-4 elevation-1':'white'"
+      :class="this.$vuetify.theme.dark == true?'grey darken-4 elevation-1':'white-border white '"
   
     >
       <v-row justify="center" align="center">
         <v-col md="10" lg="10" sm="11" cols="12" class="">
-          <v-container class="mt-3">
+          <v-container class="my-2">
             <v-row justify="start" align="center" class="">
-              <v-col md="12" class="pt-5 text-center" >
-                
+              <v-col md="12" class="text-center" >
                 <v-img :src="require('@/assets/img/webdevlogo.png')" style="margin-left:auto;margin-right:auto" width="5vh"></v-img>
                 <h1 class="google-font mb-0" style="font-size:180%">Check out our speaker lineup</h1>
                 <p class="google-font" style="width:70%;margin-left:auto;margin-right:auto;font-size:110%">Whatever your challenge, see how these leaders on the front line of transformation, innovation, and exploration can help solve it with you. Get to know the inspiring minds right here.</p>
               </v-col>
             </v-row>
           </v-container>
-          <!-- <v-divider></v-divider> -->
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="px-1">
-      <v-row justify="center" align="center" class="px-0">
+    <v-container fluid class="mb-5 pb-5">
+      <v-row justify="center" align="center">
         <v-col md="10" lg="10" sm="11" cols="12">
           
           <v-container>
@@ -80,7 +77,10 @@ export default {
 </script>
 
 <style scoped>
-@media only screen and (min-width: 1268px) {
+.white-border{
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+/* @media only screen and (min-width: 1268px) {
   .desktop-bg{
     background: url('../assets/img/common/live3.png');
     background-position: right center;
@@ -88,7 +88,7 @@ export default {
     background-repeat: no-repeat;
     height: 40vh;
   }
-}
+} */
 .card-top-margin {
   margin-top: -150px;
 }
