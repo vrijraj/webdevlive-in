@@ -7,6 +7,13 @@
       </v-col>
     </v-row>
   </v-container>
+  <v-container>
+      <v-row>
+        <v-col>
+          <communityGuidelinesSection />
+        </v-col>
+      </v-row>
+    </v-container>
   </v-content>
 </template>
 
@@ -16,7 +23,9 @@ import ComingSoon from '@/components/home/ComingSoon'
 export default {
   name: 'Home',
   components: {
-    ComingSoon
+    ComingSoon,
+    communityGuidelinesSection: () =>
+      import("@/components/communityGuidelines/guidelines")
   }
 }
 </script>

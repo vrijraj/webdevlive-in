@@ -95,7 +95,7 @@
 </template>
 
 <script>
-import SpeakersData from "../../assets/data/speakers.json";
+import SpeakersData from "@/assets/data/speakers.json";
 export default {
   components: {},
   inject: ["theme"],
@@ -117,13 +117,8 @@ export default {
       });
     });
   },
-  methods: {
-    goToTeam(id) {
-      this.$router.push("/team/" + id);
-    },
-  },
   filters: {
-    summery: (val, num) => {
+    summary: (val, num) => {
       if (val.length > num) return val.substring(0, num) + "..";
       else return val;
     },

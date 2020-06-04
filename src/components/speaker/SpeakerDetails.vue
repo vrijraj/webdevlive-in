@@ -99,13 +99,16 @@ export default {
     };
   },
   mounted() {
-    this.SessionDetails.map(res => {
-      res.speakers.map(d => {
-        if (d == this.data.id) {
-          this.SessionsData.push(res);
+    //   this.SessionsData = [];
+      this.data.sessionId.map((sid) => {
+      this.SessionDetails.map((sdata) => {
+          if (sid == sdata.id) {
+          this.SessionsData.push(sdata);
         }
       });
     });
+    console.log(this.SessionsData);
+    
   },
   filters: {
     summary: (val, num) => {
