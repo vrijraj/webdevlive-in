@@ -55,7 +55,7 @@
 
               <p
                 class="my-0 google-font mt-2"
-                v-if="SessionsData.length > 0"
+                v-if="data.sessionId > 0"
                 style="font-size:120%"
               >
                 <b>Sessions:</b>
