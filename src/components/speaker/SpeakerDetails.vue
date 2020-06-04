@@ -8,15 +8,23 @@
         :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'"
       >
         <v-avatar size="100">
-          <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
+          <img
+            :src="getImgUrl(data.image)"
+            :lazy-src="getImgUrl(data.image)"
+            alt
+          />
         </v-avatar>
-        <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{ data.name }}</p>
-        <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{ data.company.name }}</p>
+        <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">
+          {{ data.name }}
+        </p>
+        <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">
+          {{ data.company.name }}
+        </p>
         <socialMediaDetails :data="data.social" />
       </div>
     </template>
 
-    <v-card :class="theme.isDark ? 'grey darken-3' : 'white'">
+    <v-card :class="theme.isDark ? 'grey darken-3' : 'white'" v-if="dialog">
       <!-- <v-card-title class="px-5 google-font" primary-title>
         {{ data.name }} Details
       </v-card-title>-->
@@ -26,7 +34,11 @@
           <v-row>
             <v-col md="4" cols="12" class="text-center">
               <v-avatar size="100">
-                <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
+                <img
+                  :src="getImgUrl(data.image)"
+                  :lazy-src="getImgUrl(data.image)"
+                  alt
+                />
               </v-avatar>
               <p class="google-font mt-3 mb-0" style="font-size:140%">
                 <b>{{ data.name }}</b>
@@ -40,32 +52,49 @@
             </v-col>
             <v-col md="8" cols="12">
               <p class="google-font" style="font-size:110%">{{ data.bio }}</p>
-              <p class="my-0 google-font mt-2" v-if="SessionsData.length>0" style="font-size:120%">
+
+              <p
+                class="my-0 google-font mt-2"
+                v-if="SessionsData.length > 0"
+                style="font-size:120%"
+              >
                 <b>Sessions:</b>
               </p>
 
-              <v-col cols="12" md="8" v-for="(item, index) in SessionsData" :key="index">
-                <v-list two-line subheader class="pa-0 ma-0">
-                  <v-list-item class="pa-0">
-                    <v-list-item-content>
-                      <v-list-item-title
-                        class="google-font text-wrap"
-                        style="color:#424242;text-align:left;"
-                      >{{ item.title }}</v-list-item-title>
-                      <v-list-item-subtitle class="google-font">
-                        {{ item.track}}
-                        <br />
-                        <v-chip
-                          color="#00BFA5"
-                          label
-                          outlined
-                          class="mt-2 mb-0"
-                          x-small
-                        >{{item.format}}</v-chip>
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-list>
+              <v-col
+                cols="12"
+                md="8"
+                class="px-0"
+                v-for="(itemp, index) in data.sessionId"
+                :key="index"
+              >
+                <div v-for="(item, indexp) in SessionDetails" :key="indexp">
+                  <div v-if="item.id == itemp">
+                    <v-list two-line subheader class="pa-0 ma-0" :class="theme.isDark ? 'grey darken-3' : 'white'">
+                      <v-list-item class="pa-0">
+                        <v-list-item-content>
+                          <v-list-item-title
+                            class="google-font text-wrap"
+                            style="text-align:left;"
+                            >{{ item.title }}</v-list-item-title
+                          >
+                          <v-list-item-subtitle class="google-font">
+                            {{ item.track }}
+                            <br />
+                            <v-chip
+                              color="#00BFA5"
+                              label
+                              outlined
+                              class="mt-2 mb-0"
+                              x-small
+                              >{{ item.format }}</v-chip
+                            >
+                          </v-list-item-subtitle>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list>
+                  </div>
+                </div>
               </v-col>
             </v-col>
           </v-row>
@@ -87,7 +116,7 @@ import SessionDetails from "@/assets/data/sessions.json";
 import socialMediaDetails from "@/components/common/SocialInfo";
 export default {
   components: {
-    socialMediaDetails
+    socialMediaDetails,
   },
   inject: ["theme"],
   props: ["data"],
@@ -95,27 +124,17 @@ export default {
     return {
       dialog: false,
       SessionDetails: SessionDetails,
-      SessionsData: []
+      SessionsData: [],
     };
   },
   mounted() {
-    //   this.SessionsData = [];
-      this.data.sessionId.map((sid) => {
-      this.SessionDetails.map((sdata) => {
-          if (sid == sdata.id) {
-          this.SessionsData.push(sdata);
-        }
-      });
-    });
-    console.log(this.SessionsData);
-    
   },
   filters: {
     summary: (val, num) => {
       if (val.length > num) return val.substring(0, num) + "..";
       else return val;
-    }
-  }
+    },
+  },
 };
 </script>
 
