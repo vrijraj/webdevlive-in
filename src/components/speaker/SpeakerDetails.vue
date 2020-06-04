@@ -8,18 +8,10 @@
         :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'"
       >
         <v-avatar size="100">
-          <img
-            :src="getImgUrl(data.image)"
-            :lazy-src="getImgUrl(data.image)"
-            alt
-          />
+          <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
         </v-avatar>
-        <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">
-          {{ data.name }}
-        </p>
-        <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">
-          {{ data.company.name }}
-        </p>
+        <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{ data.name }}</p>
+        <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{ data.company.name }}</p>
         <socialMediaDetails :data="data.social" />
       </div>
     </template>
@@ -34,11 +26,7 @@
           <v-row>
             <v-col md="4" cols="12" class="text-center">
               <v-avatar size="100">
-                <img
-                  :src="getImgUrl(data.image)"
-                  :lazy-src="getImgUrl(data.image)"
-                  alt
-                />
+                <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
               </v-avatar>
               <p class="google-font mt-3 mb-0" style="font-size:140%">
                 <b>{{ data.name }}</b>
@@ -53,11 +41,7 @@
             <v-col md="8" cols="12">
               <p class="google-font" style="font-size:110%">{{ data.bio }}</p>
 
-              <p
-                class="my-0 google-font mt-2"
-                v-if="data.sessionId > 0"
-                style="font-size:120%"
-              >
+              <p class="my-0 google-font mt-2" v-if="data.sessionId > 0" style="font-size:120%">
                 <b>Sessions:</b>
               </p>
 
@@ -70,14 +54,18 @@
               >
                 <div v-for="(item, indexp) in SessionDetails" :key="indexp">
                   <div v-if="item.id == itemp">
-                    <v-list two-line subheader class="pa-0 ma-0" :class="theme.isDark ? 'grey darken-3' : 'white'">
+                    <v-list
+                      two-line
+                      subheader
+                      class="pa-0 ma-0"
+                      :class="theme.isDark ? 'grey darken-3' : 'white'"
+                    >
                       <v-list-item class="pa-0">
                         <v-list-item-content>
                           <v-list-item-title
                             class="google-font text-wrap"
                             style="text-align:left;"
-                            >{{ item.title }}</v-list-item-title
-                          >
+                          >{{ item.title }}</v-list-item-title>
                           <v-list-item-subtitle class="google-font">
                             {{ item.track }}
                             <br />
@@ -87,8 +75,7 @@
                               outlined
                               class="mt-2 mb-0"
                               x-small
-                              >{{ item.format }}</v-chip
-                            >
+                            >{{ item.format }}</v-chip>
                           </v-list-item-subtitle>
                         </v-list-item-content>
                       </v-list-item>
@@ -116,7 +103,7 @@ import SessionDetails from "@/assets/data/sessions.json";
 import socialMediaDetails from "@/components/common/SocialInfo";
 export default {
   components: {
-    socialMediaDetails,
+    socialMediaDetails
   },
   inject: ["theme"],
   props: ["data"],
@@ -124,17 +111,16 @@ export default {
     return {
       dialog: false,
       SessionDetails: SessionDetails,
-      SessionsData: [],
+      SessionsData: []
     };
   },
-  mounted() {
-  },
+  mounted() {},
   filters: {
     summary: (val, num) => {
       if (val.length > num) return val.substring(0, num) + "..";
       else return val;
-    },
-  },
+    }
+  }
 };
 </script>
 
