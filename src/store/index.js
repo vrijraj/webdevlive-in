@@ -52,6 +52,15 @@ export default new Vuex.Store({
           showBottomNav: true,
         },
       },
+      {
+        text: "FAQ",
+        to: "/faq",
+        icon: "mdi-note-text",
+        meta: {
+          showToolbar: false,
+          showBottomNav: false,
+        },
+      },
       // {
       //   text: "About",
       //   to: "/about",
