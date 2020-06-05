@@ -20,7 +20,7 @@
               <v-icon>mdi-chevron-up</v-icon>
             </v-btn>
           </v-fab-transition>
-          <h1 class="google-font" :class="$vuetify.theme.dark == true ? 'white--text' : 'grey--text text--darken-2'">Web.dev Live India</h1>
+          <h1 class="google-font" :class="$vuetify.theme.dark == true ? 'white--text' : 'grey--text text--darken-2'">web.dev Live India</h1>
         </v-card-text>
       </v-col>
     </v-row>
