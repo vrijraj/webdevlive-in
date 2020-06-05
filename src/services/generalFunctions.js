@@ -20,5 +20,12 @@ export default {
                 return require('@/assets/img/common/' + defaultimage);
             }
         },
+        getTeamImgUrl(pic, defaultimage = "maleAvatar.jpg") {
+            if (pic.length > 0) {
+                return require('@/assets/img/team/' + pic)
+            } else {
+                return require('@/assets/img/common/' + defaultimage);
+            }
+        },
     },
 }
