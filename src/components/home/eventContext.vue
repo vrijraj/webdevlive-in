@@ -42,7 +42,7 @@
           </v-card>
         </v-hover>
       </v-col>
-
+<!-- 
       <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="text-center pa-5">
         <v-hover v-slot:default="{ hover }" class="">
           <v-card class="py-3" :elevation="hover ? 0 : 0" :class="$vuetify.theme.dark ? 'dark-card' : ''">
@@ -58,7 +58,7 @@
             </p>
           </v-card>
         </v-hover>
-      </v-col>
+      </v-col> -->
 
       <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="text-center pa-5">
         <v-hover v-slot:default="{ hover }">
@@ -106,7 +106,7 @@
           combine learning and fun.
         </p>
       </v-col>
-      <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="px-5 mt-2">
+      <!-- <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="px-5 mt-2">
         <span
           class="pa-2 google-font"
           style="border-radius: 7px; background-color: rgb(252, 232, 230); color: rgb(179, 20, 18); font-size: 120%;"
@@ -116,7 +116,7 @@
           Hear from the community champions about their stories, experiences and
           learnings.
         </p>
-      </v-col>
+      </v-col> -->
       <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="px-5 mt-2">
         <span
           class="pa-2 google-font"
