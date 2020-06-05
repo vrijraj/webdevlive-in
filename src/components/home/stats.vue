@@ -6,12 +6,10 @@
           <b class="google-font" style="color: #4E5FBB;">Everyone is welcome here</b>
         </p>
         <p class="google-font mt-3" style="text-align:justify;">
-          In these unprecedented times, we’re seeing much of the web ecosystem focusing on fundamentals and innovating quickly to meet the ever-changing needs of users.
-          To help our community build powerful and useful sites, we want to invite you to web.dev LIVE, a four-day digital event to learn modern web techniques and to connect with other developers.
-          <span class="hidden-sm-and-down hidden-md-and-down">
-            To help our community build powerful and useful sites, we want to invite you to web.dev LIVE, a four-day digital event to learn modern web techniques and to connect with other developers.
-            <br />
-          </span>
+          Much of the web ecosystem focusing on fundamentals and innovating quickly to meet the ever-changing needs of users. <br> <br>
+          To help our community build powerful and useful sites, we want to invite you to web.dev Live India, a four-day digital event to learn modern web techniques and to connect with other developers.
+          <br> <br>
+          While we are open to welcome everyone and a digital event means anyone can join, the content will be tailored to India/APAC audience.
         </p>
       </v-col>
 
