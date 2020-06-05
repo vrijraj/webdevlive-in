@@ -8,7 +8,7 @@
         :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'"
       >
         <v-avatar size="100">
-          <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
+          <img :src="getTeamImgUrl(data.image)" :lazy-src="getTeamImgUrl(data.image)" alt />
         </v-avatar>
         <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{ data.name }}</p>
         <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{ data.company.name }}</p>
@@ -26,15 +26,13 @@
           <v-row>
             <v-col md="4" cols="12" class="text-center">
               <v-avatar size="100">
-                <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
+                <img :src="getTeamImgUrl(data.image)" :lazy-src="getTeamImgUrl(data.image)" alt />
               </v-avatar>
               <p class="google-font mt-3 mb-0" style="font-size:140%">
                 <b>{{ data.name }}</b>
               </p>
               <p class="google-font mt-1" style="font-size:100%">
-                {{ data.company.designation }}
-                <span v-if="data.company.name">,&nbsp;</span>
-                {{ data.company.name }}
+                {{ data.company.designation }}<span v-if="data.company.name">, {{ data.company.name }}</span>
               </p>
               <socialMediaDetails class="pl-0 ml-0" :data="data.social" />
             </v-col>
