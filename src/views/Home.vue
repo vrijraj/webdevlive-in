@@ -24,13 +24,13 @@
       </v-row>
     </v-container>
 
-    <!-- <v-container fluid class="">
+    <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
       <v-row justify="start" align="center">
-        <v-col md="7" sm="11" xl="6" cols="12" offset-md="1" class="">
+        <v-col md="10" sm="11" xl="6" cols="12" offset-md="1" class="">
           <Overview />
         </v-col>
       </v-row>
-    </v-container> -->
+    </v-container>
 
     <v-container fluid class="">
       <v-row justify="center" align="center">
@@ -58,7 +58,7 @@ import stats from "@/components/home/stats"
 import eventContext from "@/components/home/eventContext"
 import CodeOfConductSection from "@/components/codeOfConduct/guidelines"
 import SocialShare from "@/components/common/SocialShare"
-// import Overview from "../components/home/overview"
+import Overview from "../components/home/overview"
 export default {
   name: "Home",
   components: {
@@ -67,7 +67,7 @@ export default {
     eventContext,
     CodeOfConductSection,
     SocialShare,
-    // Overview
+    Overview
   }
 };
 </script>
