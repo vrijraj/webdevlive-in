@@ -11,7 +11,7 @@
                 <p class="google-font">
                 Join Google's Web Platform team, from the comfort of your homes, to celebrate our community's actions, learn modern web techniques and connect with each other.</p>
 
-                <v-btn color="indigo" dark>Get Notified</v-btn>
+                <v-btn color="indigo" style="text-transform: capitalize;" class="google-font" depressed large dark>Get Notified</v-btn>
             </v-col>
         </v-row>
     </v-container>
