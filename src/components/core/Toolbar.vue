@@ -75,7 +75,7 @@ export default {
       if (navigator.share) {
         navigator
           .share({
-            title: "Web.dev Live India",
+            title: "web.dev Live India",
             url: ""
           })
           .then(() => {
