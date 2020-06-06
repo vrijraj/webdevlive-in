@@ -1,42 +1,42 @@
 <template>
-  <v-container fluid class="mb-0 pb-0">
-    <v-row class=" mb-0 pb-0">
-      <v-col cols="1"></v-col>
-      <v-col cols="10" class="mb-0 pb-0">
+  <v-container fluid class="mb-0 pb-0 px-0">
+    <v-row class="mb-0 pb-0 ">
+      <v-col cols="12" class="mb-0 pb-0 px-0">
         <v-tabs
           v-model="model"
           color="indigo"
           :grow="getMobileTab()"
-          :centered="true"
+          :centered="getMobileTab()"
           slider-color="indigo"
+          class="grey lighten-2 mx-0"
           :background-color="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"
-          style="border-bottom: 1px solid #e0e0e0;"
+          :class="$vuetify.theme.dark ? 'row-border-dark' : 'row-border-white'"
         >
           <v-tab
             href="#day1"
             class="google-font"
-            style="text-transform: capitalize;"
+            style="text-transform: capitalize;font-weight: bold;"
           >
             Performance & Developer Tools
           </v-tab>
           <v-tab
             href="#day2"
             class="google-font"
-            style="text-transform: capitalize;"
+            style="text-transform: capitalize;font-weight: bold;"
           >
             Front-end & AMP
           </v-tab>
           <v-tab
             href="#day3"
             class="google-font"
-            style="text-transform: capitalize;"
+            style="text-transform: capitalize;font-weight: bold;"
           >
             PWA & FUGU
           </v-tab>
           <v-tab
             href="#day4" 
             class="google-font"
-            style="text-transform: capitalize;"
+            style="text-transform: capitalize;font-weight: bold;"
           >
             Privacy & UX
           </v-tab>
@@ -44,8 +44,7 @@
       </v-col>
     </v-row>
     <v-row class="my-0 py-0">
-      <v-col cols="1"></v-col>
-      <v-col cols="10" class="my-0 py-0">
+      <v-col cols="12" class="my-0 py-0">
         <v-tabs-items v-model="model">
           <v-tab-item
             value="day1"

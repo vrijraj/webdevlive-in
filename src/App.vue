@@ -33,19 +33,16 @@
 </template>
 
 <script>
-import Toolbar from './components/core/Toolbar'
-import Drawer from './components/core/Drawer'
-import BottomNav from './components/core/BottomNav'
-import MainView from './components/core/Views'
-import AppFooter from './components/core/Footer'
+import Toolbar from '@/components/core/Toolbar'
+import MainView from '@/components/core/Views'
 export default {
   name: 'App',
   components: {
     Toolbar,
-    Drawer,
-    BottomNav,
     MainView,
-    AppFooter
+    Drawer:()=>import('@/components/core/Drawer'),
+    BottomNav: ()=>import('@/components/core/BottomNav'),
+    AppFooter:()=>import('@/components/core/Footer')
   },
 
   data: () => ({

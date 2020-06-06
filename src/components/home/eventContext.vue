@@ -42,24 +42,6 @@
           </v-card>
         </v-hover>
       </v-col>
-<!-- 
-      <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="text-center pa-5">
-        <v-hover v-slot:default="{ hover }" class="">
-          <v-card class="py-3" :elevation="hover ? 0 : 0" :class="$vuetify.theme.dark ? 'dark-card' : ''">
-            <br />
-            <v-icon size="50px">mdi-access-point-network</v-icon>
-            <p class="google-font my-0" style="font-size:150%;">
-              Stories
-            </p>
-            <br />
-            <p class="google-font" style="font-size:100%;color:#9e9e9e">
-              Hear from the community champions about their stories, experiences
-              and learnings.
-            </p>
-          </v-card>
-        </v-hover>
-      </v-col> -->
-
       <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="text-center pa-5">
         <v-hover v-slot:default="{ hover }">
           <v-card class="pa-3" :elevation="hover ? 0 : 0" :class="$vuetify.theme.dark ? 'dark-card' : ''">

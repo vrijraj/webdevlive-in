@@ -24,15 +24,15 @@
       </v-row>
     </v-container>
 
-    <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
+    <!-- <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
       <v-row justify="start" align="center">
         <v-col md="10" sm="11" xl="6" cols="12" offset-md="1" class="">
           <Overview />
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
-    <v-container fluid class="">
+    <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
       <v-row justify="center" align="center">
         <v-col md="10" sm="11" xl="10" cols="12">
           <CodeOfConductSection />
@@ -54,20 +54,14 @@
 <script>
 // @ is an alias to /src
 import ComingSoon from "@/components/home/ComingSoon";
-import stats from "@/components/home/stats"
-import eventContext from "@/components/home/eventContext"
-import CodeOfConductSection from "@/components/codeOfConduct/guidelines"
-import SocialShare from "@/components/common/SocialShare"
-import Overview from "../components/home/overview"
 export default {
   name: "Home",
   components: {
     ComingSoon,
-    stats,
-    eventContext,
-    CodeOfConductSection,
-    SocialShare,
-    Overview
+    stats:()=>import("@/components/home/stats"),
+    eventContext:()=>import("@/components/home/eventContext"),
+    CodeOfConductSection: ()=>import("@/components/codeOfConduct/guidelines"),
+    SocialShare: ()=>import("@/components/common/SocialShare")
   }
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="mb-5 pb-5">
+    <v-container fluid >
         <v-row>
             <v-col md="6" cols="12">
                 <v-card class="pa-5 elevation-0" outlined :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'" href="https://twitter.com/WebDevLiveIndia" target="_blank">

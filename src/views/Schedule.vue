@@ -155,8 +155,7 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style >
 .white-font{
   color: white;
 }

@@ -1,12 +1,8 @@
 <template >
   <v-content class="ma-0">
-    <!-- :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" -->
-    <!-- :style="{'background-image':'url('+require('@/assets/img/common/live.png')+')'}" -->
-    <!--     :style="{'background-image':'url('+require('@/assets/img/common/live.png')+')'}" -->
     <v-container
       fluid
       :class="this.$vuetify.theme.dark == true?'grey darken-4 elevation-1':'white-border white '"
-  
     >
       <v-row justify="center" align="center">
         <v-col md="10" lg="10" sm="11" cols="12" class="">
@@ -80,22 +76,4 @@ export default {
 .white-border{
   border-bottom: 1px solid #e0e0e0 !important;
 }
-/* @media only screen and (min-width: 1268px) {
-  .desktop-bg{
-    background: url('../assets/img/common/live3.png');
-    background-position: right center;
-    background-size: 800px;
-    background-repeat: no-repeat;
-    height: 40vh;
-  }
-} */
-.card-top-margin {
-  margin-top: -150px;
-}
-/* .bg-image{
-  background-position: top right;
-  background-size: 1000px;
-  height: 40vh;
-} */
-
 </style>

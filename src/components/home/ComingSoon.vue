@@ -5,10 +5,10 @@
         <v-img :src="require('@/assets/img/home.png')"></v-img>
       </v-col>
       <v-col cols="12" md="7" lg="7">
-        <h1 class="google-font mt-5">web.dev Live India</h1>
-        <p class="google-font" style="font-size:80%">
+        <h1 class="google-font mt-5 mb-0">web.dev Live India</h1>
+        <p class="google-font mt-0" style="font-size:80%">
           Follow up event of
-          <a href="https://web.dev/live/">web.dev</a>
+          <a href="https://web.dev/live/" target="_blank">web.dev</a>
         </p>
         <p
           class="google-font"

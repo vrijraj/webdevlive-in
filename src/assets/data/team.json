@@ -77,7 +77,7 @@
       "name": "Murait Technologies",
       "designation": "Founder & Full Stack Developer"
     },
-    "image": "",
+    "image": "mayur.jpg",
     "bio": "",
     "social": {
       "twitter": "https://twitter.com/mayur_sojitra",
@@ -150,6 +150,23 @@
     "social": {
       "twitter": "https://twittwe.com/harshcrop",
       "linkedin": "https://linkedin.com/in/harshcrop"
+    }
+  },
+  {
+    "name": "Tushar Pal",
+    "community": {
+      "name": "GDG Indore",
+      "designation": "Community Organizer"
+    },
+    "company": {
+      "name": "Protonshub",
+      "designation": "Co-Founder & CTO"
+    },
+    "image": "tushar.jpg",
+    "bio": "Tushar Pal is CTO and Cofounder of Protonshub Technologies and having a expertise in multiple technologies.He is also product consultant at Diaspark Infotech to helping out a best product. Community Leader of Google Cloud Developer Community,Indore and Google Developers Group,Indore. There is something special when career and passion comes together. No excuses to yourself because reality is wrong and dreams are real  He is very big ambition to build the biggest ecosystem in a town which helps us to grow our careers and build a stronger network.",
+    "social": {
+      "twitter": "https://twitter.com/tpal94",
+      "linkedin": "https://www.linkedin.com/in/tushar-p-325b5869/"
     }
   }
 ]
