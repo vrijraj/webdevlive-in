@@ -168,5 +168,22 @@
       "twitter": "https://twitter.com/tpal94",
       "linkedin": "https://www.linkedin.com/in/tushar-p-325b5869/"
     }
+  },
+  {
+    "name": "Debiprasad Sahoo",
+    "community": {
+      "name": "GDG Bhubaneswar",
+      "designation": "Community Organizer"
+    },
+    "company": {
+      "name": "",
+      "designation": "Freelance Fullstack Developer"
+    },
+    "image": "",
+    "bio": "Debiprasad is a freelance fullstack developer based out of Bhubaneswar, India. He contributes to the developers' community by leading GDG Bhubaneswar as an Organizer with a goal to bring all developers of the city together. He is also a vocal advocate for gender equality at work.",
+    "social": {
+      "twitter": "http://twitter.com/debiprasad",
+      "linkedin": "http://linkedin.com/in/debiprasad/"
+    }
   }
 ]
