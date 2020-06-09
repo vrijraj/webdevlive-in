@@ -5,7 +5,6 @@
       justify="center"
       fill-height
       class="hidden-sm-and-down ma-2"
-      style
     >
       <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="text-center pa-5">
         <v-hover v-slot:default="{ hover }">

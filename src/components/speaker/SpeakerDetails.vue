@@ -10,17 +10,13 @@
         <v-avatar size="100">
           <img :src="getImgUrl(data.image)" :lazy-src="getImgUrl(data.image)" alt />
         </v-avatar>
-        <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{ data.name }}</p>
+        <p class="mt-3 mb-0 google-font mb-0" style="font-size:110%">{{ data.name }}</p>
         <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{ data.company.name }}</p>
         <socialMediaDetails :data="data.social" />
       </div>
     </template>
 
     <v-card :class="theme.isDark ? 'grey darken-3' : 'white'" v-if="dialog">
-      <!-- <v-card-title class="px-5 google-font" primary-title>
-        {{ data.name }} Details
-      </v-card-title>-->
-
       <v-card-text class="pa-5">
         <v-container>
           <v-row>
@@ -114,13 +110,6 @@ export default {
       SessionsData: []
     };
   },
-  mounted() {},
-  filters: {
-    summary: (val, num) => {
-      if (val.length > num) return val.substring(0, num) + "..";
-      else return val;
-    }
-  }
 };
 </script>
 

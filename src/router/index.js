@@ -33,15 +33,6 @@ Vue.use(VueRouter)
     }
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-    meta:{
-      title:'About | Web Dev Live India',
-      color:'white'
-    }
-  },
-  {
     path: '/schedule',
     name: 'Schedule',
     component: () => import(/* webpackChunkName: "schedule" */ '../views/Schedule.vue'),

@@ -30,28 +30,6 @@
           small
           class="mt-0 mx-0"
           icon
-          v-if="checkExistance(data.github,0)"
-          :href="data.github"
-          target="_blank"
-        >
-          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-github-circle</v-icon>
-        </v-btn>
-        <v-btn
-          aria-label="social media btn"
-          small
-          class="mt-0 mx-0"
-          icon
-          v-if="checkExistance(data.medium,0)"
-          :href="data.medium"
-          target="_blank"
-        >
-          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-medium</v-icon>
-        </v-btn>
-        <v-btn
-          aria-label="social media btn"
-          small
-          class="mt-0 mx-0"
-          icon
           v-if="checkExistance(data.web,0)"
           :href="data.web"
           target="_blank"

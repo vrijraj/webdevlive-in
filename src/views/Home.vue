@@ -24,14 +24,6 @@
       </v-row>
     </v-container>
 
-    <!-- <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
-      <v-row justify="start" align="center">
-        <v-col md="10" sm="11" xl="6" cols="12" offset-md="1" class="">
-          <Overview />
-        </v-col>
-      </v-row>
-    </v-container> -->
-
     <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
       <v-row justify="center" align="center">
         <v-col md="10" sm="11" xl="10" cols="12">

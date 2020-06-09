@@ -1,6 +1,5 @@
 <template>
   <v-content class="">
-
     <v-container
       fluid
       :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
@@ -10,8 +9,7 @@
           <v-container>
             <v-row class>
               <v-col class="pb-5">
-                <!-- <v-img :src="require('@/assets/img/webdevlogo.png')" style="" width="5vh"></v-img> -->
-                <h1 class="google-font mb-5">Our Team</h1>
+                <h1 class="google-font mb-5" :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'">Our Team</h1>
                 <br />
                 <br />
               </v-col>
@@ -23,7 +21,7 @@
 
     <v-container fluid class="mb-5 pb-5">
       <v-row justify="center" align="center" class="px-0">
-        <v-col md="10" lg="10" sm="11" cols="12" class="card-top-margin">
+        <v-col md="10" lg="10" sm="11" cols="12" style="margin-top: -150px;">
           <v-container>
             <v-row class>
               <v-col
@@ -72,9 +70,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.card-top-margin {
-  margin-top: -150px;
-}
-</style>

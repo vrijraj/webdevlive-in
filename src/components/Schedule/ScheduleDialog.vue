@@ -24,15 +24,6 @@
       >
         <p class="google-font mb-0" style="font-size:110%">{{ data.title }} Details</p>
         <v-spacer></v-spacer>
-        <!-- <v-tooltip bottom>
-          <template v-slot:activator="{ on }">
-            <v-btn icon v-on="on" @click="dialog = false">
-              <v-icon>mdi-close</v-icon>
-            </v-btn>
-          </template>
-          <span>Close</span>
-        </v-tooltip> -->
-        
       </v-card-title>
       <v-card-text class="px-5">
         <v-divider></v-divider>
