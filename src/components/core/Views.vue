@@ -2,8 +2,7 @@
   <v-container
     fluid
     class="pa-0 ma-0"
-    :class="this.$vuetify.theme.dark == true?'black':'white'"
-    
+    :class="this.$vuetify.theme.dark == true ? 'black' : 'white'"
   >
     <v-slide-y-reverse-transition>
       <router-view v-show="show" />
@@ -15,11 +14,22 @@
 export default {
   data() {
     return {
-      show: false
+      show: false,
+      fab: false,
     };
   },
   created() {
     this.show = true;
-  }
+  },
+  methods: {
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.fab = top > 20;
+    },
+    toTop() {
+      this.$vuetify.goTo(0);
+    },
+  },
 };
 </script>

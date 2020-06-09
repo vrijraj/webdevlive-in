@@ -20,7 +20,7 @@
         :href="link.href"
         @click="onClick($event, link)"
         class="google-font my-0 py-0"
-        :color="$vuetify.theme.dark?'white':'indigo'"
+        :color="$vuetify.theme.dark?'white':'primary'"
       >
         <v-list-item-icon>
           <v-icon v-text="link.icon"></v-icon>

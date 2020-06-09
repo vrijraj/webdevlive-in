@@ -30,11 +30,10 @@
             <template v-slot:extension>
               <v-tabs
                 v-model="model"
-                :mobile-breakpoint="0"
                 :grow="getMobileTab()"
                 :centered="getMobileTab()"
-                color="indigo"
-                slider-color="indigo"
+                color="primary"
+                slider-color="primary"
               >
                 <v-tab href="#day1">
                   Day 1

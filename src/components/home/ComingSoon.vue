@@ -21,7 +21,7 @@
           class="google-font"
         >Join Google's Web Platform team, from the comfort of your homes, to celebrate our community's actions, learn modern web techniques and connect with each other.</p>
         <v-btn
-          color="indigo"
+          color="primary"
           style="text-transform: capitalize;"
           class="google-font"
           depressed

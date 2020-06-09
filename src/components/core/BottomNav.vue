@@ -5,7 +5,7 @@
     app
     :dark="this.$vuetify.theme.dark"
     :background-color="this.$vuetify.theme.dark?'#212121':'white'"
-    :color="this.$vuetify.theme.dark?'white':'indigo'"
+    :color="this.$vuetify.theme.dark?'white':'primary'"
     class="hidden-md-and-up"
     style="overflow-x: hidden;"
   >

@@ -15,7 +15,7 @@
             <v-fab-transition>
               <v-btn
                 style="margin-top:-20px"
-                color="indigo"
+                color="primary"
                 dark
                 absolute
                 top

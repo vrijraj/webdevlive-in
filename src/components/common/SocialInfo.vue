@@ -11,7 +11,7 @@
           :href="data.twitter"
           target="_blank"
         >
-          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-twitter</v-icon>
+          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#1da1f2'">mdi-twitter</v-icon>
         </v-btn>
 
         <v-btn
@@ -23,7 +23,7 @@
           :href="data.linkedin"
           target="_blank"
         >
-          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-linkedin</v-icon>
+          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#0077b5'">mdi-linkedin</v-icon>
         </v-btn>
         <v-btn
           aria-label="social media btn"
