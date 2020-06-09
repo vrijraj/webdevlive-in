@@ -2,7 +2,7 @@
     <v-container fluid >
         <v-row>
             <v-col md="6" cols="12">
-                <v-card class="pa-5 elevation-0" outlined :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'" href="https://twitter.com/WebDevLiveIndia" target="_blank">
+                <v-card class="pa-5 elevation-0" outlined :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'" rel="noreferrer" href="https://twitter.com/WebDevLiveIndia" target="_blank">
                     <v-icon x-large color="#00acee">mdi-twitter</v-icon>
                     <h2 class="google-font mt-2 mb-2">Stay connected</h2>
                     <p class="google-font">Keep up with the latest Web Dev India news and announcements. Join the conversation on Twitter.</p>

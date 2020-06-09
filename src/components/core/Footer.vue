@@ -14,6 +14,7 @@
           >
             <v-fab-transition>
               <v-btn
+                aria-label="FAB Button"
                 style="margin-top:-20px"
                 color="primary"
                 dark
@@ -44,6 +45,7 @@
           <span v-for="(item, index) in links" :key="index">
             <router-link
               :to="item.link"
+              rel="noreferrer"
               :class="
                 $vuetify.theme.dark == true
                   ? 'white--text'

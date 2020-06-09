@@ -155,20 +155,11 @@ export default {
 </script>
 
 <style >
-.white-font{
-  color: white;
-}
-.grey-font{
-  color: #616161 !important;
-}
 .row-border-white {
   border-bottom: 1px solid #e0e0e0;
 }
 .row-border-dark {
   border-bottom: 1px solid #292929;
   background: #212121;
-}
-.bg-dark{
-  background-color: #757575;
 }
 </style>

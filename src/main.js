@@ -5,7 +5,7 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import generalFunctions from './services/generalFunctions'
-import './style.css'
+import (/* webpackPreload: true */ './style.css')
 
 Vue.config.productionTip = false
 Vue.mixin(generalFunctions)

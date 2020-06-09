@@ -8,7 +8,7 @@
         <h1 class="google-font mt-5 mb-0">web.dev Live India</h1>
         <p class="google-font mt-0" style="font-size:80%">
           Follow up event of
-          <a href="https://web.dev/live/" target="_blank">web.dev</a>
+          <a rel="noreferrer" href="https://web.dev/live/" target="_blank">web.dev</a>
         </p>
         <p
           class="google-font"
@@ -21,6 +21,7 @@
           class="google-font"
         >Join Google's Web Platform team, from the comfort of your homes, to celebrate our community's actions, learn modern web techniques and connect with each other.</p>
         <v-btn
+          aria-label="Home BTN"
           color="primary"
           style="text-transform: capitalize;"
           class="google-font"

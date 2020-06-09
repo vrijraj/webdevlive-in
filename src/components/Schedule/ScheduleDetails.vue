@@ -55,7 +55,6 @@ import SessionsData from '@/assets/data/sessions.json'
     }
     .schedule-details-dark:hover{
       background: #433E47;
-      
     }
     .row-border-white{
         border-bottom:1px solid #e0e0e0

@@ -55,7 +55,7 @@
 
       <v-card-actions :class="this.$vuetify.theme.dark == true?'grey darken-3':'grey lighten-3'">
         <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="dialog = false">Close</v-btn>
+        <v-btn aria-label="close" color="primary" text @click="dialog = false">Close</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>

@@ -1,6 +1,5 @@
 <template>
   <v-dialog v-model="dialog" width="800" scrollable>
-    <!-- :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteThemeCard'" -->
     <template v-slot:activator="{ on }">
       <div v-on="on" style="cursor: pointer;" class="py-3 ma-1 fill-height">
         <p style="font-size:130%" class="mb-0 google-font">{{ data.title }}</p>
@@ -91,7 +90,7 @@
 
       <v-card-actions :class="this.$vuetify.theme.dark == true?'grey darken-3':'grey lighten-3'">
         <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="dialog = false">Close</v-btn>
+        <v-btn aria-label="close" color="primary" text @click="dialog = false">Close</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -129,15 +128,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.darkModeCard {
-  background-color: #292929;
-  border: 1px solid #212121;
-  border-radius: 5px;
-}
-.whiteThemeCard {
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-}
-</style>
+

@@ -10,6 +10,7 @@
     style="overflow-x: hidden;"
   >
     <v-btn
+      aria-label="Bottom Nav Links"
       v-for="(link, i) in links.filter(res=>res.meta.showBottomNav)"
       :key="i"
       :to="link.to"

@@ -10,6 +10,7 @@
         {{ snackWithBtnText }}
         <v-spacer />
         <v-btn
+          aria-label="Snackbar"
           dark
           text
           color="#00f500"
@@ -19,6 +20,7 @@
         </v-btn>
         <v-btn
           icon
+          aria-label="close"
           @click="snackWithButtons = false"
         >
           <v-icon>mdi-close</v-icon>
