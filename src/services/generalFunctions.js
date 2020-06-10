@@ -1,6 +1,12 @@
 export default {
     methods: {
+        
         checkExistance: (link, size) => (link && link.length > size),
+
+        sortByName: (data) => data.sort((a, b) => {
+            return (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1;
+        }),
+
         getCharString: (data) => {
             var splitArr = data.split(" ");
             if (splitArr.length > 1) {
