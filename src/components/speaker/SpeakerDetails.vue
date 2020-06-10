@@ -37,19 +37,18 @@
             <v-col md="8" cols="12">
               <p class="google-font" style="font-size:110%">{{ data.bio }}</p>
 
-              <p class="my-0 google-font mt-2" v-if="data.sessionId > 0" style="font-size:120%">
+              <p class="my-0 google-font mt-2" v-if="data.sessionId.length > 0" style="font-size:120%">
                 <b>Sessions:</b>
               </p>
 
               <v-col
                 cols="12"
                 md="8"
-                class="px-0"
-                v-for="(itemp, index) in data.sessionId"
-                :key="index"
+                class="px-0 my-0 py-0"
+                v-for="(itemp) in data.sessionId"
+                :key="itemp.id"
               >
-                <div v-for="(item, indexp) in SessionDetails" :key="indexp">
-                  <div v-if="item.id == itemp">
+                <div v-for="(item) in binarySearchSession(itemp)" :key="item.id" class="">
                     <v-list
                       two-line
                       subheader
@@ -77,7 +76,6 @@
                       </v-list-item>
                     </v-list>
                   </div>
-                </div>
               </v-col>
             </v-col>
           </v-row>
@@ -95,21 +93,36 @@
 </template>
 
 <script>
-import SessionDetails from "@/assets/data/sessions.json";
 import socialMediaDetails from "@/components/common/SocialInfo";
 export default {
   components: {
     socialMediaDetails
   },
   inject: ["theme"],
-  props: ["data"],
+  props: ["data", "SessionDetails"],
   data() {
     return {
       dialog: false,
-      SessionDetails: SessionDetails,
-      SessionsData: []
     };
   },
+  mounted(){
+  },
+  methods:{
+    binarySearchSession(id){
+      let low = 0;
+      let high = this.SessionDetails.length;
+      while(low<=high){
+        let mid = Math.floor(low+(high-low)/2);
+        if(this.SessionDetails[mid].id == id){
+          return [this.SessionDetails[mid]];
+        }else if(this.SessionDetails[mid].id > id){
+          high = mid-1;
+        }else{
+          low = mid+1;
+        }
+      }
+    }
+  }
 };
 </script>
 

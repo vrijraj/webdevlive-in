@@ -35,7 +35,7 @@
                 v-for="(item, index) in SpeakersData"
                 :key="index"
               >
-                <Speakers :data="item" />
+                <Speakers :data="item" :SessionDetails="SessionDetails" />
               </v-col>
             </v-row>
           </v-container>
@@ -46,27 +46,22 @@
 </template>
 
 <script>
-import Speakers from "@/components/speaker/SpeakerDetails";
+// import Speakers from "@/components/speaker/SpeakerDetails";
 import SpeakersData from "@/assets/data/speakers.json";
+import SessionDetails from "@/assets/data/sessions.json";
 export default {
   name: "SpeakersPage",
   components: {
-    Speakers
+    Speakers:()=>import('@/components/speaker/SpeakerDetails')
   },
   data: () => ({
-    SpeakersData: []
+    SpeakersData: [],
+    SessionDetails:[]
   }),
   mounted() {
-    this.SpeakersData = SpeakersData.sort((a, b) => {
-      const x = a.name.toLowerCase();
-      const y = b.name.toLowerCase();
-      if (x < y) {
-        return -1;
-      }
-      if (x > y) {
-        return 1;
-      }
-      return 0;
+    this.SpeakersData = this.sortByName(SpeakersData)
+    this.SessionDetails = SessionDetails.sort((a,b)=>{
+      return (a.id > b.id)?1:-1;
     });
   }
 };
