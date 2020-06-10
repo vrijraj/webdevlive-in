@@ -142,9 +142,11 @@ export default {
   },
   data: () => ({
     model: "day1",
-    ScheduleData: ScheduleData,
+    ScheduleData: [],
   }),
-  mounted() {},
+  mounted() {
+    this.ScheduleData = ScheduleData
+  },
   methods: {
     getMobileTab() {
       if (window.innerWidth < 500) return true;

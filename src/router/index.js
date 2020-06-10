@@ -10,7 +10,7 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home,
     meta:{
-      title:'Home | Web Dev Live India',
+      title:'Web Dev Live India',
       color:'white'
     }
   },

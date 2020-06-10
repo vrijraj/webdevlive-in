@@ -53,10 +53,10 @@ export default {
     TeamMember
   },
   data: () => ({
-    TeamData: TeamData.sort((a, b) => a.name - b.name)
+    TeamData: [],
   }),
   mounted() {
-    this.TeamData.sort((a, b) => {
+    this.TeamData = TeamData.sort((a, b) => {
       const x = a.name.toLowerCase();
       const y = b.name.toLowerCase();
       if (x < y) {

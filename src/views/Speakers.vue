@@ -54,10 +54,10 @@ export default {
     Speakers
   },
   data: () => ({
-    SpeakersData: SpeakersData.sort((a, b) => a.name - b.name)
+    SpeakersData: []
   }),
   mounted() {
-    this.SpeakersData.sort((a, b) => {
+    this.SpeakersData = SpeakersData.sort((a, b) => {
       const x = a.name.toLowerCase();
       const y = b.name.toLowerCase();
       if (x < y) {
