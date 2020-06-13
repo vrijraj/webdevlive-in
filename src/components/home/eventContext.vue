@@ -19,8 +19,7 @@
             </p>
             <br />
             <p class="google-font" style="font-size:100%;">
-              A plethora of talks ranging from technologies like ML, Cloud,
-              Android and Web to Design to Entrepreneurship.
+              A plethora of talks ranging from technologies like AMP, PWA, Developer Tools to Privacy and Security.
             </p>
           </v-card>
         </v-hover>
@@ -46,12 +45,11 @@
           <v-card class="pa-3" :elevation="hover ? 0 : 0" :class="$vuetify.theme.dark ? 'grey darken-4' : ''">
             <v-icon size="50px">mdi-nfc-tap</v-icon>
             <p class="google-font my-0" style="font-size:150%;">
-              Discussions
+              AMAs
             </p>
             <br />
             <p class="google-font" style="font-size:100%;">
-              A variety of discussions through a Panel discussions, Fireside
-              chat and many online conversations.
+              'Ask Me Anything' sessions at the end of each day to answer the questions from the audience.
             </p>
           </v-card>
         </v-hover>
@@ -71,8 +69,7 @@
           >Sessions</span
         >
         <p class="google-font mt-3" style="font-size:100%;">
-          A plethora of talks ranging from technologies like ML, Cloud, Android
-          and Web to Design to Entrepreneurship.
+          A plethora of talks ranging from technologies like AMP, PWA, Developer Tools to Privacy and Security.
         </p>
       </v-col>
       <v-col cols="12" sm="5" md="3" lg="3" xl="3" class="px-5 mt-2">
@@ -89,11 +86,10 @@
         <span
           class="google-font"
           style="font-size: 150%;"
-          >Discussions</span
+          >AMAs</span
         >
         <p class="google-font mt-3" style="font-size:100%;">
-          A variety of discussions through a Panel discussions, Fireside chat
-          and many online conversations.
+          'Ask Me Anything' sessions at the end of each day to answer the questions from the audience.
         </p>
       </v-col>
     </v-row>
