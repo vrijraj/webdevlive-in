@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-row justify="center" align="center">
         <v-col md="10" sm="11" xl="10" cols="12">
-          <ComingSoon />
+          <StartScreen />
         </v-col>
       </v-row>
     </v-container>
@@ -45,11 +45,11 @@
 
 <script>
 // @ is an alias to /src
-import ComingSoon from "@/components/home/ComingSoon";
+import StartScreen from "@/components/home/StartScreen";
 export default {
   name: "Home",
   components: {
-    ComingSoon,
+    StartScreen,
     stats:()=>import("@/components/home/stats"),
     eventContext:()=>import("@/components/home/eventContext"),
     CodeOfConductSection: ()=>import("@/components/codeOfConduct/guidelines"),

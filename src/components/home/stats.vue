@@ -3,12 +3,12 @@
     <v-row align="center" justify="center">
       <v-col cols="12" md="7" sm="7" lg="7" xl="6" class="">
         <p class="google-font mb-1" style="font-weight: 350;font-size:200%">
-          <b class="google-font primary--text" >Everyone is welcome here</b>
+          <b class="google-font" :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'" >Everyone is welcome here</b>
         </p>
-        <p class="google-font mt-3" style="text-align:justify;">
+        <p class="google-font mt-3" style="">
           Much of the web ecosystem focusing on fundamentals and innovating quickly to meet the ever-changing needs of users. <br> <br>
           To help our community build powerful and useful sites, we want to invite you to web.dev Live India, a four-day digital event to learn modern web techniques and to connect with other developers.
-          <br> <br>
+          <br> 
           While we are open to welcome everyone and a digital event means anyone can join, the content will be tailored to India/APAC audience.
         </p>
       </v-col>

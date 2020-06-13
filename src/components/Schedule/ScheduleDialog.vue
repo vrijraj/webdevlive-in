@@ -17,7 +17,10 @@
       </div>
     </template>
 
-    <v-card :class="theme.isDark ? 'grey darken-3' : 'white'" v-if="dialog" >
+    <v-card class="pa-0" :class="theme.isDark ? 'grey darken-3' : 'white'" v-if="dialog" >
+      <iframe v-if="data.link" class="ma-0 pa-0" width="100%" height="315" style="border:none;" 
+        :src="data.link">
+      </iframe>
       <v-card-title
         class="google-font"
         style="background-position:right bottom;"
@@ -41,6 +44,12 @@
               <p class="google-font my-1" style="font-size:110%">
                 <b>Description:</b> {{ data.description }}
               </p>
+              <v-chip v-if="data.slide" :href="data.slide" color="indigo" outlined target="_blank" class="mt-2 mr-2" label>
+                  <v-avatar left>
+                    <v-icon small>mdi-note-outline</v-icon>
+                  </v-avatar>
+                  Presentation
+              </v-chip>
               <v-container fluid class="px-0 mx-0">
                 <v-row
                   class="pa-0 ma-0"
