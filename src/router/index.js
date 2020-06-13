@@ -49,6 +49,15 @@ Vue.use(VueRouter)
       title:'FAQ | Web Dev Live India',
       color:'white'
     }
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    beforeEnter() {location.href = 'http://goo.gle/webdevliveindia-register'},
+    meta:{
+      title:'Register | Web Dev Live India',
+      color:'white'
+    }
   }
 ]
 
