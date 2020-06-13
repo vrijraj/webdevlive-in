@@ -136,7 +136,7 @@
     }
   },
   {
-    "name": "Harsh",
+    "name": "Harsh Shah",
     "community": {
       "name": "GDG Cloud Ahm & Pydata Ahm",
       "designation": "Community Organizer"
@@ -146,9 +146,9 @@
       "designation": "Tech Lead"
     },
     "image": "harsh.jpg",
-    "bio": "",
+    "bio": "I am a full-stack & DevOps engineer. I am also a technical consultant to many startups. I was a Two-time GSoCer (Google summer of Code) Intern with Wikimedia & KDE. FOSS lover. I am currently Tech-Lead at PedalsUp. I have been working with Pycon ACAP and was invited to give talks by GDG Udaipur, Google India Web Summit 2019, Facebook Dev circle Hyd 2020, many more places. I worked in more than 4 product-based startups. I am Organizer of the PyData Ahmedabad Community and Co-Organiser of Google Cloud Community.",
     "social": {
-      "twitter": "https://twittwe.com/harshcrop",
+      "twitter": "https://twitter.com/harshcrop",
       "linkedin": "https://linkedin.com/in/harshcrop"
     }
   },
@@ -184,6 +184,57 @@
     "social": {
       "twitter": "http://twitter.com/debiprasad",
       "linkedin": "http://linkedin.com/in/debiprasad/"
+    }
+  },
+  {
+    "name": "Saurabh Rajpal",
+    "community": {
+      "name": "",
+      "designation": ""
+    },
+    "company": {
+      "name": "Google",
+      "designation": "Technical Solutions Consultant"
+    },
+    "image": "saurabh.jpg",
+    "bio": "Saurabh Rajpal is currently a Web Ecosystem Consultant at Google and has been a full stack backend developer during his professional journey prior to joining Google. He's a tech enthusiast who likes to teach stuff with a funny lens and easy to understand relatable ways.",
+    "social": {
+      "twitter": "https://twitter.com/imsaurabhrajpal ",
+      "linkedin": "https://www.linkedin.com/in/imsaurabhrajpal/"
+    }
+  },
+  {
+    "name": "Siddhant Agarwal",
+    "community": {
+      "name": "",
+      "designation": ""
+    },
+    "company": {
+      "name": "Google",
+      "designation": "Program Coordinator"
+    },
+    "image": "sid.jpg",
+    "bio": "Siddhant Agarwal works as Program Coordinator with Google Developer Relations team in India. He currently takes care of Google Developer Experts program in India along with managing TensorFlow User Groups globally and in India. He is also leading strategic and execution efforts behind Build for Digital India initiative launched in partnership between Google and Ministry of Electronics and Information Techonology (MeitY), Govt. of India. A design thinker at heart, he loves working with startups scale in UX and improve their designs.",
+    "social": {
+      "twitter": "https://twitter.com/sidagarwal04",
+      "linkedin": "https://www.linkedin.com/in/sidagarwal04/"
+    }
+  },
+  {
+    "name": "Biswajeet Mallik",
+    "community": {
+      "name": "",
+      "designation": ""
+    },
+    "company": {
+      "name": "Google",
+      "designation": "Program Manager"
+    },
+    "image": "biswa.jpg",
+    "bio": "Program Manager at Google (India lead for Developer Community Programs)",
+    "social": {
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/in/biswajeetmallik/"
     }
   }
 ]
