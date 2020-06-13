@@ -16,7 +16,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="">
+    <v-container fluid class>
       <v-row justify="center" align="center">
         <v-col md="10" sm="11" xl="10" cols="12">
           <eventContext />
@@ -24,7 +24,19 @@
       </v-row>
     </v-container>
 
-    <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
+    <v-container
+      fluid
+      :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
+      style="min-height: 250px;max-height: 250px;"
+    >
+      <v-row justify="center" align="center">
+        <v-col md="10" sm="11" xl="10" cols="12">
+          <eventOverview />
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <v-container fluid class>
       <v-row justify="center" align="center">
         <v-col md="10" sm="11" xl="10" cols="12">
           <CodeOfConductSection />
@@ -32,14 +44,13 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="">
+    <v-container fluid class>
       <v-row align="center" justify="center">
         <v-col md="8" lg="7" xl="5" sm="11">
-          <SocialShare/>
+          <SocialShare />
         </v-col>
       </v-row>
     </v-container>
-    
   </v-content>
 </template>
 
@@ -50,10 +61,11 @@ export default {
   name: "Home",
   components: {
     StartScreen,
-    stats:()=>import("@/components/home/stats"),
-    eventContext:()=>import("@/components/home/eventContext"),
-    CodeOfConductSection: ()=>import("@/components/codeOfConduct/guidelines"),
-    SocialShare: ()=>import("@/components/common/SocialShare")
+    stats: () => import("@/components/home/stats"),
+    eventContext: () => import("@/components/home/eventContext"),
+    eventOverview: () => import("@/components/home/overview"),
+    CodeOfConductSection: () => import("@/components/codeOfConduct/guidelines"),
+    SocialShare: () => import("@/components/common/SocialShare")
   }
 };
 </script>
