@@ -25,7 +25,7 @@
           
           <v-container>
             <v-row class>
-              <v-col
+              <!-- <v-col
                 md="3"
                 lg="3"
                 xl="2"
@@ -36,7 +36,8 @@
                 :key="index"
               >
                 <Speakers :data="item" :SessionDetails="SessionDetails" />
-              </v-col>
+              </v-col> -->
+              <ComingSoon />
             </v-row>
           </v-container>
         </v-col>
@@ -51,7 +52,8 @@ import SessionDetails from "@/assets/data/sessions.json";
 export default {
   name: "SpeakersPage",
   components: {
-    Speakers:()=>import('@/components/speaker/SpeakerDetails'),
+    // Speakers:()=>import('@/components/speaker/SpeakerDetails'),
+    ComingSoon:()=>import('@/components/common/ComingSoon'),
   },
   data: () => ({
     SpeakersData: [],
