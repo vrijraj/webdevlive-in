@@ -36,7 +36,7 @@
               <p
                 class="google-font"
                 style="font-size:110%;word-break:normal;font-weight:bold"
-              >{{data.community.designation}}, {{data.community.name}}</p>
+              >{{data.community.designation}}<span v-if="data.community.designation">,</span> {{data.community.name}}</p>
               <p class="google-font" style="font-size:110%">{{ data.bio }}</p>
             </v-col>
           </v-row>
