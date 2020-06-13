@@ -1,6 +1,7 @@
 [
     {
         "id": "201",
+        "slide":"",
         "title": "Strong and Kind",
         "description": "Reflection on how one can build resilience while navigating the pressures of demands of a dynamic workplace and the pivotal role of mindfulness, kindness and compassion.",
         "track": "Leadership",
@@ -14,6 +15,7 @@
     },
     {
         "id": "202",
+        "slide":"",
         "title": "How women lead and succeed",
         "description": "I’ve been interacting with successful, very successful women and I have always been curious about what the secret rituals and healthy practices are that make up their lives? How is that they are more successful than many other women on the planet? \n\nAnd what I found out was that it’s about knowing the right techniques and rituals to get to the next level. It's more to do with the habits you are willing to give up and create more space for habits that will multiply our progress speed.\n\nIn this 30 minute talk, I share with you the # 1 ritual of success practiced by the business moguls and super successful leaders. It will help you up-level your results and accelerate your speed of growth.",
         "track": "Leadership",
@@ -27,6 +29,7 @@
     },
     {
         "id": "203",
+        "slide":"",
         "title": "Ice Breaker",
         "description": "",
         "track": "Leadership",
@@ -41,6 +44,7 @@
     },
     {
         "id": "204",
+        "slide":"",
         "title": "Owning Your Narrative",
         "description": "How about a new narrative for the new normal? Or the new (ab)normal? Whatever that is, but why need a narrative? Well, whether or not you own your narrative, there is one that already exists! Whether you are an employee, a freelancer, an intrapreneur, an entrepreneur or a business owner how you choose to sail through the new normal has everything to do with the narrative you choose to create, amplify and manage.",
         "track": "Leadership",
@@ -54,6 +58,7 @@
     },
     {
         "id": "205",
+        "slide":"",
         "title": "Why Communities Matter?",
         "description": "",
         "link": "",
@@ -71,6 +76,7 @@
     },
     {
         "id": "206",
+        "slide":"",
         "title": "Q & A",
         "description": "",
         "track": "Leadership",
@@ -82,6 +88,7 @@
     },
     {
         "id": "207",
+        "slide":"",
         "title": "Data Pipelines using Airflow on Kubernetes",
         "description": "Airflow is an opensource platform to create, schedule and monitor workflows. In this talk we will explore \n- What is airflow?   \n- How to create data pipelines? \n- How to exploit kubernetes to achieve performance\n- Pros and cons of the approach",
         "track": "Tech - ML & Cloud",
@@ -95,6 +102,7 @@
     },
     {
         "id": "208",
+        "slide":"",
         "title": "Building a Fault Tolerant Architecture",
         "description": "",
         "track": "Tech - ML & Cloud",
@@ -108,6 +116,7 @@
     },
     {
         "id": "209",
+        "slide":"",
         "title": "Designing Conversations using Dialogflow",
         "description": "",
         "track": "Tech - ML & Cloud",
@@ -121,6 +130,7 @@
     },
     {
         "id": "210",
+        "slide":"",
         "title": "Ice Breaker",
         "description": "There are a lot of inspiring women in technology around the us. A small walk through the stories of some inspiring women.",
         "track": "Tech - ML & Cloud",
@@ -135,6 +145,7 @@
     },
     {
         "id": "211",
+        "slide":"",
         "title": "Hands-on workshop in Introduction to Neural Networks",
         "description": "",
         "track": "Tech - ML & Cloud",
@@ -149,6 +160,7 @@
     },
     {
         "id": "212",
+        "slide":"",
         "title": "Fireside Chat",
         "description": "Fireside Chat",
         "track": "Tech - ML & Cloud",
@@ -163,6 +175,7 @@
     },
     {
         "id": "213",
+        "slide":"",
         "title": "Virtual Machines in GCP",
         "description": "",
         "track": "Tech - ML & Cloud",
@@ -176,6 +189,7 @@
     },
     {
         "id": "231",
+        "slide":"",
         "title": "ML Explainability + Trust",
         "description": "",
         "link": "",
@@ -189,6 +203,7 @@
     },
     {
         "id": "214",
+        "slide":"",
         "title": "Q & A",
         "description": "",
         "track": "Tech - ML & Cloud",
@@ -200,6 +215,7 @@
     },
     {
         "id": "215",
+        "slide":"",
         "title": "Visual Engineering",
         "description": "This talk would cover some aspects of how visuals speak to humans and why we must engineer them.",
         "link": "",
@@ -213,6 +229,7 @@
     },
     {
         "id": "216",
+        "slide":"",
         "title": "Fail, Gains and Stepping Stones",
         "description": "A reflective talk on some of the fails, learnings and moments in my career which shaped what I do now, with a peak into some design led projects. A real look into how plans can fall apart, but there will be people, communities and insights that help your journey.",
         "track": "Design & Entrepreneurship",
@@ -226,6 +243,7 @@
     },
     {
         "id": "217",
+        "slide":"",
         "title": "Ice Breaker",
         "description": "",
         "track": "Design & Entrepreneurship",
@@ -240,6 +258,7 @@
     },
     {
         "id": "218",
+        "slide":"",
         "title": "An Entrepreneur’s Journey",
         "description": "",
         "link": "",
@@ -253,6 +272,7 @@
     },
     {
         "id": "230",
+        "slide":"",
         "title": "How to Get Startup Ideas",
         "description": "",
         "track": "Design & Entrepreneurship",
@@ -266,6 +286,7 @@
     },
     {
         "id": "219",
+        "slide":"",
         "title": "A Wonky Journey",
         "description": "It's never a straight path to success. Or the commonly accepted definition of \"success\". In the journey of an entrepreneur, things always happen at the worst possible time. What makes it worth it is how you treat the situation. This talk takes you back 7 years and encompassess all the life lessons that Swaathi learnt on her journey. Buckle up!",
         "track": "Design & Entrepreneurship",
@@ -279,6 +300,7 @@
     },
     {
         "id": "220",
+        "slide":"",
         "title": "Role of Design in Startups",
         "description": "",
         "track": "Design & Entrepreneurship",
@@ -292,6 +314,7 @@
     },
     {
         "id": "221",
+        "slide":"",
         "title": "Q & A",
         "description": "",
         "track": "Design & Entrepreneurship",
@@ -303,6 +326,7 @@
     },
     {
         "id": "222",
+        "slide":"",
         "title": "What’s new in Android R",
         "description": "Learn about new features in Android R and how they will impact your app. Also learn about Best Practices for new API’s.",
         "link": "",
@@ -316,6 +340,7 @@
     },
     {
         "id": "223",
+        "slide":"",
         "title": "Widgets that stretch and fold: Responsive Design in Flutter",
         "description": "When we are building Flutter apps for Android & iOS and now even Web, we have to make sure we move away from the practise of using hardcoded widths and heights. It’s important to develop and know about flexible widgets that can stretch all the way and fold in minimal spaces, because when we are developing in Flutter, we are developing for more than 4 varied platforms.The talk is targeted to developers (and maybe even designer turned developers) who know how to work around Flutter widgets, but are struggling to get out of their forced habit of creating strictly sized widgets and want to build apps that are responsive and still beautiful in various other platforms. ",
         "track": "Tech - Android & Web",
@@ -329,6 +354,7 @@
     },
     {
         "id": "224",
+        "slide":"",
         "title": "Ice Breaker",
         "description": "",
         "track": "Tech - Android & Web",
@@ -343,6 +369,7 @@
     },
     {
         "id": "225",
+        "slide":"",
         "title": "Framework-agnostic web components, with Angular",
         "description": "Living in the times when technology and frameworks change quite fast, we really need to think through what we are building, why we are building it, and how we are building it. And now that we have done this amount of thinking, we want to be smart, right? Same effort, multiple times? Definitely not! I will be talking about Building reusable web components using Angular elements, and building and publishing the package to be able to use it in applications built using any framework.",
         "link": "",
@@ -356,6 +383,7 @@
     },
     {
         "id": "226",
+        "slide":"",
         "title": "What it takes to become a modern web developer in 2020",
         "description": "",
         "track": "Tech - Android & Web",
@@ -369,6 +397,7 @@
     },
     {
         "id": "227",
+        "slide":"",
         "title": "Angular Components: Google Map",
         "description": "",
         "track": "Tech - Android & Web",
@@ -382,6 +411,7 @@
     },
     {
         "id": "228",
+        "slide":"",
         "title": "Micro-interactions: Enhancing UX",
         "description": "",
         "track": "Tech - Android & Web",
@@ -395,6 +425,7 @@
     },
     {
         "id": "232",
+        "slide":"",
         "title": "#IWDIndia2020 Story",
         "description": "",
         "track": "Tech - Android & Web",
@@ -406,6 +437,7 @@
     },
     {
         "id": "229",
+        "slide":"",
         "title": "Q & A",
         "description": "",
         "track": "Tech - Android & Web",
