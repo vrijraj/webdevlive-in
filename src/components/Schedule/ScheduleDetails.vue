@@ -3,7 +3,7 @@
     <v-row
       justify="center"
       align="center"
-      v-for="(item, index) in data.schedule"
+      v-for="(item, index) in data['schedule']"
       :key="index"
       :class="$vuetify.theme.dark ? 'row-border-dark ' : 'row-border-white'"
       class="pa-0 my-0 "

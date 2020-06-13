@@ -69,7 +69,7 @@ export default {
     links: [
       {
         name: "web.dev",
-        link: "https://web.dev/",
+        link: "//https://web.dev/",
       },
       {
         name: "FAQ",
@@ -77,7 +77,7 @@ export default {
       },
       {
         name: "Google Developers",
-        link: "https://developers.google.com/",
+        link: "//https://developers.google.com/",
       },
     ],
   }),
