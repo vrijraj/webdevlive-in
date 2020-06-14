@@ -34,6 +34,7 @@
           <span v-for="(item,i) in mainData.hashtags" :key="i">
             <v-chip
               :href="'https://twitter.com/hashtag/'+item"
+              rel="noopener"
               target="_blank"
               small
               label
@@ -62,7 +63,10 @@
 import aboutEvent from "@/assets/data/about.json";
 export default {
   data: () => ({
-    mainData: aboutEvent
-  })
+    mainData: {}
+  }),
+  mounted() {
+    this.mainData = aboutEvent;
+  }
 };
 </script>

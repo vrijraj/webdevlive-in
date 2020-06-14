@@ -99,7 +99,7 @@
                     <p class="google-font" style="text-align:justify;">
                      Progressive Web Apps are web apps that use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications.
                      <br>
-                     Project Fugu 🐡 is an effort to close gaps in the web's capabilities enabling new classes of applications to run on the web. The developer-friendly landing page of the project is <a href="https://web.dev/fugu-status/" target="_blank" style="text-decoration:none;">https://web.dev/fugu-status/</a>.
+                     Project Fugu 🐡 is an effort to close gaps in the web's capabilities enabling new classes of applications to run on the web. The developer-friendly landing page of the project is <a href="https://web.dev/fugu-status/" rel="noreferrer" target="_blank" style="text-decoration:none;">https://web.dev/fugu-status/</a>.
                     </p>
               <ComingSoon />
 
@@ -127,25 +127,32 @@
           </v-tabs-items>
         </v-col>
       </v-row>
+
+    <v-row justify="center" align="center">
+      <v-col md="8">
+        <SocialShare/>
+      </v-col>
+    </v-row>
     </v-container>
   </v-content>
 </template>
 
 <script>
 // import ScheduleDetails from "../components/Schedule/ScheduleDetails";
-import ScheduleData from "../assets/data/schedule.json";
+// import ScheduleData from "../assets/data/schedule.json";
 export default {
   name: "",
   components: {
     // ScheduleDetails,
-    ComingSoon:()=>import('@/components/common/ComingSoon')
+    ComingSoon:()=>import('@/components/common/ComingSoon'),
+    SocialShare: () => import("@/components/common/SocialShare")
   },
   data: () => ({
     model: "day1",
     ScheduleData: [],
   }),
   mounted() {
-    this.ScheduleData = ScheduleData
+    // this.ScheduleData = ScheduleData
   },
   methods: {
     getMobileTab() {

@@ -26,11 +26,12 @@
 
     <v-container
       fluid
-      :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
-      style="min-height: 250px;max-height: 250px;"
+      :class="this.$vuetify.theme.dark == true?'grey darken-4 elevation-5':'grey lighten-4'"
+      class="py-4 pb-5"
+      style="min-height:330px"
     >
-      <v-row justify="center" align="center">
-        <v-col md="10" sm="11" xl="10" cols="12">
+      <v-row justify="start" align="start">
+        <v-col offset-md="1" md="8" offset-sm="1" offset-xl="1" sm="11" xl="8" cols="12">
           <eventOverview />
         </v-col>
       </v-row>
@@ -61,11 +62,11 @@ export default {
   name: "Home",
   components: {
     StartScreen,
-    stats: () => import("@/components/home/stats"),
-    eventContext: () => import("@/components/home/eventContext"),
-    eventOverview: () => import("@/components/home/overview"),
-    CodeOfConductSection: () => import("@/components/codeOfConduct/guidelines"),
-    SocialShare: () => import("@/components/common/SocialShare")
+    stats: () => import(/* webpackChunkName: "homeStats" */ "@/components/home/stats"),
+    eventContext: () => import(/* webpackChunkName: "homeContext" */ "@/components/home/eventContext"),
+    eventOverview: () => import(/* webpackChunkName: "homeOverview" */ "@/components/home/overview"),
+    CodeOfConductSection: () => import(/* webpackChunkName: "homeGuidelines" */ "@/components/codeOfConduct/guidelines"),
+    SocialShare: () => import(/* webpackChunkName: "homeSocialShare" */ "@/components/common/SocialShare")
   }
 };
 </script>

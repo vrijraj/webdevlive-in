@@ -42,28 +42,34 @@
           </v-container>
         </v-col>
       </v-row>
+      <v-row justify="center" align="center">
+        <v-col md="6">
+          <SocialShare/>
+        </v-col>
+      </v-row>
     </v-container>
   </v-content>
 </template>
 
 <script>
-import SpeakersData from "@/assets/data/speakers.json";
-import SessionDetails from "@/assets/data/sessions.json";
+// import SpeakersData from "@/assets/data/speakers.json";
+// import SessionDetails from "@/assets/data/sessions.json";
 export default {
   name: "SpeakersPage",
   components: {
     // Speakers:()=>import('@/components/speaker/SpeakerDetails'),
     ComingSoon:()=>import('@/components/common/ComingSoon'),
+    SocialShare: () => import("@/components/common/SocialShare")
   },
   data: () => ({
     SpeakersData: [],
     SessionDetails:[]
   }),
   mounted() {
-    this.SpeakersData = this.sortByName(SpeakersData)
-    this.SessionDetails = SessionDetails.sort((a,b)=>{
-      return (a.id > b.id)?1:-1;
-    });
+    // this.SpeakersData = this.sortByName(SpeakersData)
+    // this.SessionDetails = SessionDetails.sort((a,b)=>{
+    //   return (a.id > b.id)?1:-1;
+    // });
   }
 };
 </script>

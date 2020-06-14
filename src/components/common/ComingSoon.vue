@@ -14,9 +14,6 @@
         <!-- <v-img :src="require('@/assets/img/webdevlogo.png')" style="margin-left:auto;margin-right:auto" width="5vh"></v-img> -->
       </v-col>
     </v-row>
-    <v-row align="center" justify="center">
-      <SocialShare />
-    </v-row>
   </v-container>
 </template>
 
@@ -24,7 +21,7 @@
 export default {
   data: () => ({}),
   components: {
-    SocialShare: () => import("@/components/common/SocialShare")
+    
   }
 };
 </script>

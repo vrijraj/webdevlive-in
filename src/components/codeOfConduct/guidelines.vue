@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row justify="start" align="start">
       <v-col cols="12" md="10" lg="10" xl="9">
-        <p class="google-font" :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'" style="font-size:180%;">Code of Conduct</p>
+        <p class="google-font" :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'" style="font-weight: 350;font-size:200%">Code of Conduct</p>
         <v-expansion-panels accordion>
           <v-expansion-panel v-for="(item,i) in data" :key="i">
             <v-expansion-panel-header class="google-font">{{item.name}}</v-expansion-panel-header>
