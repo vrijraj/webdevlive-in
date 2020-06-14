@@ -1,9 +1,6 @@
 {
     "EventName":"web.dev Live India",
     "hashtags":["WebDevLiveIndia","WebDevLive"],
-    "links":{
-        "registration":"register"
-    },
     "codeOfConduct": [
         {
             "name": "Be nice to the other attendees",
