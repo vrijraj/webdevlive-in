@@ -4,68 +4,59 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home,
-    meta:{
-      title:'Web Dev Live India',
-      color:'white'
+    meta: {
+      title: 'Web Dev Live India',
+      color: 'white'
     }
   },
   {
     path: '/team',
     name: 'Team',
     component: () => import(/* webpackChunkName: "team" */ '../views/Team.vue'),
-    meta:{
-      title:'Team | Web Dev Live India',
-      color:'white'
+    meta: {
+      title: 'Team | Web Dev Live India',
+      color: 'white'
     }
   },
   {
     path: '/speakers',
     name: 'Speakers',
     component: () => import(/* webpackChunkName: "speakers" */ '../views/Speakers.vue'),
-    meta:{
-      title:'Speakers | Web Dev Live India',
-      color:'white'
+    meta: {
+      title: 'Speakers | Web Dev Live India',
+      color: 'white'
     }
   },
   {
     path: '/schedule',
     name: 'Schedule',
     component: () => import(/* webpackChunkName: "schedule" */ '../views/Schedule.vue'),
-    meta:{
-      title:'Schedule | Web Dev Live India',
-      color:'white'
+    meta: {
+      title: 'Schedule | Web Dev Live India',
+      color: 'white'
     }
   },
   {
     path: '/faq',
     name: 'FAQ',
     component: () => import(/* webpackChunkName: "faq" */ '../views/FAQ.vue'),
-    meta:{
-      title:'FAQ | Web Dev Live India',
-      color:'white'
-    }
-  },
-  {
-    path: '/test',
-    name: 'Test',
-    component: () => import(/* webpackChunkName: "faq" */ '../views/test.vue'),
-    meta:{
-      title:'Test | Web Dev Live India',
-      color:'white'
+    meta: {
+      title: 'FAQ | Web Dev Live India',
+      color: 'white'
     }
   },
   {
     path: '/register',
     name: 'Register',
-    beforeEnter() {location.href = 'http://goo.gle/webdevliveindia-register'},
-    meta:{
-      title:'Register | Web Dev Live India',
-      color:'white'
+    component: () => import(/* webpackChunkName: "faq" */ '../views/Registration.vue'),
+    meta: {
+      title: 'Register | Web Dev Live India',
+      color: 'white'
     }
   }
 ]
@@ -79,8 +70,8 @@ const router = new VueRouter({
   },
 })
 
-router.beforeEach((to, from, next)=>{
-  if(to.meta.title){
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
     document.title = to.meta.title
   }
   next()

@@ -43,7 +43,7 @@
             <!-- &nbsp; -->
           </span>
         </p>
-        <router-link to="/register" target="_blank">
+        <router-link to="/register">
           <v-btn
             aria-label="Home BTN"
             color="primary"
@@ -52,7 +52,7 @@
             depressed
             large
             dark
-          >Registration</v-btn>
+          >Register Here</v-btn>
         </router-link>
       </v-col>
     </v-row>
