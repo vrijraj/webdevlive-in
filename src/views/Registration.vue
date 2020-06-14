@@ -29,9 +29,10 @@
             v-if="!formSubmitted"
           >Bringing Indian web devs together, from home</p>
           <v-divider></v-divider>
-          
+
           <p class="google-font mt-4" v-if="!formSubmitted" style="font-size:110%">
-            Connect with us at <a
+            Connect with us at
+            <a
               href="https://twitter.com/WebDevLiveIndia"
               rel="noreferrer"
               target="_blank"
@@ -39,7 +40,11 @@
             >@WebDevLiveIndia</a> for the
             latest updates.
             <br />For any query, contact us at:
-            <a href="mailto:webdevliveindia@gmail.com" style="text-decoration:none" :class="$vuetify.theme.dark == true ? 'white--text' : 'primary--text'"> webdevliveindia@gmail.com</a>
+            <a
+              href="mailto:webdevliveindia@gmail.com"
+              style="text-decoration:none"
+              :class="$vuetify.theme.dark == true ? 'white--text' : 'primary--text'"
+            >webdevliveindia@gmail.com</a>
           </p>
           <p class="google-font mt-4" style="font-size:100%;">
             <span v-for="(item,i) in mainData.hashtags" :key="i">
@@ -160,19 +165,19 @@
                     v-on:change="validateForm()"
                     :rules="[rules.required]"
                   >
-                      <div
-                        class="google-font"
-                        style="font-size:120%"
-                        :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
-                      >
-                        How would you like to identify yourself as?
-                        <span style="color:#ff5252;">*</span>
-                        <br />
-                        <span
-                          style="color:#ff5252;font-size:70%"
-                          v-if="userInfo.genderRadioGroup === 0"
-                        >This field is required.</span>
-                      </div>
+                    <div
+                      class="google-font"
+                      style="font-size:120%"
+                      :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
+                    >
+                      How would you like to identify yourself as?
+                      <span style="color:#ff5252;">*</span>
+                      <br />
+                      <span
+                        style="color:#ff5252;font-size:70%"
+                        v-if="userInfo.genderRadioGroup === 0"
+                      >This field is required.</span>
+                    </div>
                     <v-radio value="Male">
                       <template v-slot:label>
                         <div>Male</div>
@@ -199,19 +204,19 @@
                     v-on:change="validateForm()"
                     :rules="[rules.required]"
                   >
-                      <div
-                        class="google-font"
-                        style="font-size:120%;"
-                        :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
-                      >
-                        Years of experience
-                        <span style="color:#ff5252;">*</span>
-                        <br />
-                        <span
-                          style="color:#ff5252;font-size:70%"
-                          v-if="userInfo.expRadioGroup === 0"
-                        >This field is required.</span>
-                      </div>
+                    <div
+                      class="google-font"
+                      style="font-size:120%;"
+                      :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
+                    >
+                      Years of experience
+                      <span style="color:#ff5252;">*</span>
+                      <br />
+                      <span
+                        style="color:#ff5252;font-size:70%"
+                        v-if="userInfo.expRadioGroup === 0"
+                      >This field is required.</span>
+                    </div>
                     <v-radio value="0 - 5 years">
                       <template v-slot:label>
                         <div>0 - 5 years</div>
@@ -293,19 +298,19 @@
                     name="entry.910958158"
                     :rules="[rules.required]"
                   >
-                      <div
-                        class="google-font mb-2"
-                        style="font-size:120%"
-                        :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
-                      >
-                        How did you get to know about this event?
-                        <span style="color:#ff5252;">*</span>
-                        <br />
-                        <span
-                          style="color:#ff5252;font-size:70%"
-                          v-if="userInfo.infoRadioGroup === 0"
-                        >This field is required.</span>
-                      </div>
+                    <div
+                      class="google-font mb-2"
+                      style="font-size:120%"
+                      :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
+                    >
+                      How did you get to know about this event?
+                      <span style="color:#ff5252;">*</span>
+                      <br />
+                      <span
+                        style="color:#ff5252;font-size:70%"
+                        v-if="userInfo.infoRadioGroup === 0"
+                      >This field is required.</span>
+                    </div>
                     <v-radio value="Twitter">
                       <template v-slot:label>
                         <div>Twitter</div>
@@ -370,7 +375,13 @@
               </v-row>
               <v-row justify="center" align="center">
                 <v-col md="5" cols="12">
-                  <v-btn color="primary" :loading="loader" large type="submit" :disabled="invalidEntry">Submit</v-btn>
+                  <v-btn
+                    color="primary"
+                    :loading="loader"
+                    large
+                    type="submit"
+                    :disabled="invalidEntry"
+                  >Submit</v-btn>
                 </v-col>
               </v-row>
             </v-container>
@@ -378,33 +389,60 @@
         </v-col>
 
         <!-- Thank you msg -->
-        <v-col md="8" sm="11" xl="8" cols="12" class="text-center" v-if="formSubmitted && formClosed === false">
-          <h1>Bringing Indian web devs together, from home</h1>
+        <v-col
+          md="8"
+          sm="11"
+          xl="8"
+          cols="12"
+          class="text-center"
+          v-if="formSubmitted && formClosed === false"
+        >
+          <h1 class="google-font">Bringing Indian web devs together, from home</h1>
           <br />
           <p class="google-font" style="font-size:110%">
-              Thank you for registering for 
-              <a href="https://twitter.com/hashtag/WebDevLiveIndia"
-              rel="noreferrer" target="_blank" style="text-decoration:none"><b>#WebDevLiveIndia</b></a>.
-              <br> We will be sending the confirmation mail after <b> 4th July, 2020</b>.
-              We would love to see your excitement for the event on Twitter.
-              <br />
-              <br />You may use <a href="https://twitter.com/hashtag/WebDevLiveIndia"
-              rel="noreferrer" target="_blank" style="text-decoration:none"><b>#WebDevLiveIndia</b></a> or tag
+            Thank you for registering for
             <a
               href="https://twitter.com/WebDevLiveIndia"
               rel="noreferrer"
               target="_blank"
-              style="text-decoration:none;"
-            ><b>@WebDevLiveIndia</b></a> in your tweets.
+              style="text-decoration:none"
+            >
+              <b>#WebDevLiveIndia</b>
+            </a>.
+            <br />We will be sending the confirmation mail after
+            <b>4th July, 2020</b>.
+            <br />
+            <v-btn
+              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwebdevlivein.web.app&ref_src=twsrc%5Etfw&text=console.log%28%27Hi%20%23WebDevs%27%29%3B%0A%0AI%20have%20registered%20for%20%23WebDevLiveIndia%20to%20attend%20many%20amazing%20sessions.%0AHave%20you%3F%0A%0AIf%20not%2C%20register%20yourself%20at%3A%20bit.ly%2Fwebdevliveindia%0A%0A%23WebDev%20%23WebDevLive%20%40WebDevLiveIndia"
+              target="_blank"
+              rel="noreferrer"
+              dark
+              color="#4285F4"
+              class="mt-2 google-font"
+            >
+              <v-icon size="20px" left>mdi-twitter</v-icon>
+              <b>Share your excitement</b>
+            </v-btn>
           </p>
         </v-col>
         <!-- Form Not Accepting -->
-        <v-col md="8" sm="11" xl="8" cols="12" class="text-center" v-if="formSubmitted && formClosed">
+        <v-col
+          md="8"
+          sm="11"
+          xl="8"
+          cols="12"
+          class="text-center"
+          v-if="formSubmitted && formClosed"
+        >
           <br />
           <p style="font-size:130%">The form is no longer accepting responses.</p>
           <p class="google-font">
             For any query, write to:
-            <a href="mailto:webdevliveindia@gmail.com" style="text-decoration:none" :class="$vuetify.theme.dark == true ? 'white--text' : 'primary--text'"> webdevliveindia@gmail.com</a>
+            <a
+              href="mailto:webdevliveindia@gmail.com"
+              style="text-decoration:none"
+              :class="$vuetify.theme.dark == true ? 'white--text' : 'primary--text'"
+            >webdevliveindia@gmail.com</a>
             <br />
             <br />Connect with us at
             <a
@@ -452,11 +490,11 @@ export default {
     errorMessage: false,
     formSubmitted: false, // false
     formClosed: null, // null
-    mainData:[],
+    mainData: [],
     loader: false
   }),
-  mounted(){
-      this.mainData = aboutEvent
+  mounted() {
+    this.mainData = aboutEvent;
   },
   methods: {
     validateForm() {
@@ -482,7 +520,7 @@ export default {
     },
     response() {
       let vm = this;
-      vm.loader = true
+      vm.loader = true;
       let formElement = vm.$refs.formElement;
       let formData = new FormData(formElement);
       // https://cors-anywhere.herokuapp.com/
@@ -493,10 +531,10 @@ export default {
           vm.formSubmitted = true;
           if (response.data.includes("mistake")) {
             vm.formClosed = true;
-            vm.loader = false
+            vm.loader = false;
           } else if (response.data.includes("another")) {
             vm.formClosed = false;
-            vm.loader = false
+            vm.loader = false;
           }
         }
       });
