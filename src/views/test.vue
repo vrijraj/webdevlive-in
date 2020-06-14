@@ -26,8 +26,9 @@
                 : 'grey--text text--darken-2'
             "
             style="font-weight: 350;font-size:150%"
+            v-if="!formSubmitted"
           >Bringing Indian web devs together, from home</p>
-          <p class="google-font" style="text-align: justify;">
+          <p class="google-font" style="text-align: justify;" v-if="!formSubmitted">
             These are unprecedented times, with people worldwide looking to stay
             connected and informed. The Web plays a special role here, and we're
             proud to see how the community has stepped up. Join Google's Web
@@ -35,7 +36,7 @@
             community's actions, learn modern web techniques, and connect with
             each other.
           </p>
-          <p class="google-font">
+          <p class="google-font" v-if="!formSubmitted">
             Connect with us at https://twitter.com/WebDevLiveIndia for the
             latest updates.
             <br />
@@ -368,6 +369,43 @@
             </v-container>
           </form>
         </v-col>
+        <v-col md="12" sm="11" xl="10" cols="12" v-if="formSubmitted && formClosed === false">
+          <h1>Bringing Indian web devs together, from home</h1>
+          <br />
+          <p>
+            Thank you for registering for #WebDevLiveIndia. We will be sending the confirmation mail after 4th July, 2020.
+            We would love to see your excitement for the event on Twitter.
+            <br />
+            <br />You may use #WebDevLiveIndia or tag
+            <a
+              href="https://twitter.com/WebDevLiveIndia"
+              rel="noreferrer"
+              target="_blank"
+              style="text-decoration:none;"
+            >@WebDevLiveIndia</a> in your tweets.
+            For more information, visit: goo.gle/webdevliveindia
+          </p>
+        </v-col>
+        <v-col md="12" sm="11" xl="10" cols="12" v-if="formSubmitted && formClosed">
+          <h1>Bringing Indian web devs together, from home</h1>
+          <br />
+          <p>The form is no longer accepting responses.</p>
+          <p class="google-font">
+            For any query, write to:
+            webdevliveindia@gmail.com
+            <br />
+            <br />Connect with us at
+            <a
+              href="https://twitter.com/WebDevLiveIndia"
+              rel="noreferrer"
+              target="_blank"
+              style="text-decoration:none;"
+            >@WebDevLiveIndia</a>
+            for the latest updates.
+            <br />
+            <b>#WebDevLiveIndia #WebDevLive #WebDev</b>
+          </p>
+        </v-col>
       </v-row>
     </v-container>
   </v-content>
@@ -400,7 +438,8 @@ export default {
     },
     invalidEntry: true,
     errorMessage: false,
-    formSubmitted: false
+    formSubmitted: false,
+    formClosed: null
   }),
   methods: {
     validateForm() {
@@ -432,9 +471,13 @@ export default {
       let url =
         "https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/u/0/d/e/1FAIpQLSeScFEjqkA3KTVuSKezaPHoW65JHgYBlZPE4IjrWHFYXkl9SQ/formResponse";
       axios.post(url, formData).then(function(response) {
-        console.log(response);
-        if(response.status === 200) {
-          this.formSubmitted = true;
+        if (response.status === 200) {
+          vm.formSubmitted = true;
+          if (response.data.includes("mistake")) {
+            vm.formClosed = true;
+          } else if (response.data.includes("another")) {
+            vm.formClosed = false;
+          }
         }
       });
     }
