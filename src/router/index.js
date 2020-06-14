@@ -53,7 +53,7 @@ const routes = [
   {
     path: '/register',
     name: 'Register',
-    component: () => import(/* webpackChunkName: "faq" */ '../views/Registration.vue'),
+    component: () => import(/* webpackChunkName: "registration" */ '../views/Registration.vue'),
     meta: {
       title: 'Register | Web Dev Live India',
       color: 'white'
