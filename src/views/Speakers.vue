@@ -52,8 +52,8 @@
 </template>
 
 <script>
-import SpeakersData from "@/assets/data/speakers.json";
-import SessionDetails from "@/assets/data/sessions.json";
+// import SpeakersData from "@/assets/data/speakers.json";
+// import SessionDetails from "@/assets/data/sessions.json";
 export default {
   name: "SpeakersPage",
   components: {
@@ -66,10 +66,10 @@ export default {
     SessionDetails:[]
   }),
   mounted() {
-    this.SpeakersData = this.sortByName(SpeakersData)
-    this.SessionDetails = SessionDetails.sort((a,b)=>{
-      return (a.id > b.id)?1:-1;
-    });
+    // this.SpeakersData = this.sortByName(SpeakersData)
+    // this.SessionDetails = SessionDetails.sort((a,b)=>{
+    //   return (a.id > b.id)?1:-1;
+    // });
   }
 };
 </script>

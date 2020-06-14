@@ -62,11 +62,11 @@ export default {
   name: "Home",
   components: {
     StartScreen,
-    stats: () => import("@/components/home/stats"),
-    eventContext: () => import("@/components/home/eventContext"),
-    eventOverview: () => import("@/components/home/overview"),
-    CodeOfConductSection: () => import("@/components/codeOfConduct/guidelines"),
-    SocialShare: () => import("@/components/common/SocialShare")
+    stats: () => import(/* webpackChunkName: "homeStats" */ "@/components/home/stats"),
+    eventContext: () => import(/* webpackChunkName: "homeContext" */ "@/components/home/eventContext"),
+    eventOverview: () => import(/* webpackChunkName: "homeOverview" */ "@/components/home/overview"),
+    CodeOfConductSection: () => import(/* webpackChunkName: "homeGuidelines" */ "@/components/codeOfConduct/guidelines"),
+    SocialShare: () => import(/* webpackChunkName: "homeSocialShare" */ "@/components/common/SocialShare")
   }
 };
 </script>

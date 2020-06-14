@@ -139,7 +139,7 @@
 
 <script>
 // import ScheduleDetails from "../components/Schedule/ScheduleDetails";
-import ScheduleData from "../assets/data/schedule.json";
+// import ScheduleData from "../assets/data/schedule.json";
 export default {
   name: "",
   components: {
@@ -152,7 +152,7 @@ export default {
     ScheduleData: [],
   }),
   mounted() {
-    this.ScheduleData = ScheduleData
+    // this.ScheduleData = ScheduleData
   },
   methods: {
     getMobileTab() {
