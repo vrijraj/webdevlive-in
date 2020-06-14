@@ -51,7 +51,7 @@ export default new Vuex.Store({
           showToolbar: false,
           showBottomNav: false,
         },
-      },
+      }
     ],
   },
   getters: {
