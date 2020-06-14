@@ -2,6 +2,7 @@
   <v-content class="ma-0">
     <v-container
       fluid
+      class="pb-0"
       :class="this.$vuetify.theme.dark == true?'grey darken-4 elevation-1':'white-border white'"
     >
       <v-row justify="center" align="center">
@@ -43,7 +44,7 @@
         </v-col>
       </v-row>
       <v-row justify="center" align="center">
-        <v-col md="6">
+        <v-col md="8">
           <SocialShare/>
         </v-col>
       </v-row>
