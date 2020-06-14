@@ -17,9 +17,7 @@
                 : 'grey--text text--darken-2'
             "
             style="font-weight: 350;font-size:200%"
-          >
-            web.dev Live India: Registration
-          </p>
+          >web.dev Live India: Registration</p>
           <p
             class="google-font"
             :class="
@@ -28,22 +26,20 @@
                 : 'grey--text text--darken-2'
             "
             style="font-weight: 350;font-size:150%"
-          >
-            Bringing Indian web devs together, from home
-          </p>
+          >Bringing Indian web devs together, from home</p>
           <p class="google-font" style="text-align: justify;">
             These are unprecedented times, with people worldwide looking to stay
             connected and informed. The Web plays a special role here, and we're
             proud to see how the community has stepped up. Join Google's Web
             Platform team, from the comfort of your homes, to celebrate our
             community's actions, learn modern web techniques, and connect with
-            each other. 
+            each other.
           </p>
           <p class="google-font">
             Connect with us at https://twitter.com/WebDevLiveIndia for the
-            latest updates. 
-            <br><br>
-            For any query, contact us at:
+            latest updates.
+            <br />
+            <br />For any query, contact us at:
             webdevliveindia@gmail.com #WebDevLiveIndia #WebDevLive #WebDev
           </p>
         </v-col>
@@ -55,6 +51,8 @@
                 <v-col md="5" cols="12">
                   <v-text-field
                     label="Email"
+                    v-on:change="validateForm()"
+                    v-model="userInfo.email"
                     name="emailAddress"
                     :rules="[rules.required, rules.email]"
                     outlined
@@ -67,6 +65,8 @@
                   <v-text-field
                     label="First Name"
                     :rules="[rules.required]"
+                    v-on:change="validateForm()"
+                    v-model="userInfo.fname"
                     name="entry.468300441"
                     outlined
                     required
@@ -77,6 +77,8 @@
                 <v-col md="5" cols="12">
                   <v-text-field
                     label="Last Name"
+                    v-on:change="validateForm()"
+                    v-model="userInfo.lname"
                     outlined
                     :rules="[rules.required]"
                     name="entry.2146700190"
@@ -89,6 +91,8 @@
                   <v-text-field
                     label="Company / Institute name "
                     outlined
+                    v-on:change="validateForm()"
+                    v-model="userInfo.company"
                     :rules="[rules.required]"
                     required
                     name="entry.996142731"
@@ -99,6 +103,8 @@
                 <v-col md="5" cols="12">
                   <v-text-field
                     label="Role"
+                    v-on:change="validateForm()"
+                    v-model="userInfo.role"
                     outlined
                     :rules="[rules.required]"
                     required
@@ -111,6 +117,8 @@
                   <v-text-field
                     label="City"
                     outlined
+                    v-on:change="validateForm()"
+                    v-model="userInfo.city"
                     :rules="[rules.required]"
                     required
                     name="entry.1550631012"
@@ -122,6 +130,8 @@
                   <v-text-field
                     label="Country"
                     outlined
+                    v-on:change="validateForm()"
+                    v-model="userInfo.country"
                     :rules="[rules.required]"
                     required
                     name="entry.1772296180"
@@ -132,14 +142,13 @@
                 <v-col md="5" cols="12">
                   <v-radio-group
                     name="entry.1737451561"
-                    required
+                    v-model="userInfo.genderRadioGroup"
+                    v-on:change="validateForm()"
                     :rules="[rules.required]"
                   >
                     <template v-slot:label>
                       <div class="google-font" style="font-size:120%">
-                        <strong
-                          >How would you like to identify yourself as? *</strong
-                        >
+                        <strong>How would you like to identify yourself as? *</strong>
                       </div>
                     </template>
                     <v-radio value="Male">
@@ -164,6 +173,8 @@
                 <v-col md="5" cols="12">
                   <v-radio-group
                     name="entry.757164378"
+                    v-model="userInfo.expRadioGroup"
+                    v-on:change="validateForm()"
                     :rules="[rules.required]"
                   >
                     <template v-slot:label>
@@ -196,34 +207,39 @@
               </v-row>
               <v-row justify="center" align="center">
                 <v-col md="5" cols="12">
-                  <div class="google-font" style="font-size:120%">
-                    <strong>How did you get to know about this event? *</strong>
-                  </div>
+                  <div
+                    class="google-font"
+                    style="font-size:120%"
+                  >How did you get to know about this event? *</div>
                   <v-checkbox
                     class="mb-0"
                     name="entry.1422460694"
-                    :rules="[rules.required]"
+                    v-on:change="validateForm()"
+                    v-model="userInfo.themeCheckbox[0]"
                     label="Performance & Developer Tools (9th July, 2020)"
                     value="Performance & Developer Tools (9th July, 2020)"
                   ></v-checkbox>
                   <v-checkbox
                     class="my-0"
                     name="entry.1422460694"
-                    :rules="[rules.required]"
+                    v-on:change="validateForm()"
+                    v-model="userInfo.themeCheckbox[1]"
                     label="Front-end & AMP (10th July, 2020)"
                     value="Front-end & AMP (10th July, 2020)"
                   ></v-checkbox>
                   <v-checkbox
                     class="my-0"
                     name="entry.1422460694"
-                    :rules="[rules.required]"
+                    v-on:change="validateForm()"
+                    v-model="userInfo.themeCheckbox[2]"
                     label="PWA & FUGU (11th July, 2020)"
                     value="PWA & FUGU (11th July, 2020)"
                   ></v-checkbox>
                   <v-checkbox
                     class="my-0"
                     name="entry.1422460694"
-                    :rules="[rules.required]"
+                    v-on:change="validateForm()"
+                    v-model="userInfo.themeCheckbox[3]"
                     label="Privacy & UX (12th July, 2020)"
                     value="Privacy & UX (12th July, 2020)"
                   ></v-checkbox>
@@ -232,14 +248,14 @@
               <v-row justify="center" align="center">
                 <v-col md="5" cols="12">
                   <v-radio-group
+                    v-model="userInfo.infoRadioGroup"
+                    v-on:change="validateForm()"
                     name="entry.910958158"
                     :rules="[rules.required]"
                   >
                     <template v-slot:label>
                       <div class="google-font mb-2" style="font-size:120%">
-                        <strong
-                          >How would you like to identify yourself as? *</strong
-                        >
+                        <strong>How did you get to know about this event? *</strong>
                       </div>
                     </template>
                     <v-radio value="Twitter">
@@ -298,7 +314,6 @@
               <v-row justify="center" align="center">
                 <v-col md="5" cols="12">
                   <v-textarea
-                    :rules="[rules.required]"
                     outlined
                     label="Anything else you want to share with us?"
                     name="entry.1763016329"
@@ -307,7 +322,7 @@
               </v-row>
               <v-row justify="center" align="center">
                 <v-col md="5" cols="12">
-                  <v-btn color="primary" large type="submit">Submit</v-btn>
+                  <v-btn color="primary" large type="submit" :disabled="invalidEntry">Submit</v-btn>
                 </v-col>
               </v-row>
             </v-container>
@@ -324,15 +339,50 @@ import axios from "axios";
 export default {
   data: () => ({
     rules: {
-      required: (value) => !!value || "Required.",
-      counter: (value) => value.length <= 20 || "Max 20 characters",
-      email: (value) => {
+      required: value => !!value || "This field is required.",
+      email: value => {
         const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return pattern.test(value) || "Invalid e-mail.";
-      },
+        return pattern.test(value) || "Invalid e-mail address";
+      }
     },
+    userInfo: {
+      fname: null,
+      lname: null,
+      email: null,
+      city: null,
+      country: null,
+      company: null,
+      role: null,
+      themeCheckbox: [false, false, false, false],
+      genderRadioGroup: 0,
+      infoRadioGroup: 0,
+      expRadioGroup: 0
+    },
+    invalidEntry: true,
+    errorMessage: null
   }),
   methods: {
+    validateForm() {
+      if (
+        this.userInfo.fname &&
+        this.userInfo.lname &&
+        this.userInfo.email &&
+        this.rules.email(this.userInfo.email) !== "Invalid e-mail." &&
+        this.userInfo.city &&
+        this.userInfo.country &&
+        this.userInfo.company &&
+        this.userInfo.role &&
+        this.userInfo.infoRadioGroup !== 0 &&
+        this.userInfo.expRadioGroup !== 0 &&
+        this.userInfo.genderRadioGroup !== 0 &&
+        this.userInfo.themeCheckbox.filter(res => res == false || res == null)
+          .length !== 4
+      ) {
+        this.invalidEntry = false;
+      } else {
+        this.invalidEntry = true;
+      }
+    },
     response() {
       let vm = this;
       let formElement = vm.$refs.formElement;
@@ -340,11 +390,10 @@ export default {
       // https://cors-anywhere.herokuapp.com/
       let url =
         "https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/u/0/d/e/1FAIpQLSeScFEjqkA3KTVuSKezaPHoW65JHgYBlZPE4IjrWHFYXkl9SQ/formResponse";
-
       axios.post(url, formData).then(function(response) {
         console.log(response);
       });
-    },
-  },
+    }
+  }
 };
 </script>
