@@ -51,6 +51,15 @@ Vue.use(VueRouter)
     }
   },
   {
+    path: '/test',
+    name: 'Test',
+    component: () => import(/* webpackChunkName: "faq" */ '../views/test.vue'),
+    meta:{
+      title:'Test | Web Dev Live India',
+      color:'white'
+    }
+  },
+  {
     path: '/register',
     name: 'Register',
     beforeEnter() {location.href = 'http://goo.gle/webdevliveindia-register'},
