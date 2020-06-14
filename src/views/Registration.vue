@@ -1,8 +1,8 @@
 <template>
   <v-content class="ma-0">
-    <v-container fluid>
+    <v-container>
       <v-row justify="center" align="center">
-        <v-col md="5" sm="11" xl="10" cols="12" class="text-center">
+        <v-col md="5" xl="5" sm="11" cols="12" class="text-center">
           <br />
           <v-img
             :src="require('@/assets/img/webdevlogo.png')"
@@ -10,7 +10,7 @@
             width="5vh"
           ></v-img>
           <p
-            class="google-font"
+            class="google-font mb-1"
             :class="
               this.$vuetify.theme.dark
                 ? 'white--text'
@@ -23,28 +23,41 @@
             :class="
               this.$vuetify.theme.dark
                 ? 'white--text'
-                : 'grey--text text--darken-2'
+                : 'grey--text text--darken-2 mt-0'
             "
-            style="font-weight: 350;font-size:150%"
+            style="font-weight: 350;font-size:130%"
             v-if="!formSubmitted"
           >Bringing Indian web devs together, from home</p>
-          <p class="google-font" style="text-align: justify;" v-if="!formSubmitted">
-            These are unprecedented times, with people worldwide looking to stay
-            connected and informed. The Web plays a special role here, and we're
-            proud to see how the community has stepped up. Join Google's Web
-            Platform team, from the comfort of your homes, to celebrate our
-            community's actions, learn modern web techniques, and connect with
-            each other.
-          </p>
-          <p class="google-font" v-if="!formSubmitted">
-            Connect with us at https://twitter.com/WebDevLiveIndia for the
+          <v-divider></v-divider>
+          
+          <p class="google-font mt-4" v-if="!formSubmitted" style="font-size:110%">
+            Connect with us at <a
+              href="https://twitter.com/WebDevLiveIndia"
+              rel="noreferrer"
+              target="_blank"
+              style="text-decoration:none;"
+            >@WebDevLiveIndia</a> for the
             latest updates.
-            <br />
             <br />For any query, contact us at:
-            webdevliveindia@gmail.com #WebDevLiveIndia #WebDevLive #WebDev
+            <a href="mailto:webdevliveindia@gmail.com" style="text-decoration:none" :class="$vuetify.theme.dark == true ? 'white--text' : 'primary--text'"> webdevliveindia@gmail.com</a>
+          </p>
+          <p class="google-font mt-4" style="font-size:100%;">
+            <span v-for="(item,i) in mainData.hashtags" :key="i">
+              <v-chip
+                :href="'https://twitter.com/hashtag/'+item"
+                rel="noopener"
+                target="_blank"
+                outlined
+                color="primary"
+                label
+                class="mr-1"
+              >#{{item}}</v-chip>
+              <!-- &nbsp; -->
+            </span>
           </p>
         </v-col>
 
+        <!-- Form -->
         <v-col md="12" sm="11" xl="10" cols="12" v-if="!formSubmitted">
           <form ref="formElement" @submit.prevent="response">
             <v-container>
@@ -363,36 +376,41 @@
               </v-row>
               <v-row justify="center" align="center">
                 <v-col md="5" cols="12">
-                  <v-btn color="primary" large type="submit" :disabled="invalidEntry">Submit</v-btn>
+                  <v-btn color="primary" :loading="loader" large type="submit" :disabled="invalidEntry">Submit</v-btn>
                 </v-col>
               </v-row>
             </v-container>
           </form>
         </v-col>
-        <v-col md="12" sm="11" xl="10" cols="12" v-if="formSubmitted && formClosed === false">
+
+        <!-- Thank you msg -->
+        <v-col md="8" sm="11" xl="8" cols="12" class="text-center" v-if="formSubmitted && formClosed === false">
           <h1>Bringing Indian web devs together, from home</h1>
           <br />
-          <p>
-            Thank you for registering for #WebDevLiveIndia. We will be sending the confirmation mail after 4th July, 2020.
-            We would love to see your excitement for the event on Twitter.
-            <br />
-            <br />You may use #WebDevLiveIndia or tag
+          <p class="google-font" style="font-size:110%">
+              Thank you for registering for 
+              <a href="https://twitter.com/hashtag/WebDevLiveIndia"
+              rel="noreferrer" target="_blank" style="text-decoration:none"><b>#WebDevLiveIndia</b></a>.
+              <br> We will be sending the confirmation mail after <b> 4th July, 2020</b>.
+              We would love to see your excitement for the event on Twitter.
+              <br />
+              <br />You may use <a href="https://twitter.com/hashtag/WebDevLiveIndia"
+              rel="noreferrer" target="_blank" style="text-decoration:none"><b>#WebDevLiveIndia</b></a> or tag
             <a
               href="https://twitter.com/WebDevLiveIndia"
               rel="noreferrer"
               target="_blank"
               style="text-decoration:none;"
-            >@WebDevLiveIndia</a> in your tweets.
-            For more information, visit: goo.gle/webdevliveindia
+            ><b>@WebDevLiveIndia</b></a> in your tweets.
           </p>
         </v-col>
-        <v-col md="12" sm="11" xl="10" cols="12" v-if="formSubmitted && formClosed">
-          <h1>Bringing Indian web devs together, from home</h1>
+        <!-- Form Not Accepting -->
+        <v-col md="8" sm="11" xl="8" cols="12" class="text-center" v-if="formSubmitted && formClosed">
           <br />
-          <p>The form is no longer accepting responses.</p>
+          <p style="font-size:130%">The form is no longer accepting responses.</p>
           <p class="google-font">
             For any query, write to:
-            webdevliveindia@gmail.com
+            <a href="mailto:webdevliveindia@gmail.com" style="text-decoration:none" :class="$vuetify.theme.dark == true ? 'white--text' : 'primary--text'"> webdevliveindia@gmail.com</a>
             <br />
             <br />Connect with us at
             <a
@@ -412,7 +430,7 @@
 </template>
 
 <script>
-// import firebase from "../firebase/firebase";
+import aboutEvent from "@/assets/data/about.json";
 import axios from "axios";
 export default {
   data: () => ({
@@ -438,9 +456,14 @@ export default {
     },
     invalidEntry: true,
     errorMessage: false,
-    formSubmitted: false,
-    formClosed: null
+    formSubmitted: false, // false
+    formClosed: null, // null
+    mainData:[],
+    loader: false
   }),
+  mounted(){
+      this.mainData = aboutEvent
+  },
   methods: {
     validateForm() {
       if (
@@ -465,6 +488,7 @@ export default {
     },
     response() {
       let vm = this;
+      vm.loader = true
       let formElement = vm.$refs.formElement;
       let formData = new FormData(formElement);
       // https://cors-anywhere.herokuapp.com/
@@ -475,8 +499,10 @@ export default {
           vm.formSubmitted = true;
           if (response.data.includes("mistake")) {
             vm.formClosed = true;
+            vm.loader = false
           } else if (response.data.includes("another")) {
             vm.formClosed = false;
+            vm.loader = false
           }
         }
       });
