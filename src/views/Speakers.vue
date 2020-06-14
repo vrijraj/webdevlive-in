@@ -42,6 +42,11 @@
           </v-container>
         </v-col>
       </v-row>
+      <v-row justify="center" align="center">
+        <v-col md="6">
+          <SocialShare/>
+        </v-col>
+      </v-row>
     </v-container>
   </v-content>
 </template>
@@ -54,6 +59,7 @@ export default {
   components: {
     // Speakers:()=>import('@/components/speaker/SpeakerDetails'),
     ComingSoon:()=>import('@/components/common/ComingSoon'),
+    SocialShare: () => import("@/components/common/SocialShare")
   },
   data: () => ({
     SpeakersData: [],

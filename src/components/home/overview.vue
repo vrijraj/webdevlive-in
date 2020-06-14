@@ -1,13 +1,16 @@
 <template>
-  <v-container fluid class="mb-0 pb-0 px-0">
+  <v-container fluid class="mb-0 pb-0 px-5">
     <v-row class="mb-0 pb-0 ">
       <v-col cols="12" class="mb-0 pb-0 px-0">
+        <p class="google-font" offset-cols="1" :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'" style="font-weight: 350;font-size:200%">Themes</p>
         <v-tabs
           v-model="model"
-          color="indigo"
+          :color="this.$vuetify.theme.dark?'white':'primary'"
           :grow="getMobileTab()"
+          left
+          show-arrows
           :centered="getMobileTab()"
-          slider-color="indigo"
+          :slider-color="this.$vuetify.theme.dark?'white':'primary'"
           class="grey lighten-2 mx-0"
           :background-color="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"
           :class="$vuetify.theme.dark ? 'row-border-dark' : 'row-border-white'"
@@ -43,15 +46,15 @@
         </v-tabs>
       </v-col>
     </v-row>
-    <v-row class="my-0 py-0">
-      <v-col cols="12" class="my-0 py-0">
-        <v-tabs-items v-model="model">
+    <v-row class="my-0 py-0" >
+      <v-col cols="12" class="my-0 py-0 " >
+        <v-tabs-items v-model="model" :class="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'">
           <v-tab-item
             value="day1"
             class="my-0 py-0"
             :class="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"
           >
-            <v-container class="py-0 my-0 px-0">
+            <v-container fluid class="py-0 my-0 px-0">
               <v-row>
                 <v-col>
                   <p class="google-font" style="text-align:justify">
@@ -66,7 +69,7 @@
             class="my-0 py-0"
             :class="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"
           >
-            <v-container class="py-0 my-0 px-0">
+            <v-container fluid class="py-0 my-0 px-0">
               <v-row>
                 <v-col>
                   <p class="google-font" style="text-align:justify">
@@ -81,13 +84,13 @@
             class="my-0 py-0"
            :class="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"
           >
-            <v-container class="py-0 my-0 px-0">
+            <v-container fluid class="py-0 my-0 px-0">
               <v-row>
                 <v-col>
                   <p class="google-font" style="text-align:justify">
                     Progressive Web Apps are web apps that use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications.
                      <br>
-                     Project Fugu 🐡 is an effort to close gaps in the web's capabilities enabling new classes of applications to run on the web. The developer-friendly landing page of the project is <a href="https://web.dev/fugu-status/" target="_blank" style="text-decoration:none;">https://web.dev/fugu-status/</a>.
+                     Project Fugu 🐡 is an effort to close gaps in the web's capabilities enabling new classes of applications to run on the web. The developer-friendly landing page of the project is <a href="https://web.dev/fugu-status/" rel="noreferrer" target="_blank" style="text-decoration:none;">https://web.dev/fugu-status/</a>.
                   </p>
                 </v-col>
               </v-row>
@@ -98,7 +101,7 @@
             class="my-0 py-0"
             :class="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"
           >
-            <v-container class="py-0 my-0 px-0">
+            <v-container fluid class="py-0 my-0 px-0">
               <v-row>
                 <v-col>
                   <p class="google-font" style="text-align:justify">
