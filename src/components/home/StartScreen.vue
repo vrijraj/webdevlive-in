@@ -60,13 +60,13 @@
 </template>
 
 <script>
-import aboutEvent from "@/assets/data/about.json";
-export default {
-  data: () => ({
-    mainData: {}
-  }),
-  mounted() {
-    this.mainData = aboutEvent;
+  import aboutEvent from "@/assets/data/about.json";
+  export default {
+    data: ()=>({
+      mainData:{}
+    }),
+    mounted(){
+      this.mainData = aboutEvent
+    }
   }
-};
 </script>
