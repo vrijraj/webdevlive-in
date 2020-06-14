@@ -2,7 +2,7 @@
   <v-content class="ma-0">
     <v-container
       fluid
-      class="pb-0"
+      class="pb-0" 
       :class="this.$vuetify.theme.dark == true?'grey darken-4 elevation-1':'white-border white'"
     >
       <v-row justify="center" align="center">
