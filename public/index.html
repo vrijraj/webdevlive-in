@@ -1,62 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,user-scalable=no"
-    />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-     <!-- Add to homescreen for Chrome on Android -->
-     <meta content="yes" name="mobile-web-app-capable" />
-     <!-- Add to homescreen for Safari on iOS -->
-    <meta content="yes" name="apple-mobile-web-app-capable" />
-    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
-    <meta
-      name="description"
-      content="web.dev Live India is the follow event of web.dev for the Indian web developers, taking care of best suitable topics for our audience. This event will be taking place from July 9th to July 12th, 2020."
-    />
-    <meta name="og:title" content="AURA - MAIN" />
-    <meta name="og:type" content="Community" />
-    <meta name="og:url" content="<%= BASE_URL %>" />
-    <meta name="og:site_name" content="web.dev Live India 2020" />
-    <meta
-      name="og:description"
-      content="Google Developers Group is an initiative to concentrate the efforts of many developers in and around world to learn, share and get productive using the various Google products."
-    />
-    <meta
-      name="keywords"
-      content="GDG, Google, Google Developers Groups, Aura, Aura main, Aura admin, Admin, Vue, Vuetify"
-    />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"> -->
-    <link
-      rel="preload"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169117945-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-169117945-1');
-    </script>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta content="yes" name="mobile-web-app-capable" />
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="description"
+    content="web.dev Live India is the follow event of web.dev for the Indian web developers, taking care of best suitable topics for our audience. This event will be taking place from July 9th to July 12th, 2020." />
+  <meta property="og:title" content="web.dev Live India" />
+  <meta property="og:type" content="web.dev Website" />
+  <meta property="og:image" content="https://webdevlivein.web.app/img/Web%20Dev%20Live%20India.jpeg" />
+  <meta property="og:url" content="https://bit.ly/webdevliveindia" />
+  <meta property="og:site_name" content="web.dev Live India 2020" />
+  <meta property="og:description"
+    content="web.dev Live India is the follow-up event of web.dev for the Indian web developers, taking care of best suitable topics for our audience. This event will be taking place from July 9th to July 12th, 2020." />
+  <meta property="keywords" content="Web, web.dev, web.dev Live India, web.dev Live, Web Dev, Vue, Vuetify" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://bit.ly/webdevliveindia">
+  <meta name="twitter:title" content="web.dev Live India">
+  <meta name="twitter:description"
+    content="web.dev Live India is the follow-up event of web.dev for the Indian web developers, taking care of best suitable topics for our audience. This event will be taking place from July 9th to July 12th, 2020.">
+  <meta name="twitter:image" content="https://webdevlivein.web.app/img/Web%20Dev%20Live%20India.jpeg">
+  <meta name="twitter:tags" content="webdevlive, webdevliveindia, webdev, webdevs" />
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"> -->
+  <link rel="preload" as="style" onload="this.rel='stylesheet'"
+    href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169117945-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  </head>
-  <body>
-    <noscript>
-      <strong
-        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
-        properly without JavaScript enabled. Please enable it to
-        continue.</strong
-      >
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    gtag('config', 'UA-169117945-1');
+  </script>
+
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+      properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
