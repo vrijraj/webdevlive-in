@@ -44,7 +44,7 @@
           </p>
         </v-col>
 
-        <v-col md="12" sm="11" xl="10" cols="12">
+        <v-col md="12" sm="11" xl="10" cols="12" v-if="!formSubmitted">
           <form ref="formElement" @submit.prevent="response">
             <v-container>
               <v-row justify="center" align="center">
@@ -89,7 +89,7 @@
               <v-row justify="center" align="center">
                 <v-col md="5" cols="12">
                   <v-text-field
-                    label="Company / Institute name "
+                    label="Company / Institute Name "
                     outlined
                     v-on:change="validateForm()"
                     v-model="userInfo.company"
@@ -147,8 +147,18 @@
                     :rules="[rules.required]"
                   >
                     <template v-slot:label>
-                      <div class="google-font" style="font-size:120%">
-                        <strong>How would you like to identify yourself as? *</strong>
+                      <div
+                        class="google-font"
+                        style="font-size:120%"
+                        :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
+                      >
+                        How would you like to identify yourself as?
+                        <span style="color:#ff5252;">*</span>
+                        <br />
+                        <span
+                          style="color:#ff5252;font-size:70%"
+                          v-if="userInfo.genderRadioGroup === 0"
+                        >This field is required.</span>
                       </div>
                     </template>
                     <v-radio value="Male">
@@ -178,8 +188,18 @@
                     :rules="[rules.required]"
                   >
                     <template v-slot:label>
-                      <div class="google-font" style="font-size:120%">
-                        <strong>Years of experience *</strong>
+                      <div
+                        class="google-font"
+                        style="font-size:120%;"
+                        :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
+                      >
+                        Years of experience
+                        <span style="color:#ff5252;">*</span>
+                        <br />
+                        <span
+                          style="color:#ff5252;font-size:70%"
+                          v-if="userInfo.expRadioGroup === 0"
+                        >This field is required.</span>
                       </div>
                     </template>
                     <v-radio value="0 - 5 years">
@@ -210,7 +230,17 @@
                   <div
                     class="google-font"
                     style="font-size:120%"
-                  >How did you get to know about this event? *</div>
+                    :style="$vuetify.theme.dark ? '{color:white}' : '{color:black}'"
+                  >
+                    How did you get to know about this event?
+                    <span style="color:#ff5252;">*</span>
+                    <br />
+                    <span
+                      style="color:#ff5252;font-size:70%"
+                      v-if="userInfo.themeCheckbox.filter(res => res == false || res == null)
+          .length === 4"
+                    >This field is required.</span>
+                  </div>
                   <v-checkbox
                     class="mb-0"
                     name="entry.1422460694"
@@ -254,8 +284,18 @@
                     :rules="[rules.required]"
                   >
                     <template v-slot:label>
-                      <div class="google-font mb-2" style="font-size:120%">
-                        <strong>How did you get to know about this event? *</strong>
+                      <div
+                        class="google-font mb-2"
+                        style="font-size:120%"
+                        :style="$vuetify.theme.dark ? 'color:white !important' : 'color:black !important'"
+                      >
+                        How did you get to know about this event?
+                        <span style="color:#ff5252;">*</span>
+                        <br />
+                        <span
+                          style="color:#ff5252;font-size:70%"
+                          v-if="userInfo.infoRadioGroup === 0"
+                        >This field is required.</span>
                       </div>
                     </template>
                     <v-radio value="Twitter">
@@ -359,7 +399,8 @@ export default {
       expRadioGroup: 0
     },
     invalidEntry: true,
-    errorMessage: null
+    errorMessage: false,
+    formSubmitted: false
   }),
   methods: {
     validateForm() {
@@ -392,6 +433,9 @@ export default {
         "https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/u/0/d/e/1FAIpQLSeScFEjqkA3KTVuSKezaPHoW65JHgYBlZPE4IjrWHFYXkl9SQ/formResponse";
       axios.post(url, formData).then(function(response) {
         console.log(response);
+        if(response.status === 200) {
+          this.formSubmitted = true;
+        }
       });
     }
   }
