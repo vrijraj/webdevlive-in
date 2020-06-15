@@ -27,10 +27,10 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span class="primary--text">0</span>
+                <span class="primary--text">4</span>
               </b>
             </p>
-            <p class="google-font">Communities</p>
+            <p class="google-font">Days</p>
           </v-col>
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
@@ -43,7 +43,7 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span class="primary--text">0</span>
+                <span class="primary--text">20</span>
               </b>
             </p>
             <p class="google-font">Sessions</p>

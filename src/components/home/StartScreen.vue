@@ -30,6 +30,8 @@
           class="google-font"
         >Join Google's Web Platform team, from the comfort of your homes, to celebrate our community's actions, learn modern web techniques and connect with each other.</p>
 
+        <p class="google-font" :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'" style="font-size:120%">July 9-12, 2020 | 05:00 PM to 08:00 PM IST</p>
+
         <p class="google-font" style="font-size:100%;color:#9e9e9e">
           <span v-for="(item,i) in mainData.hashtags" :key="i">
             <v-chip
