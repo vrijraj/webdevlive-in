@@ -6,7 +6,7 @@ module.exports = {
     "vuetify"
   ],
   pwa: {
-    name: 'Web.dev Live India',
+    name: 'Web.dev LIVE India',
     workboxPluginMode: 'InjectManifest',
     themeColor: '#3F51B5',
     msTileColor: '#3F51B5',

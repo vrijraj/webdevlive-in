@@ -10,7 +10,7 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Web Dev Live India',
+      title: 'Web Dev LIVE India',
       color: 'white'
     }
   },
@@ -19,7 +19,7 @@ const routes = [
     name: 'Team',
     component: () => import(/* webpackChunkName: "team" */ '../views/Team.vue'),
     meta: {
-      title: 'Team | Web Dev Live India',
+      title: 'Team | Web Dev LIVE India',
       color: 'white'
     }
   },
@@ -28,7 +28,7 @@ const routes = [
     name: 'Speakers',
     component: () => import(/* webpackChunkName: "speakers" */ '../views/Speakers.vue'),
     meta: {
-      title: 'Speakers | Web Dev Live India',
+      title: 'Speakers | Web Dev LIVE India',
       color: 'white'
     }
   },
@@ -37,7 +37,7 @@ const routes = [
     name: 'Schedule',
     component: () => import(/* webpackChunkName: "schedule" */ '../views/Schedule.vue'),
     meta: {
-      title: 'Schedule | Web Dev Live India',
+      title: 'Schedule | Web Dev LIVE India',
       color: 'white'
     }
   },
@@ -46,7 +46,7 @@ const routes = [
     name: 'FAQ',
     component: () => import(/* webpackChunkName: "faq" */ '../views/FAQ.vue'),
     meta: {
-      title: 'FAQ | Web Dev Live India',
+      title: 'FAQ | Web Dev LIVE India',
       color: 'white'
     }
   },
@@ -55,7 +55,7 @@ const routes = [
     name: 'Register',
     component: () => import(/* webpackChunkName: "registration" */ '../views/Registration.vue'),
     meta: {
-      title: 'Register | Web Dev Live India',
+      title: 'Register | Web Dev LIVE India',
       color: 'white'
     }
   }

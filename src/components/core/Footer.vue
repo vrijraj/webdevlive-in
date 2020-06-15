@@ -31,7 +31,7 @@
                   ? 'white--text'
                   : 'grey--text text--darken-2'
               "
-            >web.dev Live India</h1>
+            >web.dev LIVE India</h1>
           </v-card-text>
         </v-col>
       </v-row>

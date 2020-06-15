@@ -17,7 +17,7 @@
                 : 'grey--text text--darken-2'
             "
             style="font-weight: 350;font-size:200%"
-          >web.dev Live India: Registration</p>
+          >web.dev LIVE India: Registration</p>
           <p
             class="google-font"
             :class="

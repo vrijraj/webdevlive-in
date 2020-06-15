@@ -121,7 +121,7 @@ export default {
       if (navigator.share) {
         navigator
           .share({
-            title: "web.dev Live India",
+            title: "web.dev LIVE India",
             url: "",
           })
           .then(() => {
