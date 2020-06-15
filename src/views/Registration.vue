@@ -454,8 +454,8 @@ export default {
     },
     invalidEntry: true,
     errorMessage: false,
-    formSubmitted: true, // false
-    formClosed: false, // null
+    formSubmitted: false, // false
+    formClosed: null, // null
     mainData: [],
     loader: false
   }),

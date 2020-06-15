@@ -54,7 +54,7 @@
       </v-row>
     </v-container>
 
-    <v-container>
+    <v-container fluid>
       <v-row justify="center" align="center">
         <v-col md="10">
           <v-tabs-items v-model="model">
@@ -129,7 +129,7 @@
       </v-row>
 
     <v-row justify="center" align="center">
-      <v-col md="8">
+      <v-col md="8" xl="7">
         <SocialShare/>
       </v-col>
     </v-row>

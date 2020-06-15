@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+<v-container fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" md="5" lg="4" class="text-center">
         <v-img :src="require('@/assets/img/home.png')">
@@ -14,7 +14,7 @@
         <h1
           class="google-font mt-5 mb-0"
           :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'"
-        >web.dev Live India</h1>
+        >web.dev LIVE India</h1>
         <p class="google-font mt-0" style="font-size:80%">
           Follow up event of
           <a rel="noreferrer" href="https://web.dev/live/" target="_blank">web.dev</a>

@@ -31,7 +31,7 @@
       style="min-height:330px"
     >
       <v-row justify="start" align="start">
-        <v-col offset-md="1" md="8" offset-sm="1" offset-xl="1" sm="11" xl="8" cols="12">
+        <v-col offset-md="1" md="8" offset-sm="1" offset-xl="1" sm="10" xl="8" cols="12">
           <eventOverview />
         </v-col>
       </v-row>

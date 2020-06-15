@@ -6,8 +6,8 @@
       :class="this.$vuetify.theme.dark == true?'grey darken-4 elevation-1':'white-border white'"
     >
       <v-row justify="center" align="center">
-        <v-col md="10" lg="10" sm="11" cols="12" class="">
-          <v-container class="my-2">
+        <v-col md="10" class="">
+          <v-container fluid class="my-2">
             <v-row justify="start" align="center" class="">
               <v-col md="12" class="text-center" >
                 <v-img :src="require('@/assets/img/webdevlogo.png')" style="margin-left:auto;margin-right:auto" width="5vh"></v-img>
@@ -38,13 +38,13 @@
               >
                 <Speakers :data="item" :SessionDetails="SessionDetails" />
               </v-col> -->
-              <ComingSoon />
+              <ComingSoon class="text-center" />
             </v-row>
           </v-container>
         </v-col>
       </v-row>
       <v-row justify="center" align="center">
-        <v-col md="8">
+        <v-col md="8" xl="7">
           <SocialShare/>
         </v-col>
       </v-row>

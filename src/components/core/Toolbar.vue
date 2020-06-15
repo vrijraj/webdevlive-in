@@ -1,5 +1,10 @@
 <template>
-  <v-app-bar app fixed clipped-left :class="this.$vuetify.theme.dark ? '' : 'white'">
+  <v-app-bar
+    app
+    fixed
+    clipped-left
+    :class="this.$vuetify.theme.dark ? '' : 'white'"
+  >
     <v-app-bar-nav-icon
       aria-label="Hamburger Btn"
       @click="toggleDrawer"
@@ -32,13 +37,14 @@
         :class="
           this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-2'
         "
-      >{{ aboutEvent.EventName || "" }}</router-link>
+        >{{ aboutEvent.EventName || "" }}</router-link
+      >
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-tabs
-      :color="this.$vuetify.theme.dark?'white':'primary'"
+      :color="this.$vuetify.theme.dark ? 'white' : 'primary'"
       right
-      :slider-color="this.$vuetify.theme.dark?'white':'primary'"
+      :slider-color="this.$vuetify.theme.dark ? 'white' : 'primary'"
       :hide-slider="getRouteName()"
       class="hidden-sm-and-down"
     >
@@ -50,10 +56,16 @@
         :to="link.to"
         @click="onClick($event, link)"
         style="text-transform: capitalize;"
-      >{{ link.text }}</v-tab>
+        >{{ link.text }}</v-tab
+      >
     </v-tabs>
 
-    <v-btn aria-label="Share Button" icon v-on:click="shareMe" class="hidden-sm-and-up">
+    <v-btn
+      aria-label="Share Button"
+      icon
+      v-on:click="shareMe"
+      class="hidden-sm-and-up"
+    >
       <v-icon>mdi-share-variant</v-icon>
     </v-btn>
 
@@ -69,15 +81,16 @@ import { mapGetters, mapMutations } from "vuex";
 import aboutEvent from "@/assets/data/about.json";
 export default {
   data: () => ({
+    timeout: 6000,
     aboutEvent: aboutEvent,
     menu: [
       { icon: "home", title: "Link A" },
       { icon: "info", title: "Link B" },
-      { icon: "warning", title: "Link C" }
-    ]
+      { icon: "warning", title: "Link C" },
+    ],
   }),
   computed: {
-    ...mapGetters(["links"])
+    ...mapGetters(["links"]),
   },
   methods: {
     ...mapMutations(["toggleDrawer"]),
@@ -109,16 +122,18 @@ export default {
         navigator
           .share({
             title: "web.dev Live India",
-            url: ""
+            url: "",
           })
           .then(() => {
             console.log("Thanks for sharing");
           })
-          .catch(e => {
+          .catch((e) => {
             console.log(e);
           });
+      } else {
+        alert('Not supporting in your browser')
       }
-    }
-  }
+    },
+  },
 };
 </script>
