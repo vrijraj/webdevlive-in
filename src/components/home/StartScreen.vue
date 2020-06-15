@@ -56,6 +56,18 @@
             dark
           >Register Here</v-btn>
         </router-link>
+
+        <!-- <v-btn
+            aria-label="Home BTN"
+            color="primary"
+            style="text-transform: capitalize;"
+            class="google-font"
+            depressed
+            large
+            target="_blank"
+            href="http://goo.gle/webdevliveindia"
+            dark
+        >Register Here 2</v-btn> -->
       </v-col>
     </v-row>
   </v-container>
