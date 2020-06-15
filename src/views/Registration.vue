@@ -178,20 +178,14 @@
                         v-if="userInfo.genderRadioGroup === 0"
                       >This field is required.</span>
                     </div>
-                    <v-radio value="Male">
-                      <template v-slot:label>
-                        <div>Male</div>
-                      </template>
+                    <v-radio value="Male" v-slot:label>
+                      <div>Male</div>
                     </v-radio>
-                    <v-radio value="Female">
-                      <template v-slot:label>
-                        <div>Female</div>
-                      </template>
+                    <v-radio value="Female" v-slot:label>
+                      <div>Female</div>
                     </v-radio>
-                    <v-radio value="Prefer not to say">
-                      <template v-slot:label>
-                        <div>Prefer not to say</div>
-                      </template>
+                    <v-radio value="Prefer not to say" v-slot:label>
+                      <div>Prefer not to say</div>
                     </v-radio>
                   </v-radio-group>
                 </v-col>
@@ -217,25 +211,17 @@
                         v-if="userInfo.expRadioGroup === 0"
                       >This field is required.</span>
                     </div>
-                    <v-radio value="0 - 5 years">
-                      <template v-slot:label>
-                        <div>0 - 5 years</div>
-                      </template>
+                    <v-radio value="0 - 5 years" v-slot:label>
+                      <div>0 - 5 years</div>
                     </v-radio>
-                    <v-radio value="6 - 10 years">
-                      <template v-slot:label>
-                        <div>6 - 10 years</div>
-                      </template>
+                    <v-radio value="6 - 10 years" v-slot:label>
+                      <div>6 - 10 years</div>
                     </v-radio>
-                    <v-radio value="11 - 20 years">
-                      <template v-slot:label>
-                        <div>11 - 20 years</div>
-                      </template>
+                    <v-radio value="11 - 20 years" v-slot:label>
+                      <div>11 - 20 years</div>
                     </v-radio>
-                    <v-radio value="21+ years">
-                      <template v-slot:label>
-                        <div>21+ years</div>
-                      </template>
+                    <v-radio value="21+ years" v-slot:label>
+                      <div>21+ years</div>
                     </v-radio>
                   </v-radio-group>
                 </v-col>
@@ -311,55 +297,35 @@
                         v-if="userInfo.infoRadioGroup === 0"
                       >This field is required.</span>
                     </div>
-                    <v-radio value="Twitter">
-                      <template v-slot:label>
-                        <div>Twitter</div>
-                      </template>
+                    <v-radio value="Twitter" v-slot:label>
+                      <div>Twitter</div>
                     </v-radio>
-                    <v-radio value="LinkedIn">
-                      <template v-slot:label>
-                        <div>LinkedIn</div>
-                      </template>
+                    <v-radio value="LinkedIn" v-slot:label>
+                      <div>LinkedIn</div>
                     </v-radio>
-                    <v-radio value="Facebook">
-                      <template v-slot:label>
-                        <div>Facebook</div>
-                      </template>
+                    <v-radio value="Facebook" v-slot:label>
+                      <div>Facebook</div>
                     </v-radio>
-                    <v-radio value="Google Developer Groups">
-                      <template v-slot:label>
-                        <div>Google Developer Groups</div>
-                      </template>
+                    <v-radio value="Google Developer Groups" v-slot:label>
+                      <div>Google Developer Groups</div>
                     </v-radio>
-                    <v-radio value="Women Techmakers">
-                      <template v-slot:label>
-                        <div>Women Techmakers</div>
-                      </template>
+                    <v-radio value="Women Techmakers" v-slot:label>
+                      <div>Women Techmakers</div>
                     </v-radio>
-                    <v-radio value="Developer Student Clubs">
-                      <template v-slot:label>
-                        <div>Developer Student Clubs</div>
-                      </template>
+                    <v-radio value="Developer Student Clubs" v-slot:label>
+                      <div>Developer Student Clubs</div>
                     </v-radio>
-                    <v-radio value="Other Communities">
-                      <template v-slot:label>
-                        <div>Other Communities</div>
-                      </template>
+                    <v-radio value="Other Communities" v-slot:label>
+                      <div>Other Communities</div>
                     </v-radio>
-                    <v-radio value="Friends / Family">
-                      <template v-slot:label>
-                        <div>Friends / Family</div>
-                      </template>
+                    <v-radio value="Friends / Family" v-slot:label>
+                      <div>Friends / Family</div>
                     </v-radio>
-                    <v-radio value="Through your company/colleague/institute">
-                      <template v-slot:label>
-                        <div>Through your company/colleague/institute</div>
-                      </template>
+                    <v-radio value="Through your company/colleague/institute" v-slot:label>
+                      <div>Through your company/colleague/institute</div>
                     </v-radio>
-                    <v-radio value="Others">
-                      <template v-slot:label>
-                        <div>Others</div>
-                      </template>
+                    <v-radio value="Others" v-slot:label>
+                      <div>Others</div>
                     </v-radio>
                   </v-radio-group>
                 </v-col>
@@ -413,7 +379,7 @@
             <b>4th July, 2020</b>.
             <br />
             <v-btn
-              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwebdevlivein.web.app&ref_src=twsrc%5Etfw&text=console.log%28%27Hi%20%23WebDevs%27%29%3B%0A%0AI%20have%20registered%20for%20%23WebDevLiveIndia%20to%20attend%20many%20amazing%20sessions.%0AHave%20you%3F%0A%0AIf%20not%2C%20register%20yourself%20at%3A%20bit.ly%2Fwebdevliveindia%0A%0A%23WebDev%20%23WebDevLive%20%40WebDevLiveIndia"
+              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwebdevlivein.web.app&ref_src=twsrc%5Etfw&text=console.log%28%27Hi%20%23WebDevs%27%29%3B%0A%0AI%20have%20registered%20for%20%23WebDevLiveIndia%20to%20attend%20many%20amazing%20sessions.%0AHave%20you%3F%0A%0AIf%20not%2C%20register%20yourself%20at%3A%20goo.gle%2Fwebdevliveindia%0A%0A%23WebDev%20%23WebDevLive%20%40WebDevLiveIndia"
               target="_blank"
               rel="noreferrer"
               dark
@@ -488,8 +454,8 @@ export default {
     },
     invalidEntry: true,
     errorMessage: false,
-    formSubmitted: false, // false
-    formClosed: null, // null
+    formSubmitted: true, // false
+    formClosed: false, // null
     mainData: [],
     loader: false
   }),
