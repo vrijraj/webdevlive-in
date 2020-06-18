@@ -18,7 +18,7 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span class="primary--text">600+</span>
+                <span class="primary--text">750+</span>
               </b>
             </p>
             <p class="google-font">Registrations</p>
