@@ -13,8 +13,8 @@
               <v-btn
                 aria-label="FAB Button"
                 style="margin-top:-20px"
-                color="primary"
-                dark
+                :color="this.$vuetify.theme.dark ? 'primary' : 'white'"
+                :dark="this.$vuetify.theme.dark?true:false"
                 absolute
                 top
                 right

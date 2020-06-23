@@ -2,8 +2,12 @@
   <v-app-bar
     app
     fixed
+    hide-on-scroll
     clipped-left
     :class="this.$vuetify.theme.dark ? '' : 'white'"
+    :style="
+      this.$vuetify.theme.dark ? {boxShadow:'0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #272727'}
+      :{ boxShadow: '0 2px 6px 0 rgba(0,0,0,.12), inset  0 -1px 0 0 #dadce0' }"
   >
     <v-app-bar-nav-icon
       aria-label="Hamburger Btn"
@@ -46,7 +50,7 @@
       right
       :slider-color="this.$vuetify.theme.dark ? 'white' : 'primary'"
       :hide-slider="getRouteName()"
-      class="hidden-sm-and-down"
+      class="hidden-sm-and-down google-font"
     >
       <v-tab
         class
