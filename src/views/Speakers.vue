@@ -26,7 +26,7 @@
           
           <v-container>
             <v-row class>
-              <!-- <v-col
+              <v-col
                 md="3"
                 lg="3"
                 xl="2"
@@ -37,8 +37,8 @@
                 :key="index"
               >
                 <Speakers :data="item" :SessionDetails="SessionDetails" />
-              </v-col> -->
-              <ComingSoon class="text-center" />
+              </v-col>
+              <!-- <ComingSoon class="text-center" /> -->
             </v-row>
           </v-container>
         </v-col>
@@ -53,13 +53,13 @@
 </template>
 
 <script>
-// import SpeakersData from "@/assets/data/speakers.json";
-// import SessionDetails from "@/assets/data/sessions.json";
+import SpeakersData from "@/assets/data/speakers.json";
+import SessionDetails from "@/assets/data/sessions.json";
 export default {
   name: "SpeakersPage",
   components: {
-    // Speakers:()=>import('@/components/speaker/SpeakerDetails'),
-    ComingSoon:()=>import('@/components/common/ComingSoon'),
+    Speakers:()=>import('@/components/speaker/SpeakerDetails'),
+    // ComingSoon:()=>import('@/components/common/ComingSoon'),
     SocialShare: () => import("@/components/common/SocialShare")
   },
   data: () => ({
@@ -67,10 +67,10 @@ export default {
     SessionDetails:[]
   }),
   mounted() {
-    // this.SpeakersData = this.sortByName(SpeakersData)
-    // this.SessionDetails = SessionDetails.sort((a,b)=>{
-    //   return (a.id > b.id)?1:-1;
-    // });
+    this.SpeakersData = this.sortByName(SpeakersData)
+    this.SessionDetails = SessionDetails.sort((a,b)=>{
+      return (a.id > b.id)?1:-1;
+    });
   }
 };
 </script>
