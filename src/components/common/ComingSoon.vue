@@ -10,7 +10,7 @@
         <p
           class="google-font"
           style="font-size:110%"
-        >The team is working on finalizing the data. Please have a look after 20th June, 2020 for the updated information.</p>
+        >The team is working on finalizing the data. Please have a look after 28th June, 2020 for the updated information.</p>
         <!-- <v-img :src="require('@/assets/img/webdevlogo.png')" style="margin-left:auto;margin-right:auto" width="5vh"></v-img> -->
       </v-col>
     </v-row>
