@@ -21,7 +21,7 @@ export default {
         },
         getImgUrl(pic, defaultimage = "maleAvatar.jpg") {
             if (pic.length > 0) {
-                return pic;
+                return require('@/assets/img/speaker/' + pic)
             } else {
                 return require('@/assets/img/common/' + defaultimage);
             }
