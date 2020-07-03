@@ -35,7 +35,7 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span class="primary--text">15+</span>
+                <span class="primary--text">24</span>
               </b>
             </p>
             <p class="google-font">Speakers</p>
@@ -43,7 +43,7 @@
           <v-col md="6" class="text-center" cols="6">
             <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:300%">
               <b>
-                <span class="primary--text">20+</span>
+                <span class="primary--text">24</span>
               </b>
             </p>
             <p class="google-font">Sessions</p>
