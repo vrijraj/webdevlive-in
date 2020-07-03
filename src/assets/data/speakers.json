@@ -193,7 +193,7 @@
             "designation": "Principal Engineer",
             "name": "Nykaa"
         },
-        "image": "sunit.png",
+        "image": "sunit.jpg",
         "bio": "Principal Engg @ Nykaa.com. Love traveling and food. Hustler. Believer.  Passionate about everything JS.",
         "social": {
             "linkedin": "https://www.linkedin.com/in/sunitjindal/",
@@ -207,14 +207,14 @@
         "id": "113",
         "name": "Stephen Fluin",
         "company": {
-            "designation": "",
+            "designation": "Developer Advocate",
             "name": "Google"
         },
-        "image": "",
-        "bio": "",
+        "image": "stephen.jpg",
+        "bio": "Developer Advocate for Angular @ Google",
         "social": {
             "linkedin": "",
-            "twitter": ""
+            "twitter": "https://twitter.com/stephenfluin"
         },
         "sessionId": [
             205
