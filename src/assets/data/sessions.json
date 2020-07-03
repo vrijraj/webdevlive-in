@@ -10,19 +10,21 @@
         "date": "July 09th, 2020",
         "timeDuration": "20",
         "speakers": [
+            119
         ]
     },
     {
         "id": "102",
         "slide":"",
-        "title": "Javascript: Some Basic but Very Useful Concepts",
-        "description": "",
+        "title": "Javascript: Primary but Productive Concepts",
+        "description": "I'll explain some important concepts of JavaScripts that are very useful in daily life of every developer like JSON.stringify in JavaScript, Private Properties of JavaScript, Working with Arrays in JavaScript, Constants and Read-Only Properties in JavaScript, Difference between undefined and null, NaN in JavaScript.",
         "track": "Performance & Developer Tools",
         "link": "",
         "format": "Talk",
         "date": "July 09th, 2020",
         "timeDuration": "30",
         "speakers": [
+            109
         ]
     },
     {
@@ -42,41 +44,44 @@
     {
         "id": "104",
         "slide":"",
-        "title": "Introduction to Common Web Vitals",
-        "description": "",
+        "title": "Web Vitals - Web Performance 2.0",
+        "description": "In this talk I'll walk the attendees through the latest performance metrics introduced which every web developer should take care of for optimal end user experience. Come and unveil the reasons why these new metrics are called 'Web Vitals'. I'm sure you'll have fun (and somehow learn a few things on the way).",
         "track": "Performance & Developer Tools",
         "link": "",
         "format": "Talk",
         "date": "July 09th, 2020",
         "timeDuration": "30",
         "speakers": [
-            121
+            111
         ]
     },
     {
         "id": "105",
         "slide":"",
-        "title": "Performance improvement journey for Nykaa",
-        "description": "",
+        "title": "Pursuit of Performance",
+        "description": "Nykaa's journey of creating a highly performant mobile site and various learning along the way.",
         "link": "",
         "track": "Performance & Developer Tools",
         "format": "Talk",
         "date": "July 09th, 2020",
         "timeDuration": "30",
         "speakers": [
+            112
         ]
     },
     {
         "id": "106",
         "slide":"",
         "title": "Q & A",
-        "description": "",
+        "description": "Here, we will answer the questions of each session from the audience along with the speakers of the day.",
         "track": "Performance & Developer Tools",
         "link": "",
         "format": "AMA & Closing",
         "date": "July 09th, 2020",
         "timeDuration": "30",
-        "speakers": []
+        "speakers": [
+            109, 107, 111, 112
+        ]
     },
     {
         "id": "201",
@@ -123,14 +128,15 @@
     {
         "id": "204",
         "slide":"",
-        "title": "Aman's Talk",
-        "description": "",
+        "title": "AMP Everywhere",
+        "description": "Accelerated Mobile Pages capabilities beyond just web in AMP Stories, AMP Emails, AMP Ads, and more. Also, a sneak peek into what next and how to become an active member.",
         "track": "Front-End & AMP",
         "format": "Talk",
         "link": "",
         "date": "July 10th, 2020",
         "timeDuration": "40",
         "speakers": [
+            110
         ]
     },
     {
@@ -144,19 +150,22 @@
         "date": "July 10th, 2020",
         "timeDuration": "30",
         "speakers": [
+            113
         ]
     },
     {
         "id": "206",
         "slide":"",
         "title": "Q & A",
-        "description": "",
+        "description": "Here, we will answer the questions of each session from the audience along with the speakers of the day.",
         "track": "Front-End & AMP",
         "link": "",
         "format": "AMA & Closing",
         "date": "July 10th, 2020",
         "timeDuration": "30",
-        "speakers": []
+        "speakers": [
+            105, 103, 106, 110, 113
+        ]
     },
     {
         "id": "301",
@@ -197,45 +206,50 @@
         "link": "",
         "timeDuration": "15",
         "speakers": [
+            120, 124
         ]
     },
     {
         "id": "304",
         "slide":"",
-        "title": "Prashant's Talk",
-        "description": "",
+        "title": "AMP as PWA as TWA",
+        "description": "This session will give an overview of developing PWA using AMP. We will briefly talk about 'PWA in Play' as well using TWA.",
         "link": "",
         "track": "PWA & FUGU",
         "format": "Talk",
         "date": "July 11th, 2020",
         "timeDuration": "30",
         "speakers": [
+            114
         ]
     },
     {
         "id": "305",
         "slide":"",
-        "title": "TWA's talk",
-        "description": "",
+        "title": "All about TWA",
+        "description": "This session will give an overview of TWA and developing it using bubblewrap. Oyo has launched a TWA called 'Oyo Lite', we will also learn about it's approach and success story.",
         "track": "PWA & FUGU",
         "link": "",
         "format": "Talk",
         "date": "July 11th, 2020",
         "timeDuration": "40",
         "speakers": [
+            114, 115
         ]
     },
     {
         "id": "306",
         "slide":"",
         "title": "Q & A",
-        "description": "",
+        "description": "Here, we will answer the questions of each session from the audience along with the speakers of the day.",
         "track": "PWA & FUGU",
         "format": "AMA & Closing",
         "link": "",
         "date": "July 11th, 2020",
         "timeDuration": "30",
-        "speakers": []
+        "speakers": [
+            104, 102, 114, 115
+        ]
     },
     {
         "id": "401",
@@ -276,12 +290,13 @@
         "date": "July 12th, 2020",
         "timeDuration": "15",
         "speakers": [
+            122, 123
         ]
     },
     {
         "id": "404",
         "slide":"",
-        "title": "Jagriti's Talk",
+        "title": "Coming Soon",
         "description": "",
         "link": "",
         "track": "Privacy & UX",
@@ -294,7 +309,7 @@
     {
         "id": "405",
         "slide":"",
-        "title": "JD's talk",
+        "title": "Coming Soon",
         "description": "",
         "track": "Privacy & UX",
         "format": "Talk",
@@ -308,12 +323,14 @@
         "id": "406",
         "slide":"",
         "title": "Q & A",
-        "description": "",
+        "description": "Here, we will answer the questions of each session from the audience along with the speakers of the day.",
         "track": "Privacy & UX",
         "format": "AMA & Closing",
         "link": "",
         "date": "July 12th, 2020",
         "timeDuration": "30",
-        "speakers": []
+        "speakers": [
+            108, 101
+        ]
     }
 ]
