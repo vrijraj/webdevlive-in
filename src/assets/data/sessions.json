@@ -309,14 +309,15 @@
     {
         "id": "405",
         "slide":"",
-        "title": "Coming Soon",
-        "description": "",
+        "title": "Developer's guide to Web {Payments, Security and Compliance}",
+        "description": "As a web developer, you will find ample frameworks and techniques to enhance the UI/UX of your application. However, real business applications often require you to have Payment integration capabilities in your Web App. The talk touches upon different aspects of the Payment ecosystem focusing on Web Payments as an emerging web standard being developed by the W3C to simplify online payments. Alongwith its security and compliance features, it is a major enabler for a broader set of players to participate easily in the payments ecosystem on the web.",
         "track": "Privacy & UX",
         "format": "Talk",
         "link": "",
         "date": "July 12th, 2020",
         "timeDuration": "30",
         "speakers": [
+            125
         ]
     },
     {

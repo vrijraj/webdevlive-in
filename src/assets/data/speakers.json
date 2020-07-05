@@ -399,5 +399,22 @@
         "sessionId": [
             303
         ]
-    }
+    },
+    {
+        "id": "125",
+        "name": "Dharmesh Vaya",
+        "company": {
+            "designation": "Director of Technology",
+            "name": "Agrahyah Technologies"
+        },
+        "image": "dharmesh.jpg",
+        "bio": "Dharmesh is a technologist known for his ability of developing enterprise applications on Cloud Platforms and fostering a spirit of innovation among teams, with a diverse experience around Banking, e-Commerce, Media/Entertainment to name a few. Currently he is the Director of Technology at Agrahyah Technologies. He is a Google Developer Expert for Google Cloud Platform and actively manages Google Cloud Developers Community, Mumbai. Recently, he also was recognized as India's first GDE in Payments Category.",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/dharmeshvaya",
+            "twitter": "https://twitter.com/DRVaya"
+        },
+        "sessionId": [
+            405
+        ]
+    },
 ]
