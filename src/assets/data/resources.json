@@ -1,0 +1,38 @@
+{
+    "resources": {
+        "youtubePlaylist": [
+            {
+                "day": "1",
+                "date": "July 09th, 2020",
+                "name": "Watch Here",
+                "track": "Performance & Developer Tools",
+                "description": "Performance & Developer Tools Track",
+                "link": "https://www.youtube.com/watch?v=YRWMjDQV2Ns"
+            },
+            {
+                "day": "2",
+                "date": "July 10th, 2020",
+                "name": "Set Reminder",
+                "track": "Front-End & AMP",
+                "description": "Front-End & AMP Track",
+                "link": "https://www.youtube.com/watch?v=YfK2t5jRThM"
+            },
+            {
+                "day": "3",
+                "date": "July 11th, 2020",
+                "name": "Set Reminder",
+                "track": "PWA & FUGU",
+                "description": "PWA & FUGU Track",
+                "link": "https://www.youtube.com/watch?v=p0yM3nkbdN4"
+            },
+            {
+                "day": "4",
+                "date": "July 12th, 2020",
+                "name": "Set Reminder",
+                "track": "Privacy & UX",
+                "description": "Privacy & UX Track",
+                "link": "https://www.youtube.com/watch?v=bUcj55M-gE8"
+            }
+        ]
+    }
+}
