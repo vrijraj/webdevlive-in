@@ -416,5 +416,22 @@
         "sessionId": [
             405
         ]
+    },
+    {
+        "id": "126",
+        "name": "Jagriti Pande",
+        "company": {
+            "designation": "Co-Founder",
+            "name": "UX Gorilla and ElpisDesign LLP"
+        },
+        "image": "jagriti.png",
+        "bio": "I am a UX Practitioner, Design Coach, and Painter who loves to practice and teach UX Design and creative thinking.  Trained in fine arts, User Research, and Design, I post-graduated with a Gold Medal from NIFT. I am also a Certified Design Sprint Master. I am the co-founder of UX Gorilla ( a brand of ElpisDesign LLP) which is a Product Development Agency. We help our clients in India, USA, UK, Mauritius, and Singapore build and launch their digital products. For the last 7 years, I have trained close to a thousand design aspirants, practitioners, Product Managers, and entrepreneurs. Passionate about making design education inclusive and accessible, I co-founded Design Jungle in 2017.",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/jagritipande/",
+            "twitter": "https://twitter.com/JagritiPande"
+        },
+        "sessionId": [
+            404
+        ]
     }
 ]
