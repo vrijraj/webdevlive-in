@@ -1,8 +1,8 @@
 <template>
-<v-container fluid>
+  <v-container fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" md="5" lg="4" class="text-center">
-        <v-img :src="require('@/assets/img/home.png')">
+        <v-img :src="require('@/assets/img/common/logo.gif')">
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
@@ -30,7 +30,11 @@
           class="google-font"
         >Join Google's Web Platform team, from the comfort of your homes, to celebrate our community's actions, learn modern web techniques and connect with each other.</p>
 
-        <p class="google-font" :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'" style="font-size:120%">July 9-12, 2020 | 05:00 PM to 08:00 PM IST</p>
+        <p
+          class="google-font"
+          :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-2'"
+          style="font-size:120%"
+        >July 9-12, 2020 | 05:00 PM to 08:00 PM IST</p>
 
         <p class="google-font" style="font-size:100%;color:#9e9e9e">
           <span v-for="(item,i) in mainData.hashtags" :key="i">
@@ -50,12 +54,23 @@
             aria-label="Home BTN"
             color="primary"
             style="text-transform: capitalize;"
-            class="google-font"
+            class="google-font mr-4 mb-2"
             depressed
             large
             dark
           >Register Here</v-btn>
         </router-link>
+        <v-btn
+          href="https://www.youtube.com/channel/UCs63-Jjt44mtX_zuXkC_RHg"
+          target="_blank"
+          aria-label="Home BTN"
+          color="#c4302b"
+          style="text-transform: capitalize;"
+          class="google-font"
+          depressed
+          large
+          dark
+        >YouTube Channel</v-btn>
 
         <!-- <v-btn
             aria-label="Home BTN"
@@ -67,20 +82,20 @@
             target="_blank"
             href="http://goo.gle/webdevliveindia"
             dark
-        >Register Here 2</v-btn> -->
+        >Register Here 2</v-btn>-->
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-  import aboutEvent from "@/assets/data/about.json";
-  export default {
-    data: ()=>({
-      mainData:{}
-    }),
-    mounted(){
-      this.mainData = aboutEvent
-    }
+import aboutEvent from "@/assets/data/about.json";
+export default {
+  data: () => ({
+    mainData: {}
+  }),
+  mounted() {
+    this.mainData = aboutEvent;
   }
+};
 </script>
