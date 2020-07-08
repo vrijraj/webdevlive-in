@@ -1,27 +1,19 @@
 <template>
   <v-content class="ma-0">
-    <v-container fluid>
+    <v-container fluid class="mt-0 pt-0">
       <v-row justify="center" align="center">
-        <v-col md="10" sm="11" xl="10" cols="12">
+        <v-col md="10" sm="11" xl="10" cols="12" class="mt-0 pt-0">
           <StartScreen />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="my-0 py-5 hidden-sm-and-up">
-      <v-layout wrap align-center justify-center row fill-height class="mt-5">
-        <v-flex xs12 md10>
-          <ResourcesMobileView />
-        </v-flex>
-      </v-layout>
-    </v-container>
-
-    <v-container fluid class="my-0 py-5 d-none d-sm-block pb-10">
-      <v-layout wrap align-center justify-center row fill-height class="mt-0">
-        <v-flex xs12 md10>
+    <v-container fluid class="my-0 py-5 pb-10">
+      <v-row justify="center" align="center">
+        <v-col md="10" sm="11" xl="10" cols="12">
           <Resources />
-        </v-flex>
-      </v-layout>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-container fluid :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
@@ -83,9 +75,7 @@ export default {
     eventOverview: () => import(/* webpackChunkName: "homeOverview" */ "@/components/home/overview"),
     CodeOfConductSection: () => import(/* webpackChunkName: "homeGuidelines" */ "@/components/codeOfConduct/guidelines"),
     SocialShare: () => import(/* webpackChunkName: "homeSocialShare" */ "@/components/common/SocialShare"),
-    Resources: () => import("@/components/resources/Resources"),
-    ResourcesMobileView: () =>
-      import("@/components/resources/ResourcesMobileView")
+    Resources: () => import(/* webpackChunkName: "homeResources" */"@/components/resources/Resources"),
   }
 };
 </script>

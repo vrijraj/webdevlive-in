@@ -36,16 +36,16 @@
                 slider-color="primary"
               >
                 <v-tab href="#day1">
-                  Day 1
+                  July 9
                 </v-tab>
                 <v-tab href="#day2">
-                  Day 2
+                  July 10
                 </v-tab>
                 <v-tab href="#day3">
-                  Day 3
+                  July 11
                 </v-tab>
                 <v-tab href="#day4">
-                  Day 4
+                  July 12
                 </v-tab>
               </v-tabs>
             </template>
