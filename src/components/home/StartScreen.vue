@@ -54,7 +54,7 @@
             aria-label="Home BTN"
             color="primary"
             style="text-transform: capitalize;"
-            class="google-font mr-4 mb-2"
+            class="google-font mr-4 mt-2"
             depressed
             large
             dark
@@ -66,7 +66,7 @@
           aria-label="Home BTN"
           color="#c4302b"
           style="text-transform: capitalize;"
-          class="google-font"
+          class="google-font mt-2"
           depressed
           large
           dark
