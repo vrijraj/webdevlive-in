@@ -184,15 +184,15 @@
     {
         "id": "302",
         "slide":"",
-        "title": "Demystify PWA with Flutter",
-        "description": "The lightning talk will cover an introduction to PWA and how we can use Flutter to develop and launch a PWA.",
+        "title": "PWA: What, Why and How?",
+        "description": "This talk is for designers of enterprise & consumer web apps who want to understand the options for installed web experiences from browsers and the Play Store. We’ll cover What, why, when, where & how to promote web install—and, once installed, best practices for UX & measuring success in installed web apps.",
         "track": "PWA & FUGU",
         "link": "",
         "format": "Talk",
         "date": "July 11th, 2020",
         "timeDuration": "30",
         "speakers": [
-            102
+            116, 124
         ]
     },
     {

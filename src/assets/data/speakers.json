@@ -4,7 +4,7 @@
         "name": "Aayush Arora",
         "company": {
             "name": "FilterPixel",
-            "designation": "Founderr & CEO"
+            "designation": "Founder & CEO"
         },
         "bio": "Aayush is the Founder and CEO of FilterPixel & Google Developer Expert, thriving to innovate frontend with accessible Interfaces. An innovation strategist and Massachusetts Institute of Technology Entrepreneurship graduate, he brings 5+ years of experience in Web Development, Accessibility with his expertise in Angular Framework. Since, 3+ years, he has mentored around 1 lakh students across the globe for Udacity under Google Scholarship programs and 20+ startups under Pluralsight. Aayush has always been a prominent voice for FOSSASIA during GSoC and has been contributing continuously to the growth of the communities such as FOSSASIA, NASA, and CloudCV. ",
         "image": "aayush.jpg",
@@ -15,23 +15,6 @@
             "twitter": "https://twitter.com/angularboy",
             "linkedin": "https://www.linkedin.com/in/angularboy/"
         }
-    },
-    {
-        "id": "102",
-        "name": "Aditi Soni",
-        "company": {
-            "name": "Consultadd Inc.",
-            "designation": "Software Engineer"
-        },
-        "image": "aditi.jpg",
-        "bio": "Aditi is a community lover and a passionate developer. She keeps contributing to various technical communities as an organizer or a speaker. As a personal interest, she develops mobile Applications. She is also a Google India Udacity Android Developers Nanodegree 2018 Scholar. Reading about new inventions and breakthroughs keeps her motivated. She always tries to empower women with the power of community to help women achieve the things they aim for. Happiness is a choice and she strongly believes that one should always keep the child inside them alive.",
-        "social": {
-            "twitter": "https://twitter.com/soniaditi380",
-            "linkedin": "https://www.linkedin.com/in/aditi-soni/"
-        },
-        "sessionId": [
-            302
-        ]
     },
     {
         "id": "103",
@@ -262,13 +245,13 @@
           "name": "GDG Jalandhar",
           "designation": "Community Organizer"
         },
-        "image": "vrijraj.jpg",
+        "image": "vrijraj.png",
         "bio": "Vrijraj is a front-end developer by profession and an outstanding person in daily life. Thinking out of the box is what he believes in doing. He states that learning is a process that never stops, even if you are old enough, there will be things that you can still learn. He is always eager to learn new technologies and develop new things based on it.",
         "social": {
           "twitter": "https://twitter.com/VrijrajSingh",
           "linkedin": "https://www.linkedin.com/in/vrijraj/"
         },
-        "sessionId": []
+        "sessionId": [302]
       },
     {
         "id": "117",
@@ -397,7 +380,7 @@
             "linkedin": "https://www.linkedin.com/in/arpansac"
         },
         "sessionId": [
-            303
+            303,302
         ]
     },
     {
