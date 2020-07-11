@@ -89,7 +89,7 @@
         "title": "AMP-lify Your Web Applications",
         "description": "As the title suggests 'AMP-lify' your web apps, this session is all about AMP (Accelerated Mobile Pages). A web component framework by Google in collaboration with Twitter. We will start with an introduction to AMP and we will see how it is different compared to PWA and other JS frameworks. Because both PWA and AMP are all about faster loading of web apps. So it's good to have a clear idea on when to use AMP and when to use PWA. Later we will cover important parts of AMP like AMP HTML, AMP JS and AMP Cache. We will also see components available with AMP and how you can start building with AMP. At last we will quickly go through success stories of AMP and see how it has changed the mobile web industry.",
         "track": "Front-End & AMP",
-        "link": "",
+        "link": "https://www.youtube.com/embed/SJDB8W-IxGY",
         "format": "Talk",
         "date": "July 10th, 2020",
         "timeDuration": "30",
@@ -104,7 +104,7 @@
         "description": "Let's learn how Hooks can make your React App cleaner and more readable for humans and machines.",
         "track": "Front-End & AMP",
         "format": "Talk",
-        "link": "",
+        "link": "https://www.youtube.com/embed/Y30xphwaJJY",
         "date": "July 10th, 2020",
         "timeDuration": "30",
         "speakers": [
@@ -117,7 +117,7 @@
         "title": "Understanding NgModules in Angular",
         "description": "In this talk , I will share with you all about the purpose of using NgModules in angular application and “When & Why” to use them.",
         "track": "Front-End & AMP",
-        "link": "",
+        "link": "https://www.youtube.com/embed/SnDOCVJ7LTQ",
         "format": "Talk",
         "date": "July 10th, 2020",
         "timeDuration": "15",
@@ -132,7 +132,7 @@
         "description": "Accelerated Mobile Pages capabilities beyond just web in AMP Stories, AMP Emails, AMP Ads, and more. Also, a sneak peek into what next and how to become an active member.",
         "track": "Front-End & AMP",
         "format": "Talk",
-        "link": "",
+        "link": "https://www.youtube.com/embed/7IZBoMSPVOs",
         "date": "July 10th, 2020",
         "timeDuration": "40",
         "speakers": [
@@ -146,7 +146,7 @@
         "description": "",
         "track": "Front-End & AMP",
         "format": "Talk",
-        "link": "",
+        "link": "https://www.youtube.com/embed/eWVOrRwt7mE",
         "date": "July 10th, 2020",
         "timeDuration": "30",
         "speakers": [
@@ -159,7 +159,7 @@
         "title": "Q & A",
         "description": "Here, we will answer the questions of each session from the audience along with the speakers of the day.",
         "track": "Front-End & AMP",
-        "link": "",
+        "link": "https://www.youtube.com/embed/Z_z4GR2LPRk",
         "format": "AMA & Closing",
         "date": "July 10th, 2020",
         "timeDuration": "30",
@@ -192,7 +192,7 @@
         "date": "July 11th, 2020",
         "timeDuration": "30",
         "speakers": [
-            116, 124
+            124
         ]
     },
     {
